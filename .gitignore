@@ -6,5 +6,6 @@ design/
 build/composer.lock
 build/
 !.gitignore
+!/build/wp-content/themes/sative/
 !build/wp-content/themes/sative/
 !prototype/dist/
