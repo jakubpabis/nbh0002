@@ -1,0 +1,114 @@
+.footer {
+    background-color: $color-primary;
+    color: white;
+    padding-top: 40px;
+
+    &__upper {
+
+        @media(max-width: 767px) {
+
+            * {
+                text-align: center!important;
+            }
+
+        }
+
+        &-contact {
+
+            i {
+                color: $color-secondary;
+            }
+
+            a {
+
+                &:hover {
+                    text-decoration: none;
+                    color: $color-secondary;
+                }
+
+            }
+
+        }
+
+        .btn {
+            margin-left: 10px;
+        }
+
+    }
+
+    &__lower {
+        margin-top: 30px;
+        padding: 12px 0;
+
+        a:hover {
+            color: inherit;
+        }
+
+        .sative {
+            margin-left: 20px;
+
+            @media(max-width: 359px) {
+                margin: 10px auto 5px;
+                display: block;
+            }
+
+            a {
+
+                i {
+                    color: $color-tertiary;
+                    margin: 0 2px;
+                    @include trans200;
+                    font-size: 18px;
+                    vertical-align: -2px;
+                    -webkit-text-fill-color: $color-tertiary;
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: $color-primary;
+                }
+
+                span {
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 14px;
+                    position: relative;
+
+                    &:after {
+                        position: absolute;
+                        display: block;
+                        bottom: -1px;
+                        left: 0;
+                        width: 0;
+                        content: '';
+                        height: 2px;
+                        background-color: $color-navy;
+                        @include trans200;
+                    }
+
+                }
+
+                &:hover {
+                    color: inherit;
+                    text-decoration: none;
+
+                    i {
+                        transform: scale(1.2);
+                        -webkit-text-stroke-width: 1.5px;
+                        margin: 0 3px;
+                    }
+
+                    span {
+
+                        &:after {
+                            width: 100%;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

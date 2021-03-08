@@ -1,0 +1,62 @@
+.article {
+    margin-top: 40px;
+    margin-bottom: 70px;
+
+    @media(max-width: 991px) {
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+
+    @media(max-width: 767px) {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    article {
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            line-height: 1.75;
+
+            img {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+        }
+
+        a {
+            color: $color-pink;
+            font-weight: 400;
+        }
+
+        .btn {
+            margin-top: 30px;
+        }
+
+    }
+
+}

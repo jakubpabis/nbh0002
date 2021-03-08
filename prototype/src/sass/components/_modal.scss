@@ -1,0 +1,40 @@
+.modal {
+
+    .modal-dialog {
+        border: none;
+        outline: 0;
+
+        .modal-content {
+            border: none;
+            background: transparent;
+            padding: 0;
+            border-radius: none;
+
+            .modal-header,
+            .modal-body {
+                border: none;
+                padding: 0;
+            }
+
+            .modal-container {
+
+            }
+
+        }
+
+    }
+
+    .close {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        z-index: 99999999999;
+        opacity: 1!important;
+        outline: 0!important;
+        box-shadow: none!important;
+    }
+
+}

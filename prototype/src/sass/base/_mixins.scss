@@ -1,0 +1,7 @@
+@mixin trans200 {
+    transition: all 200ms ease-out;
+}
+
+@mixin trans($val) {
+    transition: all $val ease-out;
+}

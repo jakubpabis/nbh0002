@@ -1,0 +1,60 @@
+.btn {
+    vertical-align: middle;
+    position: relative;
+    display: inline-block;
+    border-radius: 0!important;
+    font-weight: 500;
+    line-height: 1;
+    border: 1px solid;
+    outline: 0;
+    box-shadow: none!important;
+    background-color: transparent;
+    @include trans200;
+
+    &:before,
+    &:after {
+        border: none!important;
+    }
+
+    &.white {
+        border-color: white!important;
+        color: white!important;
+    }
+
+    &.black {
+        border-color: black!important;
+        color: black!important;
+    }
+
+    &__default {
+        padding: 1.2rem 3rem;
+        font-size: 1rem;
+    }
+
+    &__medium {
+        padding: 1rem 2rem;
+    }
+
+    &__small {
+        padding: 0.9rem 1.5rem;
+        font-size: 0.857rem;
+    }
+
+    &:active {
+        transform: translateY(2px);
+        filter: brightness(75%);
+    }
+
+
+
+}
+
+.link {
+    font-weight: 600;
+    text-decoration: underline;
+    
+    &:hover {
+        color: $color-pink;
+    }
+
+}

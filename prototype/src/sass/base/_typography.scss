@@ -1,0 +1,162 @@
+.text-size-xxxxlarge {
+	font-size: 4rem;
+	line-height: 1.44;
+	margin: 0;
+
+	@media(max-width: 1199px) {
+
+	}
+
+	@media(max-width: 991px) {
+
+	}
+
+	@media(max-width: 767px) {
+
+	}
+
+	@media(max-width: 575px) {
+
+	}
+
+}
+
+h1,
+.h1,
+.text-size-xxxlarge {
+	font-size: 3.21rem;
+	line-height: normal;
+
+	@media(max-width: 1199px) {
+
+	}
+
+	@media(max-width: 991px) {
+
+	}
+
+	@media(max-width: 767px) {
+
+	}
+
+	@media(max-width: 575px) {
+
+	}
+
+}
+
+h2,
+.h2,
+.text-size-xxlarge {
+	font-size: 2.357rem;
+	line-height: normal;
+
+	@media(max-width: 1199px) {
+
+	}
+
+	@media(max-width: 991px) {
+
+	}
+
+	@media(max-width: 767px) {
+
+	}
+
+	@media(max-width: 575px) {
+
+	}
+
+}
+
+h3,
+.h3,
+.text-size-xlarge {
+	font-size: 1.785rem;
+	line-height: normal;
+
+	@media(max-width: 1199px) {
+
+	}
+
+	@media(max-width: 991px) {
+
+	}
+
+	@media(max-width: 767px) {
+
+	}
+
+	@media(max-width: 575px) {
+
+	}
+
+}
+
+h4,
+.h4,
+.text-size-large {
+	font-size: 1.285rem;
+	line-height: normal;
+
+	@media(max-width: 767px) {
+
+	}
+
+}
+
+h5,
+.h5,
+.text-size-medium {
+	font-size: 1.142rem;
+	line-height: normal;
+}
+
+p,
+.p,
+.text-size-normal {
+	font-size: 1rem;
+	line-height: normal;
+	margin: 1rem auto;
+}
+
+.text-size-small,
+.text-size-small * {
+	font-size: 0.857rem;
+}
+
+.font-primary {
+	font-family: $font-primary;
+}
+
+.font-secondary {
+	font-family: $font-secondary;
+}
+
+.text-upper {
+	text-transform: uppercase;
+}
+
+.text300 {
+	font-weight: 300!important;
+}
+
+.text400 {
+	font-weight: 400!important;
+}
+
+.text500 {
+	font-weight: 500!important;
+}
+
+.text600 {
+	font-weight: 600!important;
+}
+
+.text700 {
+	font-weight: 700!important;
+}
+
+.text900 {
+	font-weight: 900!important;
+}
