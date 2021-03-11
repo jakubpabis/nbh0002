@@ -1,3 +1,7 @@
+@mixin trans100 {
+    transition: all 100ms ease-out;
+}
+
 @mixin trans200 {
     transition: all 200ms ease-out;
 }

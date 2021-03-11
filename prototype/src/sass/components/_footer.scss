@@ -57,7 +57,6 @@
                 i {
                     color: $color-tertiary;
                     margin: 0 2px;
-                    @include trans200;
                     font-size: 18px;
                     vertical-align: -2px;
                     -webkit-text-fill-color: $color-tertiary;
@@ -80,7 +79,6 @@
                         content: '';
                         height: 2px;
                         background-color: $color-navy;
-                        @include trans200;
                     }
 
                 }

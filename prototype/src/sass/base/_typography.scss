@@ -116,7 +116,7 @@ p,
 .p,
 .text-size-normal {
 	font-size: 1rem;
-	line-height: normal;
+	line-height: 1.66;
 	margin: 1rem auto;
 }
 
@@ -137,6 +137,10 @@ p,
 	text-transform: uppercase;
 }
 
+.text-underline {
+	text-decoration: underline;
+}
+
 .text300 {
 	font-weight: 300!important;
 }
@@ -149,14 +153,10 @@ p,
 	font-weight: 500!important;
 }
 
-.text600 {
-	font-weight: 600!important;
-}
-
 .text700 {
 	font-weight: 700!important;
 }
 
-.text900 {
-	font-weight: 900!important;
+.text-spacing {
+	letter-spacing: 0.5rem;
 }

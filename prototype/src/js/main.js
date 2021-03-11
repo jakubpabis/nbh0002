@@ -45,11 +45,30 @@ function uglyInput()
 	});
 }
 
+function productImgHover() 
+{
+	if( !$('body').hasClass('mobile-device') ) {
+		$('.products__product').on('mouseenter', function() {
+			if( $(this).find('.products__product-img').find('.hover').length ) {
+				$(this).find('.products__product-img').find('.main').stop(true).addClass('d-none');
+				$(this).find('.products__product-img').find('.hover').stop(true).removeClass('d-none');
+			}
+		});
+		$('.products__product').on('mouseleave', function() {
+			if( $(this).find('.products__product-img').find('.hover').length ) {
+				$(this).find('.products__product-img').find('.main').removeClass('d-none');
+				$(this).find('.products__product-img').find('.hover').addClass('d-none');
+			}
+		});
+	}
+}
+
 jQuery(document).ready(function() {
 
 	lazyImages();
 	uglyInput();
 	feather.replace();
+	productImgHover();
 
 });
 
