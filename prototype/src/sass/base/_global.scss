@@ -65,6 +65,15 @@ ul {
 		padding: 0.5rem 0;
 	}
 
+	&.list-unstyled {
+
+		li {
+			line-height: 1.21;
+			padding: 0.25rem 0;
+		}
+
+	}
+
 }
 
 input,
@@ -103,7 +112,7 @@ i {
 	position: relative;
 	display: block;
 	overflow: hidden;
-	padding-top: 107px;
+	padding-top: 119px;
 	min-height: 100vh;
 
 	@media(max-width: 991px) {
@@ -135,7 +144,7 @@ i {
 }
 
 .over-50 {
-	background-color: rgba($color: #000000, $alpha: 0.5);
+	background-color: rgba($color: $color-primary, $alpha: 0.5);
 	position: absolute;
 	height: 100%;
 	width: 100%;

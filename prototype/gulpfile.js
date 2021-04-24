@@ -142,7 +142,7 @@ gulp.task('watch', function() {
     gulp.watch('src/js/**/*.js', gulp.series('js', 'browsersyncReload'));
     gulp.watch('src/**/*.html', gulp.series('html', 'browsersyncReload'));
     gulp.watch('src/img/**/*', gulp.series('image', 'browsersyncReload'));
-    gulp.watch('src/img/**/*', gulp.series('exportWebP', 'browsersyncReload'));
+    //gulp.watch('src/img/**/*', gulp.series('exportWebP', 'browsersyncReload'));
   });
 
 gulp.task('default', gulp.series(gulp.parallel('sass'), gulp.parallel('browsersync', 'watch')));
