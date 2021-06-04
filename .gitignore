@@ -1,11 +1,9 @@
+.DS_Store
 .phpintel/
 prototype/node_modules
 prototype/.sass-cache
 design/
-.DS_Store
-build/composer.lock
 build/
 !.gitignore
-!/build/wp-content/themes/sative/
-!build/wp-content/themes/sative/
-!prototype/dist/
+!/build/wp-content/themes/nbhd
+!/prototype/dist/

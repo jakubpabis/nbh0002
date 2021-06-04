@@ -1085,6 +1085,23 @@ i {
 	max-height: 600px;
 }
 
+.header.swiper-container .swiper-pagination .swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	opacity: .5;
+}
+
+.header.swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+	opacity: 1;
+	background: white;
+}
+
+.header.swiper-container .swiper-button-prev,
+.header.swiper-container .swiper-button-next {
+	color: white;
+}
+
 .products__product-badge {
 	font-weight: 700;
 	line-height: 1;

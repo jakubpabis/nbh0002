@@ -4,29 +4,24 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package Sative
+ * @package WP_Bootstrap_Starter
  */
 
-get_header();
-?>
+get_header(); ?>
 
-	<main id="primary" class="site-main">
+	<section id="primary" class="content-area col-sm-12 col-lg-8">
+		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
+		<?php
+		if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title">
-					<?php
-					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'sative' ), '<span>' . get_search_query() . '</span>' );
-					?>
-				</h1>
+				<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'sative' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 			</header><!-- .page-header -->
 
 			<?php
 			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+			while ( have_posts() ) : the_post();
 
 				/**
 				 * Run the loop for the search to output the results.
@@ -43,10 +38,10 @@ get_header();
 
 			get_template_part( 'template-parts/content', 'none' );
 
-		endif;
-		?>
+		endif; ?>
 
-	</main><!-- #main -->
+		</main><!-- #main -->
+	</section><!-- #primary -->
 
 <?php
 get_sidebar();
