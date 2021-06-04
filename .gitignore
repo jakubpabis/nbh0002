@@ -3,7 +3,7 @@
 prototype/node_modules
 prototype/.sass-cache
 design/
-build/
+/build
 !.gitignore
 !/build/wp-content/themes/nbhd/
 !/build/wp-content/themes/sative/
