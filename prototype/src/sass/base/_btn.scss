@@ -1,78 +1,72 @@
 .btn {
-    vertical-align: middle;
-    position: relative;
-    display: inline-block;
-    border-radius: 0!important;
-    font-weight: 500;
-    line-height: 1;
-    border: 1px solid;
-    outline: 0;
-    box-shadow: none!important;
-    background-color: transparent;
-    transition: none!important;
-    transform-origin: center center;
+  vertical-align: middle;
+  position: relative;
+  display: inline-block;
+  border-radius: 0 !important;
+  font-weight: 500;
+  line-height: 1;
+  border: 1px solid;
+  outline: 0;
+  box-shadow: none !important;
+  background-color: transparent;
+  transition: none !important;
+  transform-origin: center center;
+
+  &:hover {
+    box-shadow: 0 8px 16px 2px rgba($color: #000000, $alpha: 0.25) !important;
+  }
+
+  &:before,
+  &:after {
+    border: none !important;
+  }
+
+  &.white {
+    border-color: white !important;
+    color: white !important;
 
     &:hover {
-        box-shadow: 0 8px 16px 2px rgba($color: #000000, $alpha: 0.25)!important;
+      color: $color-primary !important;
+      background-color: white;
     }
+  }
 
-    &:before,
-    &:after {
-        border: none!important;
+  &.black {
+    border-color: $color-primary !important;
+    color: $color-primary !important;
+
+    &:hover {
+      color: white !important;
+      background-color: $color-primary;
     }
+  }
 
-    &.white {
-        border-color: white!important;
-        color: white!important;
+  &__default {
+    padding: 1.1rem 4rem;
+    font-size: 1rem;
+  }
 
-        &:hover {
-            color: $color-primary!important;
-            background-color: white;
-        }
+  &__medium {
+    padding: 1rem 2.5rem;
+  }
 
-    }
+  &__small {
+    padding: 0.9rem 1.5rem;
+    font-size: 0.857rem;
+  }
 
-    &.black {
-        border-color: $color-primary!important;
-        color: $color-primary!important;
-
-        &:hover {
-            color: white!important;
-            background-color: $color-primary;
-        }
-
-    }
-
-    &__default {
-        padding: 1.1rem 4rem;
-        font-size: 1rem;
-    }
-
-    &__medium {
-        padding: 1rem 2.5rem;
-    }
-
-    &__small {
-        padding: 0.9rem 1.5rem;
-        font-size: 0.857rem;
-    }
-
-    &:active {
-        transform: translateY(2px);
-        filter: brightness(75%);
-    }
-
-
-
+  &:active {
+    transform: translateY(2px);
+    filter: brightness(75%);
+  }
 }
 
 .link {
-    font-weight: 600;
-    text-decoration: underline;
-    
-    &:hover {
-        color: $color-pink;
-        box-shadow: none!important;
-    }
+  font-weight: 600;
+  text-decoration: underline;
 
+  &:hover {
+    color: $color-pink;
+    box-shadow: none !important;
+  }
 }

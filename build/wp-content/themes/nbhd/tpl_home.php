@@ -165,27 +165,27 @@ if (get_field('slides')) {
 	</div>
 </section>
 
-<?php if (!empty(wc_get_featured_product_ids())) : ?>
 
-	<section class="bestsellers py-5 bg-grey">
-		<div class="container-xl pt-5">
-			<div class="row align-content-center justify-content-between pb-4 mb-2">
-				<div class="col-auto">
-					<span class="h2 text700">
-						Bestsellery
-					</span>
-				</div>
-				<div class="col-auto">
-					<a href="" class="btn btn__medium black">
-						Pokaż wszystkie
-					</a>
-				</div>
+
+<section class="bestsellers py-5 bg-grey">
+	<div class="container-xl pt-5">
+		<div class="row align-content-center justify-content-between pb-4 mb-2">
+			<div class="col-auto">
+				<span class="h2 text700">
+					Bestsellery
+				</span>
 			</div>
-			<?php get_template_part('template-parts/content', 'featured'); ?>
+			<div class="col-auto">
+				<a href="" class="btn btn__medium black">
+					Pokaż wszystkie
+				</a>
+			</div>
 		</div>
-	</section>
+		<?php echo do_shortcode('[products limit="15" columns="3" visibility="featured" orderby="date"]'); ?>
+	</div>
+</section>
 
-<?php endif; ?>
+
 
 <section class="img-aside py-5 bg-grey2">
 	<div class="container-xl py-5">

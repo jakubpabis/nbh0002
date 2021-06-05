@@ -553,8 +553,65 @@ if (!function_exists('woocommerce_output_related_products')) {
 		}
 	}
 }
-
 add_filter('woocommerce_hide_invisible_variations', '__return_true');
+
+
+add_action('woocommerce_before_shop_loop_item_title', function () {
+	global $product;
+	$prod = strtotime($product->get_date_modified());
+	$now = time();
+	if ($product->is_on_sale()) {
+		if ($product->is_type('simple')) {
+			$max_percentage = (($product->get_regular_price() - $product->get_sale_price()) / $product->get_regular_price()) * 100;
+		} elseif ($product->is_type('variable')) {
+			$max_percentage = 0;
+			foreach ($product->get_children() as $child_id) {
+				$variation = wc_get_product($child_id);
+				$price = $variation->get_regular_price();
+				$sale = $variation->get_sale_price();
+				if ($price != 0 && !empty($sale)) $percentage = ($price - $sale) / $price * 100;
+				if ($percentage > $max_percentage) {
+					$max_percentage = $percentage;
+				}
+			}
+		}
+		if ($max_percentage > 0) echo '<div class="products__product-badge sale">Sale -' . round($max_percentage) . '%</div>';
+	} elseif ($now - $prod <= 604800) {
+		echo '<div class="products__product-badge new">Fresh</div>';
+	}
+	echo '<div class="products__product-img">';
+}, 9);
+add_action('woocommerce_before_shop_loop_item_title', function () {
+	global $product;
+	if (!empty($product->get_gallery_image_ids())) {
+		echo wp_get_attachment_image($product->get_gallery_image_ids()[0], 'medium', false, array('class' => 'hover d-none'));
+	}
+	echo '</div>';
+	$prod = strtotime($product->get_date_modified());
+	$now = time();
+	if ($product->is_on_sale()) {
+		echo '<p class="text700 color-red text-upper mb-0">Wyprzedaż</p>';
+	} elseif ($now - $prod <= 604800) {
+		echo '<p class="text700 color-blue text-upper mb-0">Nowość</p>';
+	}
+}, 11);
+
+/**
+ * WooCommerce, Add Long Description to Products on Shop Page
+ *
+ * @link https://wpbeaches.com/woocommerce-add-short-or-long-description-to-products-on-shop-page
+ */
+add_action('woocommerce_shop_loop_item_title', function () {
+	global $product;
+	echo '<p class="text-size-small mt-1">';
+	if ($product->get_short_description()) {
+		echo apply_filters('the_excerpt', $product->get_short_description());
+	} elseif ($product->get_description()) {
+		echo wp_trim_words(wp_trim_excerpt(), apply_filters('excerpt_length', 16), '...');
+	}
+	echo '</p>';
+});
+
 
 // /**
 //  * @snippet       Display "Quantity: #" @ WooCommerce Single Product Page

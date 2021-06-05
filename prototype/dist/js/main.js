@@ -131,103 +131,123 @@ function urlParser($url)
 headTemplate:'<thead><tr><th colspan="7" class="datepicker-title"></th></tr><tr><th class="prev">'+o.templates.leftArrow+'</th><th colspan="5" class="datepicker-switch"></th><th class="next">'+o.templates.rightArrow+"</th></tr></thead>",contTemplate:'<tbody><tr><td colspan="7"></td></tr></tbody>',footTemplate:'<tfoot><tr><th colspan="7" class="today"></th></tr><tr><th colspan="7" class="clear"></th></tr></tfoot>'};r.template='<div class="datepicker"><div class="datepicker-days"><table class="table-condensed">'+r.headTemplate+"<tbody></tbody>"+r.footTemplate+'</table></div><div class="datepicker-months"><table class="table-condensed">'+r.headTemplate+r.contTemplate+r.footTemplate+'</table></div><div class="datepicker-years"><table class="table-condensed">'+r.headTemplate+r.contTemplate+r.footTemplate+'</table></div><div class="datepicker-decades"><table class="table-condensed">'+r.headTemplate+r.contTemplate+r.footTemplate+'</table></div><div class="datepicker-centuries"><table class="table-condensed">'+r.headTemplate+r.contTemplate+r.footTemplate+"</table></div></div>",a.fn.datepicker.DPGlobal=r,a.fn.datepicker.noConflict=function(){return a.fn.datepicker=m,this},a.fn.datepicker.version="1.9.0",a.fn.datepicker.deprecated=function(a){var b=window.console;b&&b.warn&&b.warn("DEPRECATED: "+a)},a(document).on("focus.datepicker.data-api click.datepicker.data-api",'[data-provide="datepicker"]',function(b){var c=a(this);c.data("datepicker")||(b.preventDefault(),n.call(c,"show"))}),a(function(){n.call(a('[data-provide="datepicker-inline"]'))})});
 !function(t){var i=t(window);t.fn.visible=function(t,e,o){if(!(this.length<1)){var r=this.length>1?this.eq(0):this,n=r.get(0),f=i.width(),h=i.height(),o=o?o:"both",l=e===!0?n.offsetWidth*n.offsetHeight:!0;if("function"==typeof n.getBoundingClientRect){var g=n.getBoundingClientRect(),u=g.top>=0&&g.top<h,s=g.bottom>0&&g.bottom<=h,c=g.left>=0&&g.left<f,a=g.right>0&&g.right<=f,v=t?u||s:u&&s,b=t?c||a:c&&a;if("both"===o)return l&&v&&b;if("vertical"===o)return l&&v;if("horizontal"===o)return l&&b}else{var d=i.scrollTop(),p=d+h,w=i.scrollLeft(),m=w+f,y=r.offset(),z=y.top,B=z+r.height(),C=y.left,R=C+r.width(),j=t===!0?B:z,q=t===!0?z:B,H=t===!0?R:C,L=t===!0?C:R;if("both"===o)return!!l&&p>=q&&j>=d&&m>=L&&H>=w;if("vertical"===o)return!!l&&p>=q&&j>=d;if("horizontal"===o)return!!l&&m>=L&&H>=w}}}}(jQuery);
 
-'use strict';
+"use strict";
 
-function lazyImages()
-{
+function lazyImages() {
+  $(".lazyset").each(function () {
+    if (spaceFromBottom($(this)) && !$(this).hasClass("loaded")) {
+      $(this)
+        .attr("srcset", $(this).data("srcset"))
+        .removeAttr("data-srcset")
+        .addClass("loaded");
+    }
+  });
+  $(".lazy").each(function () {
+    if (spaceFromBottom($(this)) && !$(this).hasClass("loaded")) {
+      $(this)
+        .attr("src", $(this).data("src"))
+        .removeAttr("data-src")
+        .addClass("loaded");
+    }
+  });
 
-	$('.lazyset').each(function() {
-		if(spaceFromBottom($(this)) && !$(this).hasClass('loaded')) {
-			$(this).attr('srcset', $(this).data('srcset')).removeAttr('data-srcset').addClass('loaded');
-		}
-	});
-	$('.lazy').each(function() {
-		if(spaceFromBottom($(this)) && !$(this).hasClass('loaded')) {
-			$(this).attr('src', $(this).data('src')).removeAttr('data-src').addClass('loaded');
-		}
-	});
-
-	$(window).on('scroll resize', function() {
-
-		$('.lazyset').each(function() {
-			if(spaceFromBottom($(this)) && !$(this).hasClass('loaded')) {
-				$(this).attr('srcset', $(this).data('srcset')).removeAttr('data-srcset').addClass('loaded');
-			}
-		});
-		$('.lazy').each(function() {
-			if(spaceFromBottom($(this)) && !$(this).hasClass('loaded')) {
-				$(this).attr('src', $(this).data('src')).removeAttr('data-src').addClass('loaded');
-			}
-		});
-
-	});
-
+  $(window).on("scroll resize", function () {
+    $(".lazyset").each(function () {
+      if (spaceFromBottom($(this)) && !$(this).hasClass("loaded")) {
+        $(this)
+          .attr("srcset", $(this).data("srcset"))
+          .removeAttr("data-srcset")
+          .addClass("loaded");
+      }
+    });
+    $(".lazy").each(function () {
+      if (spaceFromBottom($(this)) && !$(this).hasClass("loaded")) {
+        $(this)
+          .attr("src", $(this).data("src"))
+          .removeAttr("data-src")
+          .addClass("loaded");
+      }
+    });
+  });
 }
 
-function uglyInput()
-{
-	$('.ugly').each(function() {
-		var $input = $(this).find('input, textarea');
-		$input.on('change focusout', function() {
-			if( !$input.val() === true ) {
-				$input.parent().find('.ugly-label').css({'opacity' : 1});
-			} else {
-				$input.parent().find('.ugly-label').css({'opacity' : 0});
-			}
-		});
-	});
+function uglyInput() {
+  $(".ugly").each(function () {
+    var $input = $(this).find("input, textarea");
+    $input.on("change focusout", function () {
+      if (!$input.val() === true) {
+        $input.parent().find(".ugly-label").css({ opacity: 1 });
+      } else {
+        $input.parent().find(".ugly-label").css({ opacity: 0 });
+      }
+    });
+  });
 }
 
-function productImgHover() 
-{
-	if( !$('body').hasClass('mobile-device') ) {
-		$('.products__product').on('mouseenter', function() {
-			if( $(this).find('.products__product-img').find('.hover').length ) {
-				$(this).find('.products__product-img').find('.main').stop(true).addClass('d-none');
-				$(this).find('.products__product-img').find('.hover').stop(true).removeClass('d-none');
-			}
-		});
-		$('.products__product').on('mouseleave', function() {
-			if( $(this).find('.products__product-img').find('.hover').length ) {
-				$(this).find('.products__product-img').find('.main').removeClass('d-none');
-				$(this).find('.products__product-img').find('.hover').addClass('d-none');
-			}
-		});
-	}
+function productImgHover() {
+  if (!$("body").hasClass("mobile-device")) {
+    $(".products__product, .product").on("mouseenter", function () {
+      if ($(this).find(".products__product-img").find(".hover").length) {
+        $(this)
+          .find(".products__product-img")
+          .find(".main, .attachment-woocommerce_thumbnail")
+          .stop(true)
+          .addClass("d-none");
+        $(this)
+          .find(".products__product-img")
+          .find(".hover")
+          .stop(true)
+          .removeClass("d-none");
+      }
+    });
+    $(".products__product, .product").on("mouseleave", function () {
+      if ($(this).find(".products__product-img").find(".hover").length) {
+        $(this)
+          .find(".products__product-img")
+          .find(".main, .attachment-woocommerce_thumbnail")
+          .removeClass("d-none");
+        $(this)
+          .find(".products__product-img")
+          .find(".hover")
+          .addClass("d-none");
+      }
+    });
+  }
 }
 
-jQuery(document).ready(function() {
+jQuery(document).ready(function () {
+  lazyImages();
+  uglyInput();
+  feather.replace();
+  productImgHover();
 
-	lazyImages();
-	uglyInput();
-	feather.replace();
-	productImgHover();
+  var swiper = new Swiper(".swiper-container", {
+    // Optional parameters
+    loop: true,
 
-	var swiper = new Swiper('.swiper-container', {
-		// Optional parameters
-		loop: true,
-	
-		// If we need pagination
-		pagination: {
-			el: '.swiper-pagination',
-		},
-	
-		// Navigation arrows
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-	
-		// And if we need scrollbar
-		scrollbar: {
-			el: '.swiper-scrollbar',
-		},
-	});
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+    },
 
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+  });
 });
 
-jQuery(window).on('load', function() {
-
-	lazyImages();
-
+jQuery(window).on("load", function () {
+  lazyImages();
 });
