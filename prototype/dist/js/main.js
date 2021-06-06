@@ -186,7 +186,7 @@ function uglyInput() {
 
 function productImgHover() {
   if (!$("body").hasClass("mobile-device")) {
-    $(".products__product, .product").on("mouseenter", function () {
+    $(".products__product, li.product").on("mouseenter", function () {
       if ($(this).find(".products__product-img").find(".hover").length) {
         $(this)
           .find(".products__product-img")
@@ -200,7 +200,7 @@ function productImgHover() {
           .removeClass("d-none");
       }
     });
-    $(".products__product, .product").on("mouseleave", function () {
+    $(".products__product, li.product").on("mouseleave", function () {
       if ($(this).find(".products__product-img").find(".hover").length) {
         $(this)
           .find(".products__product-img")

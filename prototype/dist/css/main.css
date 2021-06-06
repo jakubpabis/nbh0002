@@ -572,6 +572,7 @@ h1,
 .h1,
 .text-size-xxxlarge {
 	font-size: 3.21rem;
+	font-weight: 700;
 	line-height: normal;
 }
 
@@ -584,6 +585,7 @@ h2,
 
 h3,
 .h3,
+.woocommerce .woocommerce-tabs.wc-tabs-wrapper .card .card-body h5 span,
 .text-size-xlarge {
 	font-size: 1.785rem;
 	line-height: normal;
@@ -1195,14 +1197,142 @@ i {
 
 .products__product-img img,
 .products .product-img img {
-	margin-top: 10% !important;
-	margin-bottom: 0 !important;
+	position: absolute !important;
+	width: 100% !important;
+	max-width: 100vw !important;
+	height: 100% !important;
+	-o-object-fit: cover !important;
+	object-fit: cover !important;
 }
 
 .products__product:hover,
 .products .product:hover {
 	text-decoration: none;
 	color: #0a0a0a;
+}
+
+.woocommerce #content div.product div.images,
+.woocommerce div.product div.images,
+.woocommerce-page #content div.product div.images,
+.woocommerce-page div.product div.images {
+	width: 60% !important;
+}
+
+.woocommerce #content div.product div.summary,
+.woocommerce div.product div.summary,
+.woocommerce-page #content div.product div.summary,
+.woocommerce-page div.product div.summary,
+.woocommerce #content div.product .woocommerce-tabs,
+.woocommerce div.product .woocommerce-tabs,
+.woocommerce-page #content div.product .woocommerce-tabs,
+.woocommerce-page div.product .woocommerce-tabs {
+	float: right;
+	clear: none !important;
+	width: 37.5% !important;
+}
+
+.woocommerce #content div.product div.summary .cart button,
+.woocommerce div.product div.summary .cart button,
+.woocommerce-page #content div.product div.summary .cart button,
+.woocommerce-page div.product div.summary .cart button,
+.woocommerce #content div.product .woocommerce-tabs .cart button,
+.woocommerce div.product .woocommerce-tabs .cart button,
+.woocommerce-page #content div.product .woocommerce-tabs .cart button,
+.woocommerce-page div.product .woocommerce-tabs .cart button {
+	font-size: 1.142rem;
+	line-height: 1;
+	display: block;
+	width: 100%;
+	padding: 18px;
+	border-radius: 0;
+	background: #000;
+}
+
+article.single-product {
+	padding: 25px 15px 15px 15px;
+}
+
+article.single-product .woocommerce-breadcrumb {
+	font-size: .857rem !important;
+	font-weight: 700 !important;
+	margin-bottom: 6px !important;
+	color: black !important;
+}
+
+article.single-product .woocommerce-breadcrumb a {
+	font-weight: 400 !important;
+	color: black !important;
+}
+
+article.single-product .woocommerce-breadcrumb hr {
+	display: inline-block;
+	width: 100%;
+	max-width: 30px;
+	margin-right: 5px;
+	margin-left: 5px;
+	vertical-align: middle;
+	border-color: black;
+}
+
+article.single-product .related.products {
+	clear: both;
+}
+
+.woocommerce div.product div.images .woocommerce-product-gallery__image {
+	padding: 0 4px !important;
+}
+
+.woocommerce div.product div.images .woocommerce-product-gallery__image:nth-child(n + 2) {
+	width: 50% !important;
+	margin: 0 0 -5px 0 !important;
+	padding: 8px 4px 0 4px !important;
+}
+
+.woocommerce-product-gallery__wrapper {
+	margin: 0 -4px !important;
+}
+
+.woocommerce .woocommerce-tabs.wc-tabs-wrapper {
+	border-top: 5px solid black;
+}
+
+.woocommerce .woocommerce-tabs.wc-tabs-wrapper .card .card-body h5 {
+	font-weight: 700;
+	display: block;
+	width: 100%;
+	cursor: pointer;
+}
+
+.woocommerce .woocommerce-tabs.wc-tabs-wrapper .card .card-body h5 span {
+	line-height: 1;
+	position: relative;
+	margin-bottom: 0;
+	transition: all 300ms ease-out;
+}
+
+.woocommerce .woocommerce-tabs.wc-tabs-wrapper .card .card-body h5:hover {
+	background-color: #f0f0f0;
+}
+
+.woocommerce .woocommerce-tabs.wc-tabs-wrapper .card .card-body h5[aria-expanded='true'] {
+	background-color: #f0f0f0;
+}
+
+.woocommerce .woocommerce-tabs.wc-tabs-wrapper .card .card-body h5[aria-expanded='true'] span {
+	transform: rotate(45deg);
+}
+
+.woocommerce .woocommerce-tabs.wc-tabs-wrapper .card .card-body .collapse {
+	overflow: auto;
+	background-color: #f0f0f0;
+}
+
+.woocommerce .woocommerce-tabs.wc-tabs-wrapper .card .card-body .collapse-content {
+	overflow: auto;
+}
+
+.woocommerce .woocommerce-tabs.wc-tabs-wrapper .card .card-body hr {
+	margin: 0;
 }
 
 .card {

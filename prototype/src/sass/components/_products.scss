@@ -20,18 +20,17 @@
     }
 
     .price {
-			del {
-				display: none!important;
-				visibility: hidden!important;
-			}
-			ins {
-				text-decoration: none!important;
+      del {
+        display: none !important;
+        visibility: hidden !important;
+      }
+      ins {
+        text-decoration: none !important;
 
-				bdi {
-					color: $color-red!important;
-				}
-
-			}
+        bdi {
+          color: $color-red !important;
+        }
+      }
       bdi {
         @extend .h5;
         @extend .text700;
@@ -41,7 +40,7 @@
 
     a.button {
       @extend .btn;
-			@extend .btn.black;
+      @extend .btn.black;
       @extend .btn__small;
     }
 
@@ -73,27 +72,160 @@
     &-img {
       width: 100%;
       height: 0;
-			margin-bottom: 1em;
+      margin-bottom: 1em;
       padding-bottom: 120%;
       position: relative;
       overflow: hidden;
-			background-color: white;
+      background-color: white;
 
-			.onsale {
-				display: none!important;
-				visibility: hidden!important;
-			}
+      .onsale {
+        display: none !important;
+        visibility: hidden !important;
+      }
 
-			img {
-				margin-top: 10%!important;
-				margin-bottom: 0!important;
-			}
-
+      img {
+        width: 100% !important;
+        max-width: 100vw !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        position: absolute !important;
+      }
     }
 
     &:hover {
       color: $color-primary;
       text-decoration: none;
+    }
+  }
+}
+
+.woocommerce #content div.product div.images,
+.woocommerce div.product div.images,
+.woocommerce-page #content div.product div.images,
+.woocommerce-page div.product div.images {
+  width: 60% !important;
+}
+
+.woocommerce #content div.product div.summary,
+.woocommerce div.product div.summary,
+.woocommerce-page #content div.product div.summary,
+.woocommerce-page div.product div.summary,
+.woocommerce #content div.product .woocommerce-tabs,
+.woocommerce div.product .woocommerce-tabs,
+.woocommerce-page #content div.product .woocommerce-tabs,
+.woocommerce-page div.product .woocommerce-tabs {
+  width: 37.5% !important;
+  float: right;
+  clear: none !important;
+
+  .cart {
+    button {
+      width: 100%;
+      display: block;
+      background: #000;
+      border-radius: 0;
+      font-size: 1.142rem;
+      padding: 18px;
+      line-height: 1;
+    }
+  }
+}
+
+article.single-product {
+  padding: 25px 15px 15px 15px;
+  .woocommerce-breadcrumb {
+    font-size: 0.857rem !important;
+    color: black !important;
+    font-weight: 700 !important;
+    margin-bottom: 6px !important;
+
+    a {
+      color: black !important;
+      font-weight: 400 !important;
+    }
+
+    hr {
+      display: inline-block;
+      width: 100%;
+      max-width: 30px;
+      vertical-align: middle;
+      border-color: black;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+  .related.products {
+    clear: both;
+  }
+}
+
+.woocommerce {
+  div.product {
+    div.images {
+      .woocommerce-product-gallery__image {
+        padding: 0 4px !important;
+        &:nth-child(n + 2) {
+          width: 50% !important;
+          padding: 8px 4px 0 4px !important;
+          margin: 0 0 -5px 0 !important;
+        }
+      }
+    }
+  }
+}
+
+.woocommerce-product-gallery__wrapper {
+  margin: 0 -4px !important;
+}
+
+.woocommerce {
+
+  .woocommerce-tabs.wc-tabs-wrapper {
+    border-top: 5px solid black;
+
+    .card {
+      .card-body {
+        h5 {
+          font-weight: 700;
+          cursor: pointer;
+          display: block;
+          width: 100%;
+
+          span {
+            @extend .h3;
+            margin-bottom: 0;
+            line-height: 1;
+            position: relative;
+            @include trans(300ms);
+          }
+
+          &:hover {
+            background-color: $color-grey2;
+          }
+
+          &[aria-expanded="true"] {
+            background-color: $color-grey2;
+
+            span {
+              transform: rotate(45deg);
+            }
+          }
+        }
+
+        .collapse {
+					overflow: auto;
+          background-color: $color-grey2;
+
+					&-content {
+						overflow: auto;
+					}
+
+        }
+
+        hr {
+          margin: 0;
+        }
+      }
     }
   }
 }
