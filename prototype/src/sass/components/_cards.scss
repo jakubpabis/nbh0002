@@ -1,8 +1,19 @@
 .card {
-    border: none;
-    outline: 0;
+  border: none;
+  outline: 0;
 }
 
 .cards {
+  &__card {
+    &-img {
+      position: relative;
+      width: 100%;
+      padding-top: 66%; /* 16:9 Aspect Ratio */
 
+      img {
+        position: absolute;
+        top: 0;
+      }
+    }
+  }
 }
