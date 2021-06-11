@@ -32,14 +32,33 @@ $product_tabs = apply_filters('woocommerce_product_tabs', array());
 if (!empty($product_tabs)) : $i = 0; ?>
 
 	<div id="accordion" class="woocommerce-tabs wc-tabs-wrapper" role="tablist">
+		<div class="card bg-grey">
+			<div class="card-body p-0" id="heading-D">
+				<h5 class="px-3 py-4 mb-0 d-flex justify-content-between align-items-center" data-toggle="collapse" data-target="#tab-D" aria-expanded="true" aria-controls="tab-D">
+					Dostawa i zwrot
+					<span>+</span>
+				</h5>
+				<div id="tab-D" class="collapse show" aria-labelledby="tab-D" data-parent="#accordion">
+					<div class="collapse-content px-3 bg-grey2 pb-4">
+						<p class="mt-0">
+							Darmowa wysyłka już od 199 PLN<br />
+							30 dni na zwrot lub wymianę produktu<br />
+							<br />
+							<strong>Wysyłka już w 48h</strong>
+						</p>
+					</div>
+				</div>
+				<hr />
+			</div>
+		</div>
 		<?php foreach ($product_tabs as $key => $product_tab) : ?>
 			<div class="card bg-grey">
 				<div class="card-body p-0" id="heading-<?php echo esc_attr($key); ?>">
-					<h5 class="px-3 py-4 mb-0 d-flex justify-content-between align-items-center" data-toggle="collapse" data-target="#tab-<?php echo esc_attr($key); ?>" aria-expanded="<?php echo $i === 0 ? 'true' : 'false'; ?>" aria-controls="tab-<?php echo esc_attr($key); ?>">
+					<h5 class="px-3 py-4 mb-0 d-flex justify-content-between align-items-center" data-toggle="collapse" data-target="#tab-<?php echo esc_attr($key); ?>" aria-expanded="false" aria-controls="tab-<?php echo esc_attr($key); ?>">
 						<?php echo wp_kses_post(apply_filters('woocommerce_product_' . $key . '_tab_title', $product_tab['title'], $key)); ?>
 						<span>+</span>
 					</h5>
-					<div id="tab-<?php echo esc_attr($key); ?>" class="collapse<?php echo $i === 0 ? ' show' : null; ?>" aria-labelledby="tab-<?php echo esc_attr($key); ?>" data-parent="#accordion">
+					<div id="tab-<?php echo esc_attr($key); ?>" class="collapse" aria-labelledby="tab-<?php echo esc_attr($key); ?>" data-parent="#accordion">
 						<div class="collapse-content px-3 bg-grey2 pb-4">
 							<?php
 							if (isset($product_tab['callback'])) {

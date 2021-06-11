@@ -117,23 +117,25 @@
 				</div>
 			</div>
 		</footer> */ ?>
-<section class="pre-footer py-5">
-	<div class="container py-5">
-		<div class="row">
-			<div class="col-lg-3">
-				<span class="h2 text700 mb-2 d-block">
-					Dołącz do nas
-				</span>
-				<a href="" class="text-upper text-spacing d-block text500">
-					@nbhdskate.pl
-				</a>
-			</div>
-			<div class="col-lg-9">
-				<?= do_shortcode('[instagram-feed]'); ?>
+<?php if (!is_single()) : ?>
+	<section class="pre-footer py-5">
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-lg-3">
+					<span class="h2 text700 mb-2 d-block">
+						Dołącz do nas
+					</span>
+					<a href="" class="text-upper text-spacing d-block text500">
+						@nbhdskate.pl
+					</a>
+				</div>
+				<div class="col-lg-9">
+					<?= do_shortcode('[instagram-feed]'); ?>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
+<?php endif; ?>
 <footer class="footer">
 	<div class="footer__newsletter">
 		<div class="container">
