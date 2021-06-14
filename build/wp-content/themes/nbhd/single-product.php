@@ -58,6 +58,7 @@ get_header(); ?>
 		 * @hooked woocommerce_get_sidebar - 10
 		 */
 		//do_action('woocommerce_sidebar');
+		echo do_shortcode('[woocommerce_cart]');
 		?>
 	</div>
 </article>
