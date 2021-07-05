@@ -347,6 +347,21 @@
 		</div>
 	</div>
 </div>
+<div class="modal fade" id="nbhdModalCart" tabindex="-1" role="dialog" aria-labelledby="nbhdModalCartLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-slideout modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<h5 class="modal-title" id="nbhdModalCartLabel">Modal sideout small</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+				<?php echo do_shortcode('[woocommerce_cart]'); ?>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		</div>
+	</div>
+</div>
 <?php if (isset($_GET['already'])) : ?>
 	<div class="modal fade" id="already-modal-newsletter" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">

@@ -173,8 +173,15 @@
 						<a href="">
 							<i data-feather="user"></i>
 						</a>
-						<a href="">
+						<a href="javascript:void(0)" data-toggle="modal" data-target="#nbhdModalCart">
 							<i data-feather="shopping-cart"></i>
+							<?php global $woocommerce;
+							$cartCount = $woocommerce->cart->cart_contents_count;
+							if ($cartCount > 0 && $cartCount <= 99) : ?>
+								<span class="navigation__lower-utils-cart-count">
+									<?php echo $cartCount; ?>
+								</span>
+							<?php endif; ?>
 						</a>
 					</div>
 				</div>
