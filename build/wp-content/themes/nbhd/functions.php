@@ -633,7 +633,7 @@ add_action('woocommerce_shop_loop_item_title', function () {
 	global $product;
 	echo '<p class="text-size-small mt-1">';
 	if ($product->get_short_description()) {
-		echo apply_filters('the_excerpt', $product->get_short_description());
+		echo wp_trim_words(apply_filters('the_excerpt', $product->get_short_description()), apply_filters('excerpt_length', 16), '...');
 	} elseif ($product->get_description()) {
 		echo wp_trim_words(wp_trim_excerpt(), apply_filters('excerpt_length', 16), '...');
 	}
