@@ -14,9 +14,11 @@
  */
 
 get_header(); ?>
-<?php woocommerce_breadcrumb();
+<div class="container-fluid">
+	<?php woocommerce_breadcrumb(); ?>
+</div>
 
-if (have_posts() && (is_shop() || is_product_category() || is_product_taxonomy() || is_product_tag())) : ?>
+<?php if (have_posts() && (is_shop() || is_product_category() || is_product_taxonomy() || is_product_tag())) : ?>
 
 	<section class="products__list">
 		<div class="container">

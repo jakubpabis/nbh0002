@@ -22,7 +22,7 @@
 						</svg>
 					</a>
 				</div>
-				<div class="col-auto d-flex align-items-center">
+				<div class="col-auto align-items-center navigation__lower-container">
 					<ul class="navigation__lower-menu">
 						<li>
 							<a href="" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

@@ -10,7 +10,9 @@
 
 get_header(); ?>
 
-<?php woocommerce_breadcrumb(); ?>
+<div class="container-fluid">
+	<?php woocommerce_breadcrumb(); ?>
+</div>
 
 <section id="singlePage">
 	<main id="main" class="site-main" role="main">
