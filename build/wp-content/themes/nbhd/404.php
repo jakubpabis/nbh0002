@@ -10,26 +10,7 @@
 
 get_header(); ?>
 
-<?php if (function_exists('yoast_breadcrumb')) : ?>
-	<aside class="breadcrumbs scene_element scene_element--fadeindown scene_element--delayed">
-		<div class="container">
-			<div class="row">
-				<?php //yoast_breadcrumb( '<div class="col-12">','</div>' ); 
-				?>
-				<?php
-				$args = array(
-					'delimiter' => '➞',
-					'wrap_before' => '<div class="col-12"><span>',
-					'wrap_after' => '</span></div>',
-					'before' => '<span>',
-					'after' => '</span>'
-				);
-				woocommerce_breadcrumb($args);
-				?>
-			</div>
-		</div>
-	</aside>
-<?php endif; ?>
+<?php woocommerce_breadcrumb(); ?>
 
 <section id="singlePage" class="scene_element scene_element scene_element--fadeindown scene_element--delayed2">
 	<main id="main" class="site-main" role="main">

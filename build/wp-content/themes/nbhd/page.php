@@ -14,7 +14,11 @@
  */
 
 get_header(); ?>
-<section>
+
+<section class="general-template-section">
+	<div class="container-fluid">
+		<?php woocommerce_breadcrumb(); ?>
+	</div>
 	<div class="container">
 		<?php
 		if (have_posts()) :

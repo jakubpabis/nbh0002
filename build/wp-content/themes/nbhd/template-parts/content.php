@@ -10,31 +10,10 @@
 
 ?>
 
-<?php if (function_exists('yoast_breadcrumb')) : ?>
-	<aside class="breadcrumbs">
-		<div class="container">
-			<div class="row">
-				<?php //yoast_breadcrumb( '<div class="col-12">','</div>' ); 
-				?>
-				<?php
-				$args = array(
-					'delimiter' => '➞',
-					'wrap_before' => '<div class="col-12"><span>',
-					'wrap_after' => '</span></div>',
-					'before' => '<span>',
-					'after' => '</span>'
-				);
-				woocommerce_breadcrumb($args);
-				?>
-			</div>
-		</div>
-	</aside>
-<?php endif; ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="container">
 		<div class="row justify-content-center">
-			<div class="col-lg-10 col-12">
+			<div class="col-12">
 
 				<?php if (get_the_post_thumbnail()) : ?>
 					<div class="post-thumbnail">

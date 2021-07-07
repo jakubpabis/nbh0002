@@ -14,7 +14,7 @@
  */
 
 get_header(); ?>
-<section>
+<section class="general-template-section">
 	<div class="container">
 		<?php
 		if (have_posts()) : ?>

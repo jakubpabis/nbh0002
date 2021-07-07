@@ -82,11 +82,23 @@ function productImgHover() {
   }
 }
 
+function addedToCartLink() {
+  $(document).ajaxComplete(function (event, request, settings) {
+    $(document)
+      .find(".added_to_cart.wc-forward")
+      .on("click", function (e) {
+        e.preventDefault();
+        $("#nbhdModalCart").modal("show");
+      });
+  });
+}
+
 jQuery(document).ready(function () {
   lazyImages();
   uglyInput();
   feather.replace();
   productImgHover();
+  addedToCartLink();
 
   var swiper = new Swiper(".swiper-container", {
     // Optional parameters

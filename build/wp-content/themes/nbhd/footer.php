@@ -348,16 +348,16 @@
 	</div>
 </div>
 <div class="modal fade" id="nbhdModalCart" tabindex="-1" role="dialog" aria-labelledby="nbhdModalCartLabel" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-slideout modal-lg" role="document">
+	<div class="modal-dialog modal-dialog-slideout" role="document">
 		<div class="modal-content">
-			<div class="modal-body">
-				<h5 class="modal-title" id="nbhdModalCartLabel">Modal sideout small</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<div class="modal-topbar bg-black color-white d-flex align-items-center justify-content-between position-absolute left-0">
+				<h5 class="h4 text-uppercase text700 mb-0" id="nbhdModalCartLabel">Koszyk</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Zamknij">
 					<span aria-hidden="true">×</span>
 				</button>
-				<?php echo do_shortcode('[woocommerce_cart]'); ?>
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+			<div class="modal-body">
+				<div class="widget_shopping_cart_content"><?php woocommerce_mini_cart(); ?></div>
 			</div>
 		</div>
 	</div>

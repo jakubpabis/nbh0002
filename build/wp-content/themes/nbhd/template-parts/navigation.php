@@ -13,7 +13,7 @@
 	<div class="navigation__lower">
 		<div class="container-fluid px-xl-5">
 			<div class="row justify-content-between align-items-center">
-				<div class="col-auto">
+				<div class="col-auto pl-xl-0">
 					<a href="/" class="navigation__lower-logo">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 101">
 							<g fill="#000" fill-rule="evenodd">
@@ -176,12 +176,8 @@
 						<a href="javascript:void(0)" data-toggle="modal" data-target="#nbhdModalCart">
 							<i data-feather="shopping-cart"></i>
 							<?php global $woocommerce;
-							$cartCount = $woocommerce->cart->cart_contents_count;
-							if ($cartCount > 0 && $cartCount <= 99) : ?>
-								<span class="navigation__lower-utils-cart-count">
-									<?php echo $cartCount; ?>
-								</span>
-							<?php endif; ?>
+							$items_count = $woocommerce->cart->get_cart_contents_count(); ?>
+							<span class="navigation__lower-utils-cart-count <?php echo $items_count ? null : 'd-none'; ?>" id="mini-cart-count"><?php echo $items_count ? $items_count : null; ?></span>
 						</a>
 					</div>
 				</div>

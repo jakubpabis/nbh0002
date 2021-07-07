@@ -895,3 +895,13 @@ function newsTemplate($coupon_code)
 	';
 	return $body;
 }
+
+add_filter('woocommerce_add_to_cart_fragments', 'nbhd_refresh_mini_cart_count');
+function nbhd_refresh_mini_cart_count($fragments)
+{
+	ob_start();
+	$items_count = WC()->cart->get_cart_contents_count();
+	echo '<span class="navigation__lower-utils-cart-count ' . ($items_count ? null : "d-none") . '" id="mini-cart-count">' . ($items_count ? $items_count : null) . '</span>';
+	$fragments['#mini-cart-count'] = ob_get_clean();
+	return $fragments;
+}

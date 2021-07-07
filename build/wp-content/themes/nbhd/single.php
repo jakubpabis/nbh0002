@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying all single posts
  *
@@ -9,24 +10,7 @@
 
 get_header(); ?>
 
-<?php if ( function_exists('yoast_breadcrumb') ) : ?>
-	<aside class="breadcrumbs">
-		<div class="container">
-			<div class="row">
-				<?php 
-					$args = array(
-						'delimiter' => '➞',
-						'wrap_before' => '<div class="col-12"><span>',
-						'wrap_after' => '</span></div>',
-						'before' => '<span>',
-						'after' => '</span>'
-					);
-					woocommerce_breadcrumb($args);
-				?>
-			</div>
-		</div>
-	</aside>
-<?php endif; ?>
+<?php woocommerce_breadcrumb(); ?>
 
 <section id="singlePage">
 	<main id="main" class="site-main" role="main">
@@ -35,14 +19,14 @@ get_header(); ?>
 				<div class="col-12">
 
 					<?php
-					while ( have_posts() ) : the_post();
+					while (have_posts()) : the_post();
 
-						get_template_part( 'template-parts/content', get_post_format() );
+						get_template_part('template-parts/content', get_post_format());
 
-							the_post_navigation();
+						the_post_navigation();
 
 						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) :
+						if (comments_open() || get_comments_number()) :
 							comments_template();
 						endif;
 

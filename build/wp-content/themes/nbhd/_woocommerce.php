@@ -14,24 +14,7 @@
  */
 
 get_header(); ?>
-<?php if (function_exists('yoast_breadcrumb')) : ?>
-	<aside class="breadcrumbs">
-		<div class="container">
-			<div class="row">
-				<?php
-				$args = array(
-					'delimiter' => '➞',
-					'wrap_before' => '<div class="col-12"><span>',
-					'wrap_after' => '</span></div>',
-					'before' => '<span>',
-					'after' => '</span>'
-				);
-				woocommerce_breadcrumb($args);
-				?>
-			</div>
-		</div>
-	</aside>
-<?php endif;
+<?php woocommerce_breadcrumb();
 
 if (have_posts() && (is_shop() || is_product_category() || is_product_taxonomy() || is_product_tag())) : ?>
 
