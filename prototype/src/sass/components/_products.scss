@@ -69,6 +69,48 @@
       }
     }
   }
+
+  .woocommerce-pagination {
+    padding-top: 20px;
+    padding-bottom: 50px;
+
+    ul {
+      border: none !important;
+
+      li {
+        border: none !important;
+        a,
+        span {
+          font-size: 16px !important;
+          width: 34px !important;
+          height: 34px !important;
+          text-align: center;
+          margin: 0 5px !important;
+          border: 1px solid transparent !important;
+
+          &.current {
+            font-weight: 700;
+            color: black !important;
+            border-color: black !important;
+          }
+
+          &.prev,
+          &.next {
+            font-weight: 700 !important;
+            line-height: 13px !important;
+          }
+
+          &.prev {
+            margin-right: 10px !important;
+          }
+
+          &.next {
+            margin-left: 10px !important;
+          }
+        }
+      }
+    }
+  }
 }
 
 .products {
