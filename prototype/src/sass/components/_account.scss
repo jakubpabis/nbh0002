@@ -1,0 +1,41 @@
+.woocommerce {
+  .woocommerce-MyAccount-navigation {
+    width: 23% !important;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li {
+        background-color: $color-grey2;
+        border-bottom: 1px solid $color-grey5;
+        padding: 10px 15px;
+
+        a {
+          display: block;
+          font-weight: 700;
+        }
+
+        &:hover,
+        &:active {
+          background-color: $color-grey3;
+
+          a {
+            text-decoration: none;
+            color: black;
+          }
+        }
+
+        &.is-active {
+          background-color: $color-grey4;
+        }
+      }
+    }
+  }
+
+  .woocommerce-MyAccount-content {
+    width: 77% !important;
+    padding-left: 40px !important;
+  }
+}

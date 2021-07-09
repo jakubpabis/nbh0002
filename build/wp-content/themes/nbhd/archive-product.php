@@ -9,7 +9,21 @@
  */
 
 get_header(); ?>
-<section class="bg-grey general-template-section">
+<?php
+$class = null;
+if (is_product_category()) {
+	global $wp_query;
+	$cat = $wp_query->get_queried_object();
+	$thumbnail_id = get_term_meta($cat->term_id, 'thumbnail_id', true);
+	if ($thumbnail_id) {
+		$image_url = wp_get_attachment_url($thumbnail_id);
+		if ($image_url) {
+			$class = 'with_header_img';
+		}
+	}
+}
+?>
+<section class="bg-grey general-template-section nbhd-products-archive <?php echo $class; ?>">
 	<div class="container-fluid">
 		<?php /**
 		 * Hook: woocommerce_before_main_content.
@@ -21,9 +35,14 @@ get_header(); ?>
 		do_action('woocommerce_before_main_content');
 
 		?>
-		<header class="woocommerce-products-header">
+		<header class="woocommerce-products-header <?php echo $class; ?>">
+			<?php if ($class) : ?>
+				<img class="lazy bg-cover" data-src="<?php echo $image_url; ?>" alt="<?php echo get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true); ?>">
+			<?php endif; ?>
 			<?php if (apply_filters('woocommerce_show_page_title', true)) : ?>
-				<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
+				<h1 class="woocommerce-products-header__title page-title <?php echo $class; ?>">
+					<?php woocommerce_page_title(); ?>
+				</h1>
 			<?php endif; ?>
 
 			<?php
@@ -45,8 +64,11 @@ get_header(); ?>
 			 * @hooked woocommerce_output_all_notices - 10
 			 * @hooked woocommerce_result_count - 20
 			 * @hooked woocommerce_catalog_ordering - 30
-			 */
-			do_action('woocommerce_before_shop_loop'); ?>
+			 */ ?>
+			<aside class="nbhd-products-archive-filtering d-flex align-items-center justify-content-between flex-wrap">
+				<?php do_action('woocommerce_before_shop_loop'); ?>
+			</aside>
+
 			<div class="products__container">
 				<?php woocommerce_product_loop_start();
 

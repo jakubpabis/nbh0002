@@ -666,6 +666,8 @@ p,
 .woocommerce-form.woocommerce-form-login.login .button,
 .checkout_coupon.woocommerce-form-coupon .woocommerce-button.button.woocommerce-form-login__submit,
 .checkout_coupon.woocommerce-form-coupon .button,
+.woocommerce-form.woocommerce-form-register .woocommerce-button.button.woocommerce-form-login__submit,
+.woocommerce-form.woocommerce-form-register .button,
 .woocommerce #payment #place_order,
 .woocommerce-page #payment #place_order,
 #nbhdModalCart .modal-content .modal-body .widget_shopping_cart_content .woocommerce-mini-cart__buttons .button.wc-forward,
@@ -691,6 +693,8 @@ p,
 .woocommerce-form.woocommerce-form-login.login .button:hover,
 .checkout_coupon.woocommerce-form-coupon .woocommerce-button.button.woocommerce-form-login__submit:hover,
 .checkout_coupon.woocommerce-form-coupon .button:hover,
+.woocommerce-form.woocommerce-form-register .woocommerce-button.button.woocommerce-form-login__submit:hover,
+.woocommerce-form.woocommerce-form-register .button:hover,
 .woocommerce #payment #place_order:hover,
 .woocommerce-page #payment #place_order:hover,
 #nbhdModalCart .modal-content .modal-body .widget_shopping_cart_content .woocommerce-mini-cart__buttons .button.wc-forward:hover {
@@ -704,6 +708,8 @@ p,
 .woocommerce-form.woocommerce-form-login.login .button:before,
 .checkout_coupon.woocommerce-form-coupon .woocommerce-button.button.woocommerce-form-login__submit:before,
 .checkout_coupon.woocommerce-form-coupon .button:before,
+.woocommerce-form.woocommerce-form-register .woocommerce-button.button.woocommerce-form-login__submit:before,
+.woocommerce-form.woocommerce-form-register .button:before,
 .woocommerce #payment #place_order:before,
 .woocommerce-page #payment #place_order:before,
 #nbhdModalCart .modal-content .modal-body .widget_shopping_cart_content .woocommerce-mini-cart__buttons .button.wc-forward:before,
@@ -715,6 +721,8 @@ p,
 .woocommerce-form.woocommerce-form-login.login .button:after,
 .checkout_coupon.woocommerce-form-coupon .woocommerce-button.button.woocommerce-form-login__submit:after,
 .checkout_coupon.woocommerce-form-coupon .button:after,
+.woocommerce-form.woocommerce-form-register .woocommerce-button.button.woocommerce-form-login__submit:after,
+.woocommerce-form.woocommerce-form-register .button:after,
 .woocommerce #payment #place_order:after,
 .woocommerce-page #payment #place_order:after,
 #nbhdModalCart .modal-content .modal-body .widget_shopping_cart_content .woocommerce-mini-cart__buttons .button.wc-forward:after,
@@ -729,6 +737,8 @@ p,
 .woocommerce-form.woocommerce-form-login.login .white.button,
 .checkout_coupon.woocommerce-form-coupon .white.woocommerce-button.button.woocommerce-form-login__submit,
 .checkout_coupon.woocommerce-form-coupon .white.button,
+.woocommerce-form.woocommerce-form-register .white.woocommerce-button.button.woocommerce-form-login__submit,
+.woocommerce-form.woocommerce-form-register .white.button,
 .woocommerce #payment .white#place_order,
 .woocommerce-page #payment .white#place_order,
 #nbhdModalCart .modal-content .modal-body .widget_shopping_cart_content .woocommerce-mini-cart__buttons .white.button.wc-forward {
@@ -741,6 +751,7 @@ p,
 .products .product a.white.button:hover,
 .woocommerce-form.woocommerce-form-login.login .white.button:hover,
 .checkout_coupon.woocommerce-form-coupon .white.button:hover,
+.woocommerce-form.woocommerce-form-register .white.button:hover,
 .woocommerce #payment .white#place_order:hover,
 .woocommerce-page #payment .white#place_order:hover,
 #nbhdModalCart .modal-content .modal-body .widget_shopping_cart_content .woocommerce-mini-cart__buttons .white.button.wc-forward:hover {
@@ -755,6 +766,8 @@ p,
 .woocommerce-form.woocommerce-form-login.login .black.button,
 .checkout_coupon.woocommerce-form-coupon .black.woocommerce-button.button.woocommerce-form-login__submit,
 .checkout_coupon.woocommerce-form-coupon .black.button,
+.woocommerce-form.woocommerce-form-register .black.woocommerce-button.button.woocommerce-form-login__submit,
+.woocommerce-form.woocommerce-form-register .black.button,
 .woocommerce #payment .black#place_order,
 .woocommerce-page #payment .black#place_order,
 #nbhdModalCart .modal-content .modal-body .widget_shopping_cart_content .woocommerce-mini-cart__buttons .black.button.wc-forward {
@@ -767,6 +780,7 @@ p,
 .products .product a.button:hover,
 .woocommerce-form.woocommerce-form-login.login .black.button:hover,
 .checkout_coupon.woocommerce-form-coupon .black.button:hover,
+.woocommerce-form.woocommerce-form-register .black.button:hover,
 .woocommerce #payment .black#place_order:hover,
 .woocommerce-page #payment .black#place_order:hover,
 #nbhdModalCart .modal-content .modal-body .widget_shopping_cart_content .woocommerce-mini-cart__buttons .black.button.wc-forward:hover {
@@ -786,6 +800,8 @@ p,
 .woocommerce-form.woocommerce-form-login.login .button,
 .checkout_coupon.woocommerce-form-coupon .woocommerce-button.button.woocommerce-form-login__submit,
 .checkout_coupon.woocommerce-form-coupon .button,
+.woocommerce-form.woocommerce-form-register .woocommerce-button.button.woocommerce-form-login__submit,
+.woocommerce-form.woocommerce-form-register .button,
 #nbhdModalCart .modal-content .modal-body .widget_shopping_cart_content .woocommerce-mini-cart__buttons .button.wc-forward,
 #nbhdModalCart .modal-content .modal-body .widget_shopping_cart_content .woocommerce-mini-cart__buttons .button.checkout.wc-forward {
 	padding: 1rem 2.5rem;
@@ -805,6 +821,8 @@ p,
 .woocommerce-form.woocommerce-form-login.login .button:active,
 .checkout_coupon.woocommerce-form-coupon .woocommerce-button.button.woocommerce-form-login__submit:active,
 .checkout_coupon.woocommerce-form-coupon .button:active,
+.woocommerce-form.woocommerce-form-register .woocommerce-button.button.woocommerce-form-login__submit:active,
+.woocommerce-form.woocommerce-form-register .button:active,
 .woocommerce #payment #place_order:active,
 .woocommerce-page #payment #place_order:active,
 #nbhdModalCart .modal-content .modal-body .widget_shopping_cart_content .woocommerce-mini-cart__buttons .button.wc-forward:active {
@@ -1430,6 +1448,76 @@ input[type='checkbox']:checked:after {
 	color: white;
 }
 
+.nbhd-products-archive.with_header_img {
+	padding-top: 0 !important;
+}
+
+.nbhd-products-archive.with_header_img .woocommerce-breadcrumb {
+	position: absolute;
+	z-index: 9;
+	top: 15px;
+	width: 100%;
+	color: white !important;
+}
+
+.nbhd-products-archive.with_header_img .woocommerce-breadcrumb * {
+	color: white !important;
+}
+
+.nbhd-products-archive.with_header_img .woocommerce-breadcrumb hr {
+	border-color: white !important;
+}
+
+.nbhd-products-archive.with_header_img .woocommerce-products-header.with_header_img {
+	position: relative;
+	margin: 0 -30px;
+	background-color: black;
+}
+
+.nbhd-products-archive.with_header_img .woocommerce-products-header.with_header_img img {
+	height: 340px !important;
+	opacity: .7;
+}
+
+.nbhd-products-archive.with_header_img .woocommerce-products-header.with_header_img .woocommerce-products-header__title.with_header_img {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-left: 30px;
+	color: white !important;
+}
+
+.nbhd-products-archive-filtering {
+	margin: 0 -30px 50px -30px;
+	padding: 30px;
+	border-bottom: 1px solid #ddd;
+	background-color: white;
+}
+
+.nbhd-products-archive-filtering .woocommerce-notices-wrapper {
+	width: 100%;
+}
+
+.nbhd-products-archive-filtering .woocommerce-result-count,
+.nbhd-products-archive-filtering .woocommerce-ordering {
+	margin-bottom: 0 !important;
+}
+
+.nbhd-products-archive-filtering .woocommerce-ordering select {
+	font-size: 16px !important;
+	padding: 8px 10px !important;
+	border-color: #888 !important;
+	border-radius: 0 !important;
+}
+
+.nbhd-products-archive-filtering .woocommerce-ordering select:hover,
+.nbhd-products-archive-filtering .woocommerce-ordering select:active,
+.nbhd-products-archive-filtering .woocommerce-ordering select:focus {
+	border: 1px solid #333 !important;
+	outline: 0 !important;
+	box-shadow: 0 !important;
+}
+
 .products__product,
 .products .product {
 	margin-bottom: 6rem !important;
@@ -1610,6 +1698,10 @@ article.single-product .related.products ul.products {
 
 article.single-product .related.products ul.products li.product {
 	margin-bottom: 5rem !important;
+}
+
+.woocommerce ul.products {
+	margin-bottom: 0 !important;
 }
 
 .woocommerce div.product div.images .woocommerce-product-gallery__image {
@@ -1807,7 +1899,8 @@ article.single-product .related.products ul.products li.product {
 }
 
 .woocommerce-form.woocommerce-form-login.login,
-.checkout_coupon.woocommerce-form-coupon {
+.checkout_coupon.woocommerce-form-coupon,
+.woocommerce-form.woocommerce-form-register {
 	margin-top: 10px !important;
 	border-radius: 0 !important;
 }
@@ -1815,7 +1908,9 @@ article.single-product .related.products ul.products li.product {
 .woocommerce-form.woocommerce-form-login.login .form-row-first,
 .woocommerce-form.woocommerce-form-login.login .form-row-last,
 .checkout_coupon.woocommerce-form-coupon .form-row-first,
-.checkout_coupon.woocommerce-form-coupon .form-row-last {
+.checkout_coupon.woocommerce-form-coupon .form-row-last,
+.woocommerce-form.woocommerce-form-register .form-row-first,
+.woocommerce-form.woocommerce-form-register .form-row-last {
 	float: none !important;
 	width: 50% !important;
 }
@@ -1823,7 +1918,9 @@ article.single-product .related.products ul.products li.product {
 .woocommerce-form.woocommerce-form-login.login .woocommerce-button.button.woocommerce-form-login__submit,
 .woocommerce-form.woocommerce-form-login.login .button,
 .checkout_coupon.woocommerce-form-coupon .woocommerce-button.button.woocommerce-form-login__submit,
-.checkout_coupon.woocommerce-form-coupon .button {
+.checkout_coupon.woocommerce-form-coupon .button,
+.woocommerce-form.woocommerce-form-register .woocommerce-button.button.woocommerce-form-login__submit,
+.woocommerce-form.woocommerce-form-register .button {
 	font-weight: 700;
 	float: none;
 	margin-top: 10px;
@@ -2139,6 +2236,10 @@ article.single-product .related.products ul.products li.product {
 .checkout_coupon.woocommerce-form-coupon .article article .woocommerce-button.button.woocommerce-form-login__submit,
 .article article .checkout_coupon.woocommerce-form-coupon .button,
 .checkout_coupon.woocommerce-form-coupon .article article .button,
+.article article .woocommerce-form.woocommerce-form-register .woocommerce-button.button.woocommerce-form-login__submit,
+.woocommerce-form.woocommerce-form-register .article article .woocommerce-button.button.woocommerce-form-login__submit,
+.article article .woocommerce-form.woocommerce-form-register .button,
+.woocommerce-form.woocommerce-form-register .article article .button,
 .article article .woocommerce #payment #place_order,
 .woocommerce #payment .article article #place_order,
 .article article .woocommerce-page #payment #place_order,
@@ -2146,6 +2247,47 @@ article.single-product .related.products ul.products li.product {
 .article article #nbhdModalCart .modal-content .modal-body .widget_shopping_cart_content .woocommerce-mini-cart__buttons .button.wc-forward,
 #nbhdModalCart .modal-content .modal-body .widget_shopping_cart_content .woocommerce-mini-cart__buttons .article article .button.wc-forward {
 	margin-top: 30px;
+}
+
+.woocommerce .woocommerce-MyAccount-navigation {
+	width: 23% !important;
+}
+
+.woocommerce .woocommerce-MyAccount-navigation ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.woocommerce .woocommerce-MyAccount-navigation ul li {
+	padding: 10px 15px;
+	border-bottom: 1px solid #ddd;
+	background-color: #f0f0f0;
+}
+
+.woocommerce .woocommerce-MyAccount-navigation ul li a {
+	font-weight: 700;
+	display: block;
+}
+
+.woocommerce .woocommerce-MyAccount-navigation ul li:hover,
+.woocommerce .woocommerce-MyAccount-navigation ul li:active {
+	background-color: #e5e5e5;
+}
+
+.woocommerce .woocommerce-MyAccount-navigation ul li:hover a,
+.woocommerce .woocommerce-MyAccount-navigation ul li:active a {
+	text-decoration: none;
+	color: black;
+}
+
+.woocommerce .woocommerce-MyAccount-navigation ul li.is-active {
+	background-color: #e0e0e0;
+}
+
+.woocommerce .woocommerce-MyAccount-content {
+	width: 77% !important;
+	padding-left: 40px !important;
 }
 
 .pre-footer .sbi {

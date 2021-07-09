@@ -1,3 +1,76 @@
+.nbhd-products-archive {
+  &.with_header_img {
+    padding-top: 0 !important;
+
+    .woocommerce-breadcrumb {
+      position: absolute;
+      z-index: 9;
+      color: white !important;
+      width: 100%;
+      top: 15px;
+
+      * {
+        color: white !important;
+      }
+
+      hr {
+        border-color: white !important;
+      }
+    }
+
+    .woocommerce-products-header.with_header_img {
+      position: relative;
+      background-color: black;
+      margin: 0 -30px;
+
+      img {
+        height: 340px !important;
+        opacity: 0.7;
+      }
+
+      .woocommerce-products-header__title.with_header_img {
+        margin-left: 30px;
+        color: white !important;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+  &-filtering {
+    margin: 0 -30px 50px -30px;
+    padding: 30px;
+    background-color: white;
+    border-bottom: 1px solid $color-grey5;
+
+    .woocommerce-notices-wrapper {
+      width: 100%;
+    }
+
+    .woocommerce-result-count,
+    .woocommerce-ordering {
+      margin-bottom: 0 !important;
+    }
+
+    .woocommerce-ordering {
+      select {
+        border-color: $color-grey7 !important;
+        border-radius: 0 !important;
+        font-size: 16px !important;
+        padding: 8px 10px !important;
+
+        &:hover,
+        &:active,
+        &:focus {
+          outline: 0 !important;
+          box-shadow: 0 !important;
+          border: 1px solid $color-grey8 !important;
+        }
+      }
+    }
+  }
+}
+
 .products {
   &__container {
     @media (max-width: 359px) {
@@ -179,6 +252,9 @@ article.single-product {
 }
 
 .woocommerce {
+  ul.products {
+    margin-bottom: 0 !important;
+  }
   div.product {
     div.images {
       .woocommerce-product-gallery__image {
@@ -366,7 +442,8 @@ article.single-product {
 }
 
 .woocommerce-form.woocommerce-form-login.login,
-.checkout_coupon.woocommerce-form-coupon {
+.checkout_coupon.woocommerce-form-coupon,
+.woocommerce-form.woocommerce-form-register {
   border-radius: 0 !important;
   margin-top: 10px !important;
 
