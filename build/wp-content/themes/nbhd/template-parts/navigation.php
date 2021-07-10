@@ -170,7 +170,7 @@
 						<a href="">
 							<i data-feather="search"></i>
 						</a>
-						<a href="">
+						<a href="/konto">
 							<i data-feather="user"></i>
 						</a>
 						<a href="javascript:void(0)" data-toggle="modal" data-target="#nbhdModalCart">

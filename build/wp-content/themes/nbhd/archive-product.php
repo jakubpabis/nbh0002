@@ -70,22 +70,28 @@ if (is_product_category()) {
 			</aside>
 
 			<div class="products__container">
-				<?php woocommerce_product_loop_start();
+				<div class="container-xl">
+					<div class="row">
+						<div class="col-12 px-0">
+							<?php woocommerce_product_loop_start();
 
-				if (wc_get_loop_prop('total')) {
-					while (have_posts()) {
-						the_post();
+							if (wc_get_loop_prop('total')) {
+								while (have_posts()) {
+									the_post();
 
-						/**
-						 * Hook: woocommerce_shop_loop.
-						 */
-						do_action('woocommerce_shop_loop');
+									/**
+									 * Hook: woocommerce_shop_loop.
+									 */
+									do_action('woocommerce_shop_loop');
 
-						wc_get_template_part('content', 'product');
-					}
-				}
+									wc_get_template_part('content', 'product');
+								}
+							}
 
-				woocommerce_product_loop_end(); ?>
+							woocommerce_product_loop_end(); ?>
+						</div>
+					</div>
+				</div>
 			</div>
 		<?php /**
 			 * Hook: woocommerce_after_shop_loop.
