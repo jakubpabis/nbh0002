@@ -585,6 +585,14 @@ h2,
 
 h3,
 .h3,
+.woocommerce #content div.product div.summary .price,
+.woocommerce div.product div.summary .price,
+.woocommerce-page #content div.product div.summary .price,
+.woocommerce-page div.product div.summary .price,
+.woocommerce #content div.product .woocommerce-tabs .price,
+.woocommerce div.product .woocommerce-tabs .price,
+.woocommerce-page #content div.product .woocommerce-tabs .price,
+.woocommerce-page div.product .woocommerce-tabs .price,
 .woocommerce .woocommerce-tabs.wc-tabs-wrapper .card .card-body h5 span,
 .text-size-xlarge {
 	font-size: 1.785rem;
@@ -1682,6 +1690,89 @@ input[type='checkbox']:checked:after {
 	width: 37.5% !important;
 }
 
+.woocommerce #content div.product div.summary .product_title.entry-title,
+.woocommerce div.product div.summary .product_title.entry-title,
+.woocommerce-page #content div.product div.summary .product_title.entry-title,
+.woocommerce-page div.product div.summary .product_title.entry-title,
+.woocommerce #content div.product .woocommerce-tabs .product_title.entry-title,
+.woocommerce div.product .woocommerce-tabs .product_title.entry-title,
+.woocommerce-page #content div.product .woocommerce-tabs .product_title.entry-title,
+.woocommerce-page div.product .woocommerce-tabs .product_title.entry-title {
+	margin-bottom: 10px;
+	margin-left: -3px;
+}
+
+.woocommerce #content div.product div.summary .product_meta > span,
+.woocommerce div.product div.summary .product_meta > span,
+.woocommerce-page #content div.product div.summary .product_meta > span,
+.woocommerce-page div.product div.summary .product_meta > span,
+.woocommerce #content div.product .woocommerce-tabs .product_meta > span,
+.woocommerce div.product .woocommerce-tabs .product_meta > span,
+.woocommerce-page #content div.product .woocommerce-tabs .product_meta > span,
+.woocommerce-page div.product .woocommerce-tabs .product_meta > span {
+	display: block;
+	width: 100%;
+}
+
+.woocommerce #content div.product div.summary .product_meta > span a,
+.woocommerce div.product div.summary .product_meta > span a,
+.woocommerce-page #content div.product div.summary .product_meta > span a,
+.woocommerce-page div.product div.summary .product_meta > span a,
+.woocommerce #content div.product .woocommerce-tabs .product_meta > span a,
+.woocommerce div.product .woocommerce-tabs .product_meta > span a,
+.woocommerce-page #content div.product .woocommerce-tabs .product_meta > span a,
+.woocommerce-page div.product .woocommerce-tabs .product_meta > span a {
+	font-weight: 500;
+}
+
+.woocommerce #content div.product div.summary .product_meta .sku_wrapper,
+.woocommerce div.product div.summary .product_meta .sku_wrapper,
+.woocommerce-page #content div.product div.summary .product_meta .sku_wrapper,
+.woocommerce-page div.product div.summary .product_meta .sku_wrapper,
+.woocommerce #content div.product .woocommerce-tabs .product_meta .sku_wrapper,
+.woocommerce div.product .woocommerce-tabs .product_meta .sku_wrapper,
+.woocommerce-page #content div.product .woocommerce-tabs .product_meta .sku_wrapper,
+.woocommerce-page div.product .woocommerce-tabs .product_meta .sku_wrapper {
+	display: none !important;
+}
+
+.woocommerce #content div.product div.summary .price,
+.woocommerce div.product div.summary .price,
+.woocommerce-page #content div.product div.summary .price,
+.woocommerce-page div.product div.summary .price,
+.woocommerce #content div.product .woocommerce-tabs .price,
+.woocommerce div.product .woocommerce-tabs .price,
+.woocommerce-page #content div.product .woocommerce-tabs .price,
+.woocommerce-page div.product .woocommerce-tabs .price {
+	font-weight: 600;
+	margin-top: 30px;
+	color: black !important;
+}
+
+.woocommerce #content div.product div.summary .price del,
+.woocommerce div.product div.summary .price del,
+.woocommerce-page #content div.product div.summary .price del,
+.woocommerce-page div.product div.summary .price del,
+.woocommerce #content div.product .woocommerce-tabs .price del,
+.woocommerce div.product .woocommerce-tabs .price del,
+.woocommerce-page #content div.product .woocommerce-tabs .price del,
+.woocommerce-page div.product .woocommerce-tabs .price del {
+	font-size: .7em;
+	font-weight: 500 !important;
+	display: block;
+}
+
+.woocommerce #content div.product div.summary .price ins,
+.woocommerce div.product div.summary .price ins,
+.woocommerce-page #content div.product div.summary .price ins,
+.woocommerce-page div.product div.summary .price ins,
+.woocommerce #content div.product .woocommerce-tabs .price ins,
+.woocommerce div.product .woocommerce-tabs .price ins,
+.woocommerce-page #content div.product .woocommerce-tabs .price ins,
+.woocommerce-page div.product .woocommerce-tabs .price ins {
+	text-decoration: none !important;
+}
+
 .woocommerce #content div.product div.summary .cart button,
 .woocommerce div.product div.summary .cart button,
 .woocommerce-page #content div.product div.summary .cart button,
@@ -1694,6 +1785,7 @@ input[type='checkbox']:checked:after {
 	line-height: 1;
 	display: block;
 	width: 100%;
+	margin-top: 30px;
 	padding: 18px;
 	border-radius: 0;
 	background: #000;

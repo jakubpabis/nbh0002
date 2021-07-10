@@ -241,8 +241,46 @@
   float: right;
   clear: none !important;
 
+  .product_title.entry-title {
+    margin-bottom: 10px;
+    margin-left: -3px;
+  }
+
+  .product_meta {
+    > span {
+      display: block;
+      width: 100%;
+
+      a {
+        font-weight: 500;
+      }
+    }
+
+    .sku_wrapper {
+      display: none !important;
+    }
+  }
+
+  .price {
+    margin-top: 30px;
+    color: black !important;
+    font-weight: 600;
+    @extend .h3;
+
+    del {
+      font-size: 0.7em;
+      font-weight: 500 !important;
+      display: block;
+    }
+
+    ins {
+      text-decoration: none !important;
+    }
+  }
+
   .cart {
     button {
+      margin-top: 30px;
       width: 100%;
       display: block;
       background: #000;

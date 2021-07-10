@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Additional Information tab
  *
@@ -15,8 +16,8 @@
  * @version 3.0.0
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 global $product; ?>
 
-<?php do_action( 'woocommerce_product_additional_information', $product ); ?>
+<?php do_action('woocommerce_product_additional_information', $product); ?>
