@@ -213,19 +213,7 @@ endif; ?>
 <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
 </div><!-- #wrapper -->
-<!-- Modal -->
-<div class="search__modal modal fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			</button>
-			<div class="modal-body d-flex">
-				<?php echo do_shortcode('[wcas-search-form]'); ?>
-			</div>
-		</div>
-	</div>
-</div>
+<!-- Modals -->
 <div class="modal fade" id="open-modal-newsletter" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 560px;">
 		<div class="modal-content">
@@ -259,6 +247,21 @@ endif; ?>
 			</div>
 			<div class="modal-body">
 				<div class="widget_shopping_cart_content"><?php woocommerce_mini_cart(); ?></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="nbhdModalSearch" tabindex="-1" role="dialog" aria-labelledby="nbhdModalSearchLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-slideout" role="document">
+		<div class="modal-content">
+			<div class="modal-topbar bg-black color-white d-flex align-items-center justify-content-between position-absolute left-0">
+				<h5 class="h4 text-uppercase text700 mb-0" id="nbhdModalSearchLabel">Wyszukiwarka</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Zamknij">
+					<span aria-hidden="true">×</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<?php echo do_shortcode('[fibosearch]'); ?>
 			</div>
 		</div>
 	</div>

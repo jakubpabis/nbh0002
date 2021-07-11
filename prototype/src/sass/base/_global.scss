@@ -441,6 +441,28 @@ input[type="checkbox"] {
   }
 }
 
+select {
+  appearance: none !important;
+  border-color: $color-grey7 !important;
+  border-radius: 0 !important;
+  font-size: 16px !important;
+  padding: 5px 10px !important;
+
+  //background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="svg-inline--fa fa-chevron-down fa-w-14 fa-3x" data-icon="chevron-down" data-prefix="fal" viewBox="0 0 448 512"><path fill="currentColor" d="M443.5 162.6l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L224 351 28.5 155.5c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.7 4.8-12.3.1-17z"/></svg>');
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="svg-inline--fa fa-chevron-down fa-w-14 fa-3x" data-icon="chevron-down" data-prefix="far" viewBox="0 0 448 512"><path fill="currentColor" d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z"/></svg>');
+  background-position: calc(100% - 10px) center;
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0 !important;
+    box-shadow: 0 !important;
+    border: 1px solid $color-grey8 !important;
+  }
+}
+
 .woocommerce-error,
 .woocommerce-info,
 .woocommerce-message {

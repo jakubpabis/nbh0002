@@ -167,7 +167,7 @@
 						</li>
 					</ul>
 					<div class="navigation__lower-utils">
-						<a href="">
+						<a href="javascript:void(0)" data-toggle="modal" data-target="#nbhdModalSearch">
 							<i data-feather="search"></i>
 						</a>
 						<a href="/konto">

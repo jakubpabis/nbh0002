@@ -695,6 +695,13 @@ add_action('woocommerce_single_product_summary', 'woocommerce_template_single_ex
 add_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 30);
 add_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 40);
 
+add_action('woocommerce_before_add_to_cart_quantity', 'nbhd_echo_qty_front_add_cart');
+
+function nbhd_echo_qty_front_add_cart()
+{
+	echo '<label class="quantity"><strong>Ilość</strong></label>';
+}
+
 // /**
 //  * @snippet       Display "Quantity: #" @ WooCommerce Single Product Page
 //  * @how-to        Get CustomizeWoo.com FREE
