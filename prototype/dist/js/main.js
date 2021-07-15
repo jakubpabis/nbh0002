@@ -226,12 +226,21 @@ function addedToCartLink() {
   });
 }
 
+function hideQty() {
+  $("form").find(".quantity.hidden").prev(".quantity").remove();
+}
+
 jQuery(document).ready(function () {
   lazyImages();
   uglyInput();
   feather.replace();
   productImgHover();
   addedToCartLink();
+  hideQty();
+
+  $("#nbhdModalSearch").on("shown.bs.modal", function () {
+    $("input.dgwt-wcas-search-input").trigger("focus");
+  });
 
   var swiper = new Swiper(".swiper-container", {
     // Optional parameters

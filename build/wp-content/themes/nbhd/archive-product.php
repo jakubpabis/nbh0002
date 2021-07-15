@@ -20,6 +20,11 @@ if (is_product_category()) {
 		if ($image_url) {
 			$class = 'with_header_img';
 		}
+	} elseif (get_term_meta($cat->parent, 'thumbnail_id', true)) {
+		$image_url = wp_get_attachment_url(get_term_meta($cat->parent, 'thumbnail_id', true));
+		if ($image_url) {
+			$class = 'with_header_img';
+		}
 	}
 }
 ?>
@@ -70,9 +75,19 @@ if (is_product_category()) {
 			</aside>
 
 			<div class="products__container">
-				<div class="container-xl">
+				<div class="container-fluid px-0">
 					<div class="row">
-						<div class="col-12 px-0">
+						<div class="col-xl-3 pb-4 mb-3">
+							<aside class="nbhd-products-archive-filters bg-white" role="complementary">
+								<h4 class="mt-0 mb-2 text700 d-block w-100 py-3 px-4 color-white bg-black text-upper">
+									Filtrowanie
+								</h4>
+								<div class="px-4 pt-4 pb-1">
+									<?php dynamic_sidebar('sidebar-1'); ?>
+								</div>
+							</aside>
+						</div>
+						<div class="col-xl-9">
 							<?php woocommerce_product_loop_start();
 
 							if (wc_get_loop_prop('total')) {
