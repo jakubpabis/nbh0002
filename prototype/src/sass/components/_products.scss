@@ -413,6 +413,15 @@ article.single-product {
 .woocommerce {
   ul.products {
     margin-bottom: 0 !important;
+
+    li.product {
+      margin-right: 30px !important;
+      width: calc(25% - 22.5px) !important;
+
+      &.last {
+        margin-right: 0 !important;
+      }
+    }
   }
 
   div.product {

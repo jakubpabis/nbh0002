@@ -2041,6 +2041,15 @@ article.single-product .related.products ul.products li.product {
 	margin-bottom: 0 !important;
 }
 
+.woocommerce ul.products li.product {
+	width: calc(25% - 22.5px) !important;
+	margin-right: 30px !important;
+}
+
+.woocommerce ul.products li.product.last {
+	margin-right: 0 !important;
+}
+
 .woocommerce div.product div.images .woocommerce-product-gallery__image {
 	padding: 0 4px !important;
 }
