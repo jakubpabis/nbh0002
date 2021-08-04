@@ -911,3 +911,12 @@ function nbhd_refresh_mini_cart_count($fragments)
 	$fragments['#mini-cart-count'] = ob_get_clean();
 	return $fragments;
 }
+
+add_action('woocommerce_product_query', 'nbhd_onsale_product_query');
+function nbhd_onsale_product_query($q)
+{
+	if (isset($_GET['on_sale']) && $_GET['on_sale'] === 'true') {
+		$product_ids_on_sale = wc_get_product_ids_on_sale();
+		$q->set('post__in', $product_ids_on_sale);
+	}
+}

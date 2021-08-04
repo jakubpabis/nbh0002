@@ -8,6 +8,12 @@
  * @package WP_Bootstrap_Starter
  */
 
+if (isset($_GET['on_sale']) && $_GET['on_sale'] === 'true') {
+	$sale = true;
+} else {
+	$sale = false;
+}
+
 get_header(); ?>
 <?php
 $class = null;
@@ -45,8 +51,12 @@ if (is_product_category()) {
 				<img class="lazy bg-cover" data-src="<?php echo $image_url; ?>" alt="<?php echo get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true); ?>">
 			<?php endif; ?>
 			<?php if (apply_filters('woocommerce_show_page_title', true)) : ?>
-				<h1 class="woocommerce-products-header__title page-title <?php echo $class; ?>">
-					<?php woocommerce_page_title(); ?>
+				<h1 class="woocommerce-products-header__title page-title <?php echo $class; ?> <?php echo $sale ? 'color-red' : null; ?>">
+					<?php if ($sale) {
+						echo 'Wyprzedaż';
+					} else {
+						woocommerce_page_title();
+					}  ?>
 				</h1>
 			<?php endif; ?>
 
