@@ -113,20 +113,12 @@
 											</div>
 										<?php endif; ?>
 									<?php else : ?>
-										<a href="">
-											Sale!
+										<a href="<?php echo get_sub_field('link')['url']; ?>">
+											<?php echo get_sub_field('link')['title']; ?>
 										</a>
 									<?php endif; ?>
 								</li>
 							<?php endwhile; ?>
-							<li class="color-tertiary">
-								<a href="">
-									Sale!
-								</a>
-							</li>
-							<li>
-								<span>|</span>
-							</li>
 						</ul>
 					<?php endif; ?>
 					<div class="navigation__lower-utils">
