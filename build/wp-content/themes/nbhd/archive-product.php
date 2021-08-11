@@ -87,7 +87,7 @@ if (is_product_category()) {
 			<div class="products__container">
 				<div class="container-fluid px-0">
 					<div class="row">
-						<div class="col-xl-3 pb-4 mb-3">
+						<div class="col-xl-3 col-lg-4 pb-4 mb-3">
 							<aside class="nbhd-products-archive-filters bg-white" role="complementary">
 								<h4 class="mt-0 mb-2 text700 d-block w-100 py-3 px-4 color-white bg-black text-upper">
 									Filtrowanie
@@ -97,7 +97,7 @@ if (is_product_category()) {
 								</div>
 							</aside>
 						</div>
-						<div class="col-xl-9">
+						<div class="col-xl-9 col-lg-8 products__container-items">
 							<?php woocommerce_product_loop_start();
 
 							if (wc_get_loop_prop('total')) {

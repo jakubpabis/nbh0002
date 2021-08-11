@@ -920,3 +920,26 @@ function nbhd_onsale_product_query($q)
 		$q->set('post__in', $product_ids_on_sale);
 	}
 }
+
+if (function_exists('acf_add_options_page')) {
+
+	acf_add_options_page(array(
+		'page_title'    => __('Opcje strony'),
+		'menu_title'    => __('Opcje strony'),
+		'menu_slug'     => 'theme-general-settings',
+		'capability'    => 'edit_posts',
+		'redirect'      => true
+	));
+
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Promo',
+		'menu_title'	=> 'Promo',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Menu',
+		'menu_title'	=> 'Menu',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+}

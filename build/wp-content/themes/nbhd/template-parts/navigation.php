@@ -23,149 +23,112 @@
 					</a>
 				</div>
 				<div class="col-auto align-items-center navigation__lower-container">
-					<ul class="navigation__lower-menu">
-						<li>
-							<a href="" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Deskorolka
-							</a>
-							<div class="dropdown-menu">
-								<div class="container-fluid px-0">
-									<div class="row">
-										<div class="col-lg-3 px-0 d-flex align-items-center justify-content-center">
-											<img src="<?= get_template_directory_uri(); ?>/assets/img/dropdown1.jpg" alt="" class="bg-cover-abs">
-											<div class="text-center">
-												<span class="h4 text700 d-block color-white mb-4 position-relative">
-													Zobacz nowości
-												</span>
-												<span class="btn btn__default white">
-													Sprawdź to
-												</span>
+					<?php if (have_rows('menu_items', 'option')) : ?>
+						<ul class="navigation__lower-menu">
+							<?php while (have_rows('menu_items', 'option')) : the_row(); ?>
+								<li>
+									<?php if (get_sub_field('link_type') === 'submenu') : ?>
+										<a href="#<?php echo get_sub_field('link_title'); ?>" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<?php echo get_sub_field('link_title'); ?>
+										</a>
+										<?php
+										$promos = 0;
+										$cols = 0;
+										if (get_sub_field('submenu') && get_sub_field('submenu')['promo_panels']) {
+											$promos = count(get_sub_field('submenu')['promo_panels']);
+										}
+										if (get_sub_field('submenu') && get_sub_field('submenu')['big_list']) {
+											$cols++;
+										}
+										if (get_sub_field('submenu') && get_sub_field('submenu')['small_list']) {
+											$cols++;
+										}
+										?>
+										<?php if (have_rows('submenu', 'option')) : ?>
+											<div class="dropdown-menu">
+												<div class="container-fluid px-0">
+													<div class="row">
+														<?php while (have_rows('submenu', 'option')) : the_row(); ?>
+															<?php if (have_rows('promo_panels', 'option')) : ?>
+																<div class="col-xl-6 col-lg-5 col-md-4">
+																	<div class="row h-100">
+																		<?php while (have_rows('promo_panels', 'option')) : the_row(); ?>
+																			<div class="<?php echo $promos === 2 ? 'col-xl-6' : 'col-12'; ?> px-0 d-flex align-items-center justify-content-center">
+																				<img src="<?php echo get_sub_field('image')['url']; ?>" alt="<?php echo get_sub_field('image')['title']; ?>" class="bg-cover-abs">
+																				<div class="text-center">
+																					<?php if (get_sub_field('title')) : ?>
+																						<span class="h4 text700 d-block color-white mb-4 position-relative">
+																							<?php echo get_sub_field('title'); ?>
+																						</span>
+																					<?php endif; ?>
+																					<?php if (get_sub_field('link')) : ?>
+																						<span class="btn btn__default white">
+																							<?php echo get_sub_field('link')['title']; ?>
+																						</span>
+																					<?php endif; ?>
+																				</div>
+																				<?php if (get_sub_field('link')) : ?>
+																					<a href="<?php echo get_sub_field('link')['url']; ?>" class="whole-element-link"></a>
+																				<?php endif; ?>
+																			</div>
+																		<?php endwhile; ?>
+																	</div>
+																</div>
+															<?php endif; ?>
+															<?php if (have_rows('big_list', 'option') || have_rows('small_list', 'option')) : ?>
+																<div class="col-xl-6 col-lg-7 col-md-8">
+																	<div class="row">
+																		<?php if (have_rows('big_list', 'option')) : ?>
+																			<div class="<?php echo $cols === 2 ? 'col-xl-6 col-md-5' : 'col-12'; ?> bg-grey px-0 d-flex align-items-center justify-content-center">
+																				<ul class="sub-menu-popular">
+																					<?php while (have_rows('big_list', 'option')) : the_row(); ?>
+																						<li>
+																							<a href="<?php echo get_sub_field('link')['url']; ?>">
+																								<?php echo get_sub_field('link')['title']; ?>
+																							</a>
+																						</li>
+																					<?php endwhile; ?>
+																				</ul>
+																			</div>
+																		<?php endif; ?>
+																		<?php if (have_rows('small_list', 'option')) : ?>
+																			<div class="<?php echo $cols === 2 ? 'col-xl-6 col-md-7' : 'col-12'; ?> px-0 d-flex align-items-center justify-content-center">
+																				<ul class="sub-menu">
+																					<?php while (have_rows('small_list', 'option')) : the_row(); ?>
+																						<li>
+																							<a href="<?php echo get_sub_field('link')['url']; ?>">
+																								<?php echo get_sub_field('link')['title']; ?>
+																							</a>
+																						</li>
+																					<?php endwhile; ?>
+																				</ul>
+																			</div>
+																		<?php endif; ?>
+																	</div>
+																</div>
+															<?php endif; ?>
+														<?php endwhile; ?>
+													</div>
+												</div>
 											</div>
-											<a href="" class="whole-element-link"></a>
-										</div>
-										<div class="col-lg-3 px-0 d-flex align-items-center justify-content-center">
-											<img src="<?= get_template_directory_uri(); ?>/assets/img/dropdown2.jpg" alt="" class="bg-cover-abs">
-											<div class="text-center">
-												<span class="h4 text700 d-block color-white mb-4 position-relative">
-													Wszystkie produkty
-												</span>
-												<span class="btn btn__default white">
-													Przeglądaj
-												</span>
-											</div>
-											<a href="" class="whole-element-link"></a>
-										</div>
-										<div class="col-lg-3 bg-grey px-0 d-flex align-items-center justify-content-center">
-											<ul class="sub-menu-popular">
-												<li>
-													<a href="">
-														Kompletne deski
-													</a>
-												</li>
-												<li>
-													<a href="">
-														Blaty
-													</a>
-												</li>
-												<li>
-													<a href="">
-														Gripy
-													</a>
-												</li>
-												<li>
-													<a href="">
-														Gumki do tracków
-													</a>
-												</li>
-												<li>
-													<a href="">
-														Kingpiny
-													</a>
-												</li>
-											</ul>
-										</div>
-										<div class="col-lg-3 px-0 d-flex align-items-center justify-content-center">
-											<ul class="sub-menu">
-												<li>
-													<a href="">
-														Montażówki
-													</a>
-												</li>
-												<li>
-													<a href="">
-														Podkładki
-													</a>
-												</li>
-												<li>
-													<a href="">
-														Kółka
-													</a>
-												</li>
-												<li>
-													<a href="">
-														Łożyska
-													</a>
-												</li>
-												<li>
-													<a href="">
-														Trucki
-													</a>
-												</li>
-												<li>
-													<a href="">
-														Akcesoria
-													</a>
-												</li>
-												<li>
-													<a href="">
-														Woski
-													</a>
-												</li>
-												<li>
-													<a href="">
-														Narzędzia
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li>
-							<a href="">
-								Buty
-							</a>
-						</li>
-						<li>
-							<a href="">
-								Odzież
-							</a>
-						</li>
-						<li class="color-tertiary">
-							<a href="">
-								Sale!
-							</a>
-						</li>
-						<li>
-							<a href="">
-								Nasze marki
-							</a>
-						</li>
-						<li>
-							<span>|</span>
-						</li>
-						<li>
-							<a href="">
-								O nas
-							</a>
-						</li>
-						<li>
-							<a href="">
-								Blog
-							</a>
-						</li>
-					</ul>
+										<?php endif; ?>
+									<?php else : ?>
+										<a href="">
+											Sale!
+										</a>
+									<?php endif; ?>
+								</li>
+							<?php endwhile; ?>
+							<li class="color-tertiary">
+								<a href="">
+									Sale!
+								</a>
+							</li>
+							<li>
+								<span>|</span>
+							</li>
+						</ul>
+					<?php endif; ?>
 					<div class="navigation__lower-utils">
 						<a href="javascript:void(0)" data-toggle="modal" data-target="#nbhdModalSearch">
 							<i data-feather="search"></i>

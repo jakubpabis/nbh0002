@@ -111,8 +111,12 @@ i {
   padding-top: 119px;
   min-height: 100vh;
 
+  @media (max-width: 1199px) {
+    padding-top: 115px;
+  }
+
   @media (max-width: 991px) {
-    padding-top: 60px;
+    padding-top: 106px;
   }
 
   @media (max-width: 575px) {

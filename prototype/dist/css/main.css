@@ -1363,7 +1363,7 @@ select:focus {
 .navigation__lower-menu > li > .dropdown-menu ul.sub-menu-popular {
 	display: block;
 	margin: 0 auto;
-	padding: 75px 0;
+	padding: 75px 30px;
 	list-style: none;
 }
 
@@ -1380,7 +1380,7 @@ select:focus {
 .navigation__lower-menu > li > .dropdown-menu ul.sub-menu {
 	display: block;
 	margin: 0 auto;
-	padding: 75px 0;
+	padding: 75px 15px;
 	list-style: none;
 	-moz-columns: 2;
 	columns: 2;
@@ -1402,6 +1402,7 @@ select:focus {
 }
 
 .navigation__lower-utils > a {
+	position: relative;
 	margin: 0;
 	padding: 0 .75rem;
 }
@@ -1420,8 +1421,8 @@ select:focus {
 	font-weight: 700;
 	line-height: 20px;
 	position: absolute;
-	top: -4px;
-	right: 1px;
+	top: -7px;
+	right: -2px;
 	width: 20px;
 	height: 20px;
 	text-align: center;
@@ -4547,7 +4548,19 @@ fieldset[disabled] .datepicker table tr td span.active:hover:hover {
 
 }
 
+@media (max-width: 1440px) {
+
+.navigation__lower-menu {
+	margin-right: 60px;
+}
+
+}
+
 @media (max-width: 1199px) {
+
+#wrapper {
+	padding-top: 115px;
+}
 
 .navigation__lower-logo {
 	max-width: 120px;
@@ -4562,12 +4575,47 @@ fieldset[disabled] .datepicker table tr td span.active:hover:hover {
 	padding: .5rem 1.2rem;
 }
 
+.navigation__lower-menu > li > .dropdown-menu {
+	top: 1.9rem !important;
+}
+
 .navigation__lower-utils {
 	margin: 0 -.25rem;
+	padding-right: .5rem;
 }
 
 .navigation__lower-utils > a {
 	padding: 0 .5rem;
+}
+
+.navigation__lower-utils-cart-count {
+	top: -6px;
+	right: -8px;
+}
+
+.products__container-items ul.products.columns-3 li.product,
+.products__container-items ul.products.columns-3 li.product {
+	width: calc(50% - 15px) !important;
+}
+
+.products__container ul.products li.product.last {
+	margin-right: 30px !important;
+}
+
+.products__container ul.products li.product:nth-child(2n) {
+	margin-right: 0 !important;
+}
+
+.products__container ul.products li.product:nth-child(2n).last {
+	margin-right: 0 !important;
+}
+
+.products__container ul.products li.product:nth-child(1n) {
+	clear: none !important;
+}
+
+.products__container ul.products li.product:nth-child(1n).first {
+	clear: none !important;
 }
 
 }
@@ -4575,7 +4623,7 @@ fieldset[disabled] .datepicker table tr td span.active:hover:hover {
 @media (max-width: 991px) {
 
 #wrapper {
-	padding-top: 60px;
+	padding-top: 106px;
 }
 
 .navigation__lower {
@@ -4595,6 +4643,10 @@ fieldset[disabled] .datepicker table tr td span.active:hover:hover {
 .navigation__lower-menu > li > a {
 	font-size: 1rem;
 	padding: .33rem .8rem;
+}
+
+.navigation__lower-menu > li > .dropdown-menu {
+	top: 1.8rem !important;
 }
 
 .article {
