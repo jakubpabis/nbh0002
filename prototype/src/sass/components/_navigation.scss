@@ -149,7 +149,7 @@
           }
         }
 
-        > .dropdown-menu {
+        .dropdown-menu {
           width: 100vw;
           margin-right: -5px !important;
           top: 2.1rem !important;
@@ -165,6 +165,14 @@
 
           @media (max-width: 991px) {
             top: 1.8rem !important;
+          }
+
+          &-img {
+            opacity: 0.66;
+
+            &-container {
+              background-color: black;
+            }
           }
 
           ul.sub-menu-popular {

@@ -53,8 +53,8 @@
 																<div class="col-xl-6 col-lg-5 col-md-4">
 																	<div class="row h-100">
 																		<?php while (have_rows('promo_panels', 'option')) : the_row(); ?>
-																			<div class="<?php echo $promos === 2 ? 'col-xl-6' : 'col-12'; ?> px-0 d-flex align-items-center justify-content-center">
-																				<img src="<?php echo get_sub_field('image')['url']; ?>" alt="<?php echo get_sub_field('image')['title']; ?>" class="bg-cover-abs">
+																			<div class="<?php echo $promos === 2 ? 'col-xl-6' : 'col-12'; ?> px-0 d-flex align-items-center justify-content-center dropdown-menu-img-container">
+																				<img src="<?php echo get_sub_field('image')['url']; ?>" alt="<?php echo get_sub_field('image')['title']; ?>" class="bg-cover-abs dropdown-menu-img">
 																				<div class="text-center">
 																					<?php if (get_sub_field('title')) : ?>
 																						<span class="h4 text700 d-block color-white mb-4 position-relative">

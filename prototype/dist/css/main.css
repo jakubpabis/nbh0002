@@ -1349,7 +1349,7 @@ select:focus {
 	color: #f00;
 }
 
-.navigation__lower-menu > li > .dropdown-menu {
+.navigation__lower-menu > li .dropdown-menu {
 	top: 2.1rem !important;
 	width: 100vw;
 	margin-right: -5px !important;
@@ -1360,24 +1360,32 @@ select:focus {
 	outline: 0;
 }
 
-.navigation__lower-menu > li > .dropdown-menu ul.sub-menu-popular {
+.navigation__lower-menu > li .dropdown-menu-img {
+	opacity: .66;
+}
+
+.navigation__lower-menu > li .dropdown-menu-img-container {
+	background-color: black;
+}
+
+.navigation__lower-menu > li .dropdown-menu ul.sub-menu-popular {
 	display: block;
 	margin: 0 auto;
 	padding: 75px 30px;
 	list-style: none;
 }
 
-.navigation__lower-menu > li > .dropdown-menu ul.sub-menu-popular li {
+.navigation__lower-menu > li .dropdown-menu ul.sub-menu-popular li {
 	font-size: 1.285rem;
 	font-weight: 700;
 	padding: 1rem 0;
 }
 
-.navigation__lower-menu > li > .dropdown-menu ul.sub-menu-popular li:hover a {
+.navigation__lower-menu > li .dropdown-menu ul.sub-menu-popular li:hover a {
 	text-decoration: none;
 }
 
-.navigation__lower-menu > li > .dropdown-menu ul.sub-menu {
+.navigation__lower-menu > li .dropdown-menu ul.sub-menu {
 	display: block;
 	margin: 0 auto;
 	padding: 75px 15px;
@@ -1386,13 +1394,13 @@ select:focus {
 	columns: 2;
 }
 
-.navigation__lower-menu > li > .dropdown-menu ul.sub-menu li {
+.navigation__lower-menu > li .dropdown-menu ul.sub-menu li {
 	font-size: 1rem;
 	font-weight: 700;
 	padding: 1rem 2rem;
 }
 
-.navigation__lower-menu > li > .dropdown-menu ul.sub-menu li:hover a {
+.navigation__lower-menu > li .dropdown-menu ul.sub-menu li:hover a {
 	text-decoration: none;
 }
 
@@ -4575,7 +4583,7 @@ fieldset[disabled] .datepicker table tr td span.active:hover:hover {
 	padding: .5rem 1.2rem;
 }
 
-.navigation__lower-menu > li > .dropdown-menu {
+.navigation__lower-menu > li .dropdown-menu {
 	top: 1.9rem !important;
 }
 
@@ -4645,7 +4653,7 @@ fieldset[disabled] .datepicker table tr td span.active:hover:hover {
 	padding: .33rem .8rem;
 }
 
-.navigation__lower-menu > li > .dropdown-menu {
+.navigation__lower-menu > li .dropdown-menu {
 	top: 1.8rem !important;
 }
 
