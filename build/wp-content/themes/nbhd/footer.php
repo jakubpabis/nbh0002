@@ -96,13 +96,13 @@ endif; ?>
 					</div>
 					<div class="d-flex">
 						<a href="https://www.facebook.com/Neighbourhood-Skateshop-436289680462922/" target="_blank" class="mr-4 text-center">
-							<i data-feather="facebook" class="text-center" style="width: 28px; height: 28px; color: #00A3FF;"></i>
+							<i data-feather="facebook" class="text-center" style="width: 28px; height: 28px; color: #1877f2;"></i>
 						</a>
 						<a href="https://www.instagram.com/nbhdskate.pl/" target="_blank" class="mr-4 text-center">
-							<i data-feather="instagram" class="text-center" style="width: 28px; height: 28px; color: #00A3FF;"></i>
+							<i data-feather="instagram" class="text-center" style="width: 28px; height: 28px; color: #c32aa3;"></i>
 						</a>
 						<a href="https://www.youtube.com/channel/UCQAnw7wS8peE9UFIjT3EF2Q" target="_blank" class="mr-4 text-center">
-							<i data-feather="youtube" class="text-center" style="width: 28px; height: 28px; color: #00A3FF;"></i>
+							<i data-feather="youtube" class="text-center" style="width: 28px; height: 28px; color: #ff0000;"></i>
 						</a>
 					</div>
 				</div>
