@@ -2620,6 +2620,13 @@ article.single-product .related.products ul.products li.product {
 	padding: 2px 0 !important;
 }
 
+.woocommerce-checkout .shipping.paczkomaty-shipping #open-geowidget {
+	font-size: 1.125rem;
+	display: block;
+	margin-top: 10px;
+	color: #f00;
+}
+
 .card {
 	border: none;
 	outline: 0;

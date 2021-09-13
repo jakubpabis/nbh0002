@@ -852,3 +852,14 @@ article.single-product {
     }
   }
 }
+
+.woocommerce-checkout {
+  .shipping.paczkomaty-shipping {
+    #open-geowidget {
+      margin-top: 10px;
+      display: block;
+      font-size: 1.125rem;
+      color: $color-red;
+    }
+  }
+}
