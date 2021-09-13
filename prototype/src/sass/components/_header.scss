@@ -7,9 +7,14 @@
     max-height: 600px;
   }
 
+  &.medium {
+    min-height: 400px;
+    height: 66vh;
+  }
+
   &.high {
     min-height: 500px;
-    height: auto;
+    height: 80vh;
   }
 
   &.swiper-container {

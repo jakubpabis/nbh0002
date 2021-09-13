@@ -1492,8 +1492,13 @@ select:focus {
 	max-height: 600px;
 }
 
+.header.medium {
+	height: 66vh;
+	min-height: 400px;
+}
+
 .header.high {
-	height: auto;
+	height: 80vh;
 	min-height: 500px;
 }
 
