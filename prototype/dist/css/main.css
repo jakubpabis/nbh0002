@@ -4927,6 +4927,10 @@ h3,
 	font-size: 1.44rem;
 }
 
+#wrapper {
+	padding-top: 87px;
+}
+
 .col,
 .col-1,
 .col-10,
