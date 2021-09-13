@@ -1663,6 +1663,11 @@ select:focus {
 	width: calc(33.33333% - 20px) !important;
 }
 
+.woocommerce ul.products.columns-4 li.product,
+.woocommerce-page ul.products.columns-4 li.product {
+	width: calc(25% - 20px) !important;
+}
+
 .products__container ul.products li.product {
 	margin-right: 30px !important;
 }
@@ -4667,7 +4672,9 @@ h3,
 }
 
 .products__container-items ul.products.columns-3 li.product,
-.products__container-items ul.products.columns-3 li.product {
+.products__container-items ul.products.columns-3 li.product,
+.products__container-items ul.products.columns-4 li.product,
+.products__container-items ul.products.columns-4 li.product {
 	width: calc(50% - 15px) !important;
 }
 
