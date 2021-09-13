@@ -1,145 +1,151 @@
 .color-grey {
-    color: $color-grey;
+  color: $color-grey;
 }
 
 .color-grey2 {
-    color: $color-grey2;
+  color: $color-grey2;
 }
 
 .color-grey3 {
-    color: $color-grey3;
+  color: $color-grey3;
 }
 
 .color-grey4 {
-    color: $color-grey4;
+  color: $color-grey4;
 }
 
 .color-grey5 {
-    color: $color-grey5;
+  color: $color-grey5;
 }
 
 .color-grey6 {
-    color: $color-grey6;
+  color: $color-grey6;
 }
 
 .color-grey7 {
-    color: $color-grey7;
+  color: $color-grey7;
 }
 
 .color-grey8 {
-    color: $color-grey8;
+  color: $color-grey8;
 }
 
 .color-grey9 {
-    color: $color-grey9;
+  color: $color-grey9;
 }
 
 .color-white {
-    color: white;
+  color: white;
 }
 
 .color-black {
-    color: $color-primary;
+  color: $color-primary;
 }
 
 .color-red {
-    color: $color-red;
+  color: $color-red;
 }
 
 .color-blue {
-    color: $color-blue;
+  color: $color-blue;
 }
 
 .color-secondary {
-    color: $color-secondary;
+  color: $color-secondary;
 }
 
 .color-tertiary {
-    color: $color-tertiary;
+  color: $color-tertiary;
 }
 
 .bg-grey {
-    background-color: $color-grey;
+  background-color: $color-grey;
 }
 
 .bg-grey2 {
-    background-color: $color-grey2;
+  background-color: $color-grey2;
 }
 
 .bg-grey3 {
-    background-color: $color-grey3;
+  background-color: $color-grey3;
 }
 
 .bg-grey4 {
-    background-color: $color-grey4;
+  background-color: $color-grey4;
 }
 
 .bg-grey5 {
-    background-color: $color-grey5;
+  background-color: $color-grey5;
 }
 
 .bg-grey6 {
-    background-color: $color-grey6;
+  background-color: $color-grey6;
 }
 
 .bg-grey7 {
-    background-color: $color-grey7;
+  background-color: $color-grey7;
 }
 
 .bg-grey8 {
-    background-color: $color-grey8;
+  background-color: $color-grey8;
 }
 
 .bg-grey9 {
-    background-color: $color-grey9;
+  background-color: $color-grey9;
 }
 
 .bg-white {
-    background-color: white;
+  background-color: white;
 }
 
 .bg-black {
-    background-color: $color-primary;
+  background-color: $color-primary;
 }
 
 .bg-red {
-    background-color: $color-red;
+  background-color: $color-red;
 }
 
 .bg-blue {
-    background-color: $color-blue;
+  background-color: $color-blue;
 }
 
 .bg-secondary {
-    background-color: $color-secondary;
+  background-color: $color-secondary;
 }
 
 .bg-tertiary {
-    background-color: $color-tertiary;
+  background-color: $color-tertiary;
 }
 
 .top-0 {
-    top: 0;
+  top: 0;
 }
 
 .bottom-0 {
-    bottom: 0;
+  bottom: 0;
 }
 
 .right-0 {
-    right: 0;
+  right: 0;
 }
 
 .left-0 {
-    left: 0;
+  left: 0;
 }
 
 .flip-vertical {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 .flip-horizontal {
-    -webkit-transform: scaleY(-1);
-    transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+
+.w-md-50 {
+  @media (min-width: 768px) {
+    width: 50%;
+  }
 }

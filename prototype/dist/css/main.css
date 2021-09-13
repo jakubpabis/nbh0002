@@ -4591,6 +4591,14 @@ fieldset[disabled] .datepicker table tr td span.active:hover:hover {
 	border-width: 1px 0;
 }
 
+@media (min-width: 768px) {
+
+.w-md-50 {
+	width: 50%;
+}
+
+}
+
 @media (min-width: 992px) {
 
 #nbhdModalCart .modal-dialog,
