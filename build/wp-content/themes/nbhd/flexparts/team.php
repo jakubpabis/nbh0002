@@ -50,7 +50,7 @@
 	<?php $i++;
 	endwhile; ?>
 <?php endif; */ ?>
-<?php $row = get_sub_field('row'); ?><?php var_dump($row); ?>
+<?php $row = get_sub_field('row')[0]; ?><?php var_dump($row); ?>
 <?php if (have_rows('people')) : ?>
 	<section class="img-aside py-5 bg-grey2">
 		<div class="container-xl py-5">
