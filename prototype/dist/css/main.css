@@ -1282,7 +1282,7 @@ select:focus {
 }
 
 .navigation__lower {
-	padding: 1.7rem 0;
+	padding: 24px 0;
 	color: #0a0a0a;
 	border-bottom: 1px solid #ddd;
 	background-color: white;
@@ -1306,7 +1306,7 @@ select:focus {
 .navigation__lower-menu {
 	display: flex;
 	margin: 0;
-	margin-right: calc(100px - 1.6rem);
+	margin-right: calc(100px - 22px);
 	padding: 0;
 	list-style: none;
 	align-items: center;
@@ -1319,17 +1319,17 @@ select:focus {
 }
 
 .navigation__lower-menu > li > span {
-	font-size: 1.07rem;
-	padding: .5rem;
+	font-size: 15px;
+	padding: 7px;
 }
 
 .navigation__lower-menu > li > a {
-	font-size: 1.07rem;
+	font-size: 15px;
 	font-weight: 700;
 	line-height: 1;
 	position: relative;
 	display: block;
-	padding: .5rem 1.6rem;
+	padding: 7px 22px;
 	white-space: nowrap;
 }
 
@@ -1350,7 +1350,7 @@ select:focus {
 }
 
 .navigation__lower-menu > li .dropdown-menu {
-	top: 29px !important;
+	top: 28px !important;
 	width: 100vw;
 	margin-right: -5px !important;
 	padding: 0 !important;
@@ -1376,9 +1376,9 @@ select:focus {
 }
 
 .navigation__lower-menu > li .dropdown-menu ul.sub-menu-popular li {
-	font-size: 1.285rem;
+	font-size: 18px;
 	font-weight: 700;
-	padding: 1rem 0;
+	padding: 14px 0;
 }
 
 .navigation__lower-menu > li .dropdown-menu ul.sub-menu-popular li:hover a {
@@ -1395,9 +1395,9 @@ select:focus {
 }
 
 .navigation__lower-menu > li .dropdown-menu ul.sub-menu li {
-	font-size: 1rem;
+	font-size: 14px;
 	font-weight: 700;
-	padding: 1rem 2rem;
+	padding: 14px 28px;
 }
 
 .navigation__lower-menu > li .dropdown-menu ul.sub-menu li:hover a {
@@ -1405,14 +1405,14 @@ select:focus {
 }
 
 .navigation__lower-utils {
-	margin: 0 -.75rem;
+	margin: 0 -10px;
 	vertical-align: middle;
 }
 
 .navigation__lower-utils > a {
 	position: relative;
 	margin: 0;
-	padding: 0 .75rem;
+	padding: 0 10px;
 }
 
 .navigation__lower-utils > a:hover .navigation__lower-utils-cart-count {
@@ -4613,8 +4613,8 @@ fieldset[disabled] .datepicker table tr td span.active:hover:hover {
 }
 
 .navigation__lower-menu > li > a {
-	font-size: 1rem;
-	padding: .5rem 1.2rem;
+	font-size: 14px;
+	padding: 7px 16px;
 }
 
 .navigation__lower-menu > li .dropdown-menu {
@@ -4622,12 +4622,12 @@ fieldset[disabled] .datepicker table tr td span.active:hover:hover {
 }
 
 .navigation__lower-utils {
-	margin: 0 -.25rem;
-	padding-right: .5rem;
+	margin: 0 -3px;
+	padding-right: 7px;
 }
 
 .navigation__lower-utils > a {
-	padding: 0 .5rem;
+	padding: 0 7px;
 }
 
 .navigation__lower-utils-cart-count {
@@ -4669,7 +4669,7 @@ fieldset[disabled] .datepicker table tr td span.active:hover:hover {
 }
 
 .navigation__lower {
-	padding: 1.4rem 0;
+	padding: 20px 0;
 }
 
 .navigation__lower-menu {
@@ -4683,12 +4683,12 @@ fieldset[disabled] .datepicker table tr td span.active:hover:hover {
 }
 
 .navigation__lower-menu > li > a {
-	font-size: 1rem;
-	padding: .33rem .8rem;
+	font-size: 14px;
+	padding: 5px 12px;
 }
 
 .navigation__lower-menu > li .dropdown-menu {
-	top: 25px !important;
+	top: 24px !important;
 }
 
 .article {
@@ -4701,7 +4701,7 @@ fieldset[disabled] .datepicker table tr td span.active:hover:hover {
 @media (max-width: 899px) {
 
 .navigation__lower {
-	padding: 1.2rem 0;
+	padding: 16px 0;
 }
 
 .navigation__lower-container {
@@ -4820,7 +4820,7 @@ fieldset[disabled] .datepicker table tr td span.active:hover:hover {
 }
 
 .navigation__lower {
-	padding: 0;
+	padding: 12px 0;
 }
 
 .products__product-badge,
