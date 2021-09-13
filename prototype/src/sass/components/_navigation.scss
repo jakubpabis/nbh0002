@@ -259,6 +259,13 @@
           right: -8px;
         }
       }
+
+      .menu-opener {
+        appearance: none;
+        border: 0;
+        outline: none;
+        background-color: transparent;
+      }
     }
   }
 }

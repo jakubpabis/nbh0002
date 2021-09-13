@@ -1439,6 +1439,15 @@ select:focus {
 	background-color: black;
 }
 
+.navigation__lower-utils .menu-opener {
+	border: 0;
+	outline: none;
+	background-color: transparent;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
 .breadcrumbs {
 	line-height: 1;
 	margin: 0;
@@ -1495,11 +1504,13 @@ select:focus {
 .header.medium {
 	height: 66vh;
 	min-height: 400px;
+	max-height: 750px;
 }
 
 .header.high {
 	height: 80vh;
 	min-height: 500px;
+	max-height: 900px;
 }
 
 .header.swiper-container .swiper-pagination .swiper-pagination-bullet {
@@ -4787,6 +4798,24 @@ h4,
 	top: 24px !important;
 }
 
+.header.low {
+	height: 42vh;
+	min-height: 250px;
+	max-height: 500px;
+}
+
+.header.medium {
+	height: 54vh;
+	min-height: 360px;
+	max-height: 690px;
+}
+
+.header.high {
+	height: 66vh;
+	min-height: 400px;
+	max-height: 750px;
+}
+
 .woocommerce ul.products.columns-4 li.product,
 .woocommerce-page ul.products.columns-4 li.product {
 	width: calc(25% - 15px) !important;
@@ -5018,6 +5047,24 @@ h3,
 
 .navigation__lower {
 	padding: 12px 0;
+}
+
+.header.low {
+	height: 35vh;
+	min-height: 220px;
+	max-height: 440px;
+}
+
+.header.medium {
+	height: 45vh;
+	min-height: 280px;
+	max-height: 400px;
+}
+
+.header.high {
+	height: 55vh;
+	min-height: 300px;
+	max-height: 600px;
 }
 
 .woocommerce ul.products.columns-4,

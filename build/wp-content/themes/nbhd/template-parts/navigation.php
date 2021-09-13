@@ -136,7 +136,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-auto pr-4 navigation__lower-utils d-lg-none">
+				<div class="col-auto pr-4 navigation__lower-utils d-md-none">
 					<a href="javascript:void(0)" data-toggle="modal" data-target="#nbhdModalSearch">
 						<i data-feather="search"></i>
 					</a>
@@ -150,7 +150,7 @@
 						<span class="navigation__lower-utils-cart-count <?php echo $items_count ? null : 'd-none'; ?>" id="mini-cart-count"><?php echo $items_count ? $items_count : null; ?></span>
 					</a>
 					<button type="button" class="menu-opener ml-5">
-						<i data-feather="menu"></i>
+						<i data-feather="menu" style="width: 24px; height: 24px;"></i>
 					</button>
 				</div>
 			</div>
