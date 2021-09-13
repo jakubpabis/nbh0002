@@ -1550,6 +1550,20 @@ select:focus {
 	opacity: .7;
 }
 
+.nbhd-products-archive.with_header_img .woocommerce-products-header.with_header_img.low {
+	height: 340px !important;
+}
+
+.nbhd-products-archive.with_header_img .woocommerce-products-header.with_header_img.medium {
+	height: 66vh !important;
+	min-height: 400px !important;
+}
+
+.nbhd-products-archive.with_header_img .woocommerce-products-header.with_header_img.high {
+	height: 80vh !important;
+	min-height: 500px !important;
+}
+
 .nbhd-products-archive.with_header_img .woocommerce-products-header.with_header_img .woocommerce-products-header__title.with_header_img {
 	position: absolute;
 	bottom: 0;

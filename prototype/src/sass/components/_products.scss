@@ -28,6 +28,20 @@
         opacity: 0.7;
       }
 
+      &.low {
+        height: 340px !important;
+      }
+
+      &.medium {
+        min-height: 400px !important;
+        height: 66vh !important;
+      }
+
+      &.high {
+        min-height: 500px !important;
+        height: 80vh !important;
+      }
+
       .woocommerce-products-header__title.with_header_img {
         margin-left: 30px;
         color: white !important;
