@@ -3,10 +3,10 @@
 		<div class="container-xl">
 			<div class="row justify-content-center">
 				<?php while (have_rows('cards')) : the_row(); ?>
-					<div class="col-md-4 col-sm-8 mb-md-0 mb-4">
+					<div class="col-md-4 col-sm-8 col-10 mb-md-0 mb-4">
 						<div class="cards__card bg-grey d-flex justify-content-center align-items-center py-lg-5 py-4 flex-wrap text-center">
 							<?php if (get_sub_field('icon')) : ?>
-								<img src="<?php echo get_sub_field('icon')['url']; ?>" alt="<?php echo get_sub_field('icon')['title']; ?>" class="w-25 mb-4">
+								<img src="<?php echo get_sub_field('icon')['url']; ?>" alt="<?php echo get_sub_field('icon')['title']; ?>" class="w-25 mb-sm-4 mb-3">
 							<?php endif; ?>
 							<?php if (get_sub_field('title')) : ?>
 								<span class="color-grey9 h4 text700 w-100 pt-2">
