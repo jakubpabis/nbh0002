@@ -152,7 +152,7 @@
         .dropdown-menu {
           width: 100vw;
           margin-right: -5px !important;
-          top: 2.1rem !important;
+          top: 29px !important;
           border: none;
           outline: 0;
           border-radius: 0;
@@ -160,11 +160,11 @@
           border-bottom: 1px solid $color-grey5;
 
           @media (max-width: 1199px) {
-            top: 1.9rem !important;
+            top: 26px !important;
           }
 
           @media (max-width: 991px) {
-            top: 1.8rem !important;
+            top: 25px !important;
           }
 
           &-img {

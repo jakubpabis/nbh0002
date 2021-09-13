@@ -1350,7 +1350,7 @@ select:focus {
 }
 
 .navigation__lower-menu > li .dropdown-menu {
-	top: 2.1rem !important;
+	top: 29px !important;
 	width: 100vw;
 	margin-right: -5px !important;
 	padding: 0 !important;
@@ -4618,7 +4618,7 @@ fieldset[disabled] .datepicker table tr td span.active:hover:hover {
 }
 
 .navigation__lower-menu > li .dropdown-menu {
-	top: 1.9rem !important;
+	top: 26px !important;
 }
 
 .navigation__lower-utils {
@@ -4688,7 +4688,7 @@ fieldset[disabled] .datepicker table tr td span.active:hover:hover {
 }
 
 .navigation__lower-menu > li .dropdown-menu {
-	top: 1.8rem !important;
+	top: 25px !important;
 }
 
 .article {
