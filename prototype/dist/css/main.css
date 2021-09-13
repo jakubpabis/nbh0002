@@ -4774,6 +4774,17 @@ h4,
 	top: 24px !important;
 }
 
+.woocommerce ul.products.columns-4 li.product,
+.woocommerce-page ul.products.columns-4 li.product {
+	width: calc(25% - 15px) !important;
+	margin-right: 20px !important;
+}
+
+.woocommerce ul.products.columns-4 li.product.last,
+.woocommerce-page ul.products.columns-4 li.product.last {
+	margin-right: 0 !important;
+}
+
 .article {
 	margin-top: 30px;
 	margin-bottom: 60px;
@@ -4787,6 +4798,15 @@ h4,
 
 .pre-footer #sb_instagram.sbi_width_resp {
 	width: calc(100% + 40px) !important;
+}
+
+}
+
+@media (max-width: 991px) and (max-width: 1199px) {
+
+.woocommerce ul.products.columns-4 li.product.last,
+.woocommerce-page ul.products.columns-4 li.product.last {
+	margin-right: 20px !important;
 }
 
 }
