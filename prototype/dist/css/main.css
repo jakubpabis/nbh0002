@@ -1665,7 +1665,7 @@ select:focus {
 
 .woocommerce ul.products.columns-4 li.product,
 .woocommerce-page ul.products.columns-4 li.product {
-	width: calc(25% - 20px) !important;
+	width: calc(25% - 22.5px) !important;
 }
 
 .products__container ul.products li.product {
