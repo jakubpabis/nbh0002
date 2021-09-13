@@ -44,7 +44,7 @@ if (!empty($product_tabs)) : $i = 0; ?>
 							Darmowa wysyłka już od 199 PLN<br />
 							30 dni na zwrot lub wymianę produktu<br />
 							<br />
-							<strong>Wysyłka już w 48h</strong>
+							<strong>Wysyłka już w 24h</strong>
 						</p>
 					</div>
 				</div>

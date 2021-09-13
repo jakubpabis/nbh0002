@@ -136,6 +136,23 @@
 						</a>
 					</div>
 				</div>
+				<div class="col-auto pr-4 navigation__lower-utils d-lg-none">
+					<a href="javascript:void(0)" data-toggle="modal" data-target="#nbhdModalSearch">
+						<i data-feather="search"></i>
+					</a>
+					<a href="/konto">
+						<i data-feather="user"></i>
+					</a>
+					<a href="javascript:void(0)" data-toggle="modal" data-target="#nbhdModalCart">
+						<i data-feather="shopping-cart"></i>
+						<?php global $woocommerce;
+						$items_count = $woocommerce->cart->get_cart_contents_count(); ?>
+						<span class="navigation__lower-utils-cart-count <?php echo $items_count ? null : 'd-none'; ?>" id="mini-cart-count"><?php echo $items_count ? $items_count : null; ?></span>
+					</a>
+					<button type="button" class="menu-opener ml-5">
+						<i data-feather="menu"></i>
+					</button>
+				</div>
 			</div>
 		</div>
 	</div>
