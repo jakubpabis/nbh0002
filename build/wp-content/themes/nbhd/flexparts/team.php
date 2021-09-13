@@ -50,13 +50,13 @@
 	<?php $i++;
 	endwhile; ?>
 <?php endif; */ ?>
-
+<?php $row = get_sub_field('row'); ?>
 <?php if (have_rows('people')) : ?>
 	<section class="img-aside py-5 bg-grey2">
 		<div class="container-xl py-5">
 			<div class="row">
 				<?php while (have_rows('people')) : the_row(); ?>
-					<div class="col-lg-<?php echo get_sub_field('row'); ?> col-sm-6">
+					<div class="col-lg-<?php echo $row; ?> col-sm-6">
 						<img data-src="<?php echo esc_url(get_sub_field('img')['sizes']['medium']); ?>" alt="<?php echo get_sub_field('img')['title']; ?>" class="bg-cover lazy mb-4">
 						<?php if (get_sub_field('name')) : ?>
 							<span class="h1 text700 mb-4 pb-2">
