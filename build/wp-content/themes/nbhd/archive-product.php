@@ -118,13 +118,21 @@ if (is_product_category()) {
 					</div>
 				</div>
 			</div>
-		<?php /**
-			 * Hook: woocommerce_after_shop_loop.
-			 *
-			 * @hooked woocommerce_pagination - 10
-			 */
-			do_action('woocommerce_after_shop_loop');
-		} else {
+			<div class="container-fluid px-0">
+				<div class="row">
+					<div class="offset-xl-3 offset-lg-4 col-xl-9 col-lg-8">
+
+
+						<?php /**
+						 * Hook: woocommerce_after_shop_loop.
+						 *
+						 * @hooked woocommerce_pagination - 10
+						 */
+						do_action('woocommerce_after_shop_loop'); ?>
+					</div>
+				</div>
+			</div>
+		<?php } else {
 			/**
 			 * Hook: woocommerce_no_products_found.
 			 *
