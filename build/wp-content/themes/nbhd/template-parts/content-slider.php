@@ -1,4 +1,4 @@
-<header id="home_carousel" class="header medium d-flex justify-content-center align-items-center swiper-container">
+<header id="home_carousel" class="header high d-flex justify-content-center align-items-center swiper-container">
 	<?php if (have_rows('slides')) : ?>
 		<div class="swiper-wrapper">
 			<?php while (have_rows('slides')) : the_row(); ?>
