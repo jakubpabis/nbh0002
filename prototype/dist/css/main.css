@@ -3007,17 +3007,17 @@ article.single-product .related.products ul.products li.product {
 	padding-left: 40px !important;
 }
 
-.pre-footer .sbi {
+.pre-footer #sb_instagram {
 	margin-right: -20px !important;
 	padding-bottom: 0 !important;
 }
 
-.pre-footer .sbi #sbi_images {
+.pre-footer #sb_instagram #sbi_images {
 	margin-bottom: -20px !important;
 	padding: 0 10px 10px 10px !important;
 }
 
-.pre-footer .sbi #sbi_load {
+.pre-footer #sb_instagram #sbi_load {
 	display: none !important;
 	visibility: hidden !important;
 }
@@ -4600,6 +4600,37 @@ fieldset[disabled] .datepicker table tr td span.active:hover:hover {
 
 @media (max-width: 1199px) {
 
+.text-size-xxxxlarge {
+	font-size: 3.66rem;
+}
+
+h1,
+.h1,
+.text-size-xxxlarge {
+	font-size: 3rem;
+}
+
+h2,
+.h2,
+.text-size-xxlarge {
+	font-size: 2.2rem;
+}
+
+h3,
+.h3,
+.woocommerce #content div.product div.summary .price,
+.woocommerce div.product div.summary .price,
+.woocommerce-page #content div.product div.summary .price,
+.woocommerce-page div.product div.summary .price,
+.woocommerce #content div.product .woocommerce-tabs .price,
+.woocommerce div.product .woocommerce-tabs .price,
+.woocommerce-page #content div.product .woocommerce-tabs .price,
+.woocommerce-page div.product .woocommerce-tabs .price,
+.woocommerce .woocommerce-tabs.wc-tabs-wrapper .card .card-body h5 span,
+.text-size-xlarge {
+	font-size: 1.66rem;
+}
+
 #wrapper {
 	padding-top: 115px;
 }
@@ -4664,12 +4695,57 @@ fieldset[disabled] .datepicker table tr td span.active:hover:hover {
 
 @media (max-width: 991px) {
 
+.text-size-xxxxlarge {
+	font-size: 3.33rem;
+}
+
+h1,
+.h1,
+.text-size-xxxlarge {
+	font-size: 2.75rem;
+}
+
+h2,
+.h2,
+.text-size-xxlarge {
+	font-size: 2.1rem;
+}
+
+h3,
+.h3,
+.woocommerce #content div.product div.summary .price,
+.woocommerce div.product div.summary .price,
+.woocommerce-page #content div.product div.summary .price,
+.woocommerce-page div.product div.summary .price,
+.woocommerce #content div.product .woocommerce-tabs .price,
+.woocommerce div.product .woocommerce-tabs .price,
+.woocommerce-page #content div.product .woocommerce-tabs .price,
+.woocommerce-page div.product .woocommerce-tabs .price,
+.woocommerce .woocommerce-tabs.wc-tabs-wrapper .card .card-body h5 span,
+.text-size-xlarge {
+	font-size: 1.55rem;
+}
+
+h4,
+.h4,
+.nbhd-products-archive-filters .widget_price_filter h3,
+.nbhd-products-archive-filters .widget_product_categories h3,
+.nbhd-products-archive-filters .widget_layered_nav_filters h3,
+.nbhd-products-archive-filters .woocommerce-widget-layered-nav h3,
+.text-size-large {
+	font-size: 1.25rem;
+}
+
 #wrapper {
-	padding-top: 106px;
+	padding-top: 99px;
 }
 
 .navigation__lower {
 	padding: 20px 0;
+}
+
+.navigation__lower {
+	padding: 16px 0;
 }
 
 .navigation__lower-menu {
@@ -4696,29 +4772,61 @@ fieldset[disabled] .datepicker table tr td span.active:hover:hover {
 	margin-bottom: 60px;
 }
 
+.pre-footer #sb_instagram {
+	margin-top: 30px !important;
+	margin-right: 0 !important;
+	margin-left: -20px !important;
 }
 
-@media (max-width: 899px) {
-
-.navigation__lower {
-	padding: 16px 0;
-}
-
-.navigation__lower-container {
-	display: none;
-}
-
-.navigation__lower-logo {
-	max-width: 124px;
+.pre-footer #sb_instagram.sbi_width_resp {
+	width: calc(100% + 40px) !important;
 }
 
 }
 
 @media (max-width: 767px) {
 
-.navigation__lower-logo svg {
-	width: 151px;
-	height: 30px;
+.text-size-xxxxlarge {
+	font-size: 3rem;
+}
+
+h1,
+.h1,
+.text-size-xxxlarge {
+	font-size: 2.66rem;
+}
+
+h2,
+.h2,
+.text-size-xxlarge {
+	font-size: 2rem;
+}
+
+h3,
+.h3,
+.woocommerce #content div.product div.summary .price,
+.woocommerce div.product div.summary .price,
+.woocommerce-page #content div.product div.summary .price,
+.woocommerce-page div.product div.summary .price,
+.woocommerce #content div.product .woocommerce-tabs .price,
+.woocommerce div.product .woocommerce-tabs .price,
+.woocommerce-page #content div.product .woocommerce-tabs .price,
+.woocommerce-page div.product .woocommerce-tabs .price,
+.woocommerce .woocommerce-tabs.wc-tabs-wrapper .card .card-body h5 span,
+.text-size-xlarge {
+	font-size: 1.5rem;
+}
+
+#wrapper {
+	padding-top: 95px;
+}
+
+.navigation__upper {
+	padding: 3px 0;
+}
+
+.navigation__lower-container {
+	display: none;
 }
 
 .article {
@@ -4730,8 +4838,35 @@ fieldset[disabled] .datepicker table tr td span.active:hover:hover {
 
 @media (max-width: 575px) {
 
-#wrapper {
-	padding-top: 48px;
+.text-size-xxxxlarge {
+	font-size: 2.75rem;
+}
+
+h1,
+.h1,
+.text-size-xxxlarge {
+	font-size: 2.5rem;
+}
+
+h2,
+.h2,
+.text-size-xxlarge {
+	font-size: 1.85rem;
+}
+
+h3,
+.h3,
+.woocommerce #content div.product div.summary .price,
+.woocommerce div.product div.summary .price,
+.woocommerce-page #content div.product div.summary .price,
+.woocommerce-page div.product div.summary .price,
+.woocommerce #content div.product .woocommerce-tabs .price,
+.woocommerce div.product .woocommerce-tabs .price,
+.woocommerce-page #content div.product .woocommerce-tabs .price,
+.woocommerce-page div.product .woocommerce-tabs .price,
+.woocommerce .woocommerce-tabs.wc-tabs-wrapper .card .card-body h5 span,
+.text-size-xlarge {
+	font-size: 1.44rem;
 }
 
 .col,

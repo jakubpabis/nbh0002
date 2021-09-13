@@ -74,7 +74,7 @@ endif; ?>
 	<div class="footer__upper py-5">
 		<div class="container py-3">
 			<div class="row">
-				<div class="col-lg-3">
+				<div class="col-lg-3 col-md-5 col-sm-8 col-auto">
 					<a class="d-block mb-3" href="/" style="max-width: 164px;">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 101">
 							<g fill="#FFF" fill-rule="evenodd">
@@ -82,13 +82,13 @@ endif; ?>
 							</g>
 						</svg>
 					</a>
-					<div class="d-flex -justify-content-between mb-4">
+					<div class="d-flex justify-content-between mb-md-4 mb-3">
 						<p class="text700 mx-0">
 							NBHD SKATE<br />
 							Dolna 2A<br />
 							32-540 Trzebinia
 						</p>
-						<p class="text700 text-right ml-auto mr-0">
+						<p class="text700 text-right ml-sm-auto ml-5 mr-0">
 							<a class="text-underline" href="mailto:info@nbhdskate.pl">info@nbhdskate.pl</a><br />
 							<a href="tel:+48 735 970 079">+48 735 970 079</a><br />
 							<a href="tel:+48 505 485 958">+48 505 485 958</a>
@@ -106,7 +106,7 @@ endif; ?>
 						</a>
 					</div>
 				</div>
-				<div class="offset-lg-1 col-lg-2 pt-4 mt-2">
+				<div class="offset-md-1 col-lg-2 col-md-3 col-6 pt-4 mt-md-2 mt-5">
 					<span class="text-size-medium text700 d-block mb-3 pb-3">
 						Pomoc
 					</span>
@@ -134,7 +134,7 @@ endif; ?>
 						</li>
 					</ul>
 				</div>
-				<div class="col-lg-2 pt-4 mt-2">
+				<div class="col-lg-2 col-md-3 col-6 pt-4 mt-md-2 mt-5">
 					<span class="text-size-medium text700 d-block mb-3 pb-3">
 						Mapa strony
 					</span>
@@ -159,7 +159,7 @@ endif; ?>
 						</li>
 					</ul>
 				</div>
-				<div class="col-lg-2 pt-4 mt-2">
+				<div class="col-lg-2 col-md-4 col-6 pt-4 mt-lg-2 mt-5">
 					<span class="text-size-medium text700 d-block mb-3 pb-3">
 						Płatności
 					</span>
@@ -180,7 +180,7 @@ endif; ?>
 						</svg>
 					</div>
 				</div>
-				<div class="col-lg-2 pt-4 mt-2">
+				<div class="col-lg-2 col-md-4 col-6 pt-4 mt-lg-2 mt-5">
 					<span class="text-size-medium text700 d-block mb-3 pb-3">
 						Wysyłka
 					</span>
