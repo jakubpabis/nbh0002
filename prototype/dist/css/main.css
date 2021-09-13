@@ -1663,6 +1663,11 @@ select:focus {
 	width: calc(33.33333% - 20px) !important;
 }
 
+.woocommerce.columns-4 {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
 .woocommerce ul.products.columns-4 li.product,
 .woocommerce-page ul.products.columns-4 li.product {
 	width: calc(25% - 22.5px) !important;
@@ -4802,11 +4807,29 @@ h4,
 
 }
 
-@media (max-width: 991px) and (max-width: 1199px) {
+@media (max-width: 768px) {
+
+.woocommerce ul.products.columns-4,
+.woocommerce-page ul.products.columns-4 {
+	display: flex !important;
+	width: calc(100% + 20px) !important;
+	flex-wrap: wrap !important;
+}
+
+.woocommerce ul.products.columns-4 li.product,
+.woocommerce-page ul.products.columns-4 li.product {
+	width: calc(33.333% - 20px) !important;
+	margin-right: 20px !important;
+}
 
 .woocommerce ul.products.columns-4 li.product.last,
 .woocommerce-page ul.products.columns-4 li.product.last {
 	margin-right: 20px !important;
+}
+
+.products__product,
+.products .product {
+	margin-bottom: 5rem !important;
 }
 
 }
@@ -4985,6 +5008,27 @@ h3,
 	padding: 12px 0;
 }
 
+.woocommerce ul.products.columns-4,
+.woocommerce-page ul.products.columns-4 {
+	width: calc(100% + 15px) !important;
+}
+
+.woocommerce ul.products.columns-4 li.product,
+.woocommerce-page ul.products.columns-4 li.product {
+	width: calc(50% - 15px) !important;
+	margin-right: 15px !important;
+}
+
+.woocommerce ul.products.columns-4 li.product.last,
+.woocommerce-page ul.products.columns-4 li.product.last {
+	margin-right: 15px !important;
+}
+
+.products__product,
+.products .product {
+	margin-bottom: 4rem !important;
+}
+
 .products__product-badge,
 .products .product-badge {
 	top: 10px;
@@ -5020,6 +5064,21 @@ h3,
 #nbhdModalSearch .modal-content .modal-body .widget_shopping_cart_content ul.woocommerce-mini-cart li.woocommerce-mini-cart-item .remove_from_cart_button {
 	top: 2px !important;
 	right: 2px !important;
+}
+
+}
+
+@media (max-width: 374px) {
+
+.woocommerce ul.products.columns-4 li.product,
+.woocommerce-page ul.products.columns-4 li.product {
+	width: calc(100% - 15px) !important;
+	margin-right: 15px !important;
+}
+
+.woocommerce ul.products.columns-4 li.product.last,
+.woocommerce-page ul.products.columns-4 li.product.last {
+	margin-right: 15px !important;
 }
 
 }

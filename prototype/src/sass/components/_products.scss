@@ -144,6 +144,24 @@
   width: calc(33.33333% - 20px) !important;
 }
 
+.woocommerce.columns-4 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.woocommerce ul.products.columns-4,
+.woocommerce-page ul.products.columns-4 {
+  @media (max-width: 768px) {
+    width: calc(100% + 20px) !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+  }
+
+  @media (max-width: 575px) {
+    width: calc(100% + 15px) !important;
+  }
+}
+
 .woocommerce ul.products.columns-4 li.product,
 .woocommerce-page ul.products.columns-4 li.product {
   width: calc(25% - 22.5px) !important;
@@ -154,10 +172,33 @@
 
     &.last {
       margin-right: 0 !important;
+    }
+  }
 
-      @media (max-width: 1199px) {
-        margin-right: 20px !important;
-      }
+  @media (max-width: 768px) {
+    width: calc(33.333% - 20px) !important;
+    margin-right: 20px !important;
+
+    &.last {
+      margin-right: 20px !important;
+    }
+  }
+
+  @media (max-width: 575px) {
+    width: calc(50% - 15px) !important;
+    margin-right: 15px !important;
+
+    &.last {
+      margin-right: 15px !important;
+    }
+  }
+
+  @media (max-width: 374px) {
+    width: calc(100% - 15px) !important;
+    margin-right: 15px !important;
+
+    &.last {
+      margin-right: 15px !important;
     }
   }
 }
@@ -221,6 +262,15 @@
   &__product,
   .product {
     margin-bottom: 6rem !important;
+
+    @media (max-width: 768px) {
+      margin-bottom: 5rem !important;
+    }
+
+    @media (max-width: 575px) {
+      margin-bottom: 4rem !important;
+    }
+
     .woocommerce-loop-product__title {
       font-weight: 700;
       margin-bottom: 0.25rem;

@@ -3,7 +3,7 @@
 		<div class="row justify-content-between">
 			<?php if (get_sub_field('image_position') === 'left') : ?>
 				<div class="col-lg-7">
-					<img data-src="<?php echo get_sub_field('image')['url']; ?>" alt="<?php echo get_sub_field('image')['title']; ?>" class="bg-cover lazy">
+					<img data-src="<?php echo get_sub_field('image')['sizes']['medium']; ?>" alt="<?php echo get_sub_field('image')['title']; ?>" class="bg-cover lazy">
 				</div>
 			<?php endif; ?>
 			<div class="col-xl-4 col-lg-5 d-flex flex-wrap align-content-between">

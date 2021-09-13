@@ -36,7 +36,7 @@
 					<div class="col-md-6 col-sm-9 mb-2">
 						<div class="cards__card position-relative mb-4 p-0">
 							<div class="cards__card-img">
-								<img src="<?php echo get_sub_field('image')['url']; ?>" alt="<?php echo get_sub_field('image')['title']; ?>" class="bg-cover-abs">
+								<img src="<?php echo get_sub_field('image')['sizes']['medium']; ?>" alt="<?php echo get_sub_field('image')['title']; ?>" class="bg-cover-abs">
 							</div>
 							<div class="cards__card-corner position-absolute bottom-0 left-0 bg-white p-sm-3 p-2 pr-md-5 pr-sm-4 pr-3">
 								<?php if (get_sub_field('title')) : ?>
