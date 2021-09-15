@@ -15,7 +15,7 @@ if ($row == 6) {
 		<div class="container-xl py-5">
 			<div class="row">
 				<?php while (have_rows('marki')) : the_row(); ?>
-					<div class="col-lg-<?php echo $row; ?> col-sm-4 col-6 px-4">
+					<div class="col-lg-<?php echo $row; ?> col-sm-4 col-6">
 						<?php if (get_sub_field('title_link')) : ?>
 							<?php if (get_sub_field('title_link')['url']) : ?>
 								<a href="<?php echo get_sub_field('title_link')['url']; ?>">
