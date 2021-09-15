@@ -8,17 +8,19 @@
 			<?php endif; ?>
 			<div class="col-xl-4 col-lg-5 d-flex flex-wrap align-content-between">
 				<?php if (get_sub_field('sub_title')) : ?>
-					<span class="text-upper text-spacing d-block text500">
+					<span class="text-upper text-spacing d-block text500 w-100">
 						<?php echo get_sub_field('sub_title'); ?>
 					</span>
 				<?php endif; ?>
 				<?php if (get_sub_field('title')) : ?>
-					<span class="h1 text700">
+					<span class="h1 text700 d-block w-100">
 						<?php echo get_sub_field('title'); ?>
 					</span>
 				<?php endif; ?>
 				<?php if (get_sub_field('text')) : ?>
-					<?php echo get_sub_field('text'); ?>
+					<div class="w-100 d-block">
+						<?php echo get_sub_field('text'); ?>
+					</div>
 				<?php endif; ?>
 				<?php if (get_sub_field('link')) : ?>
 					<a href="<?php echo get_sub_field('link')['url']; ?>" class="btn btn__default black">

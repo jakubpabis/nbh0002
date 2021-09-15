@@ -11,7 +11,7 @@ if ($row == 6) {
 }
 ?>
 <?php if (have_rows('marki')) : ?>
-	<section class="img-aside py-5 bg-grey2">
+	<section class="img-aside py-5">
 		<div class="container-xl py-5">
 			<div class="row">
 				<?php while (have_rows('marki')) : the_row(); ?>
