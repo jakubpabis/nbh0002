@@ -22,6 +22,8 @@ get_header(); ?>
 			<?php get_template_part('flexparts/slider'); ?>
 		<?php elseif (get_row_layout() == 'team') : ?>
 			<?php get_template_part('flexparts/team'); ?>
+		<?php elseif (get_row_layout() == 'marki') : ?>
+			<?php get_template_part('flexparts/marki'); ?>
 		<?php endif; ?>
 	<?php endwhile; ?>
 <?php endif; ?>
