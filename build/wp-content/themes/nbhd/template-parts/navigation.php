@@ -1,3 +1,5 @@
+<?php global $woocommerce;
+$items_count = $woocommerce->cart->get_cart_contents_count(); ?>
 <nav class="navigation">
 	<div class="navigation__upper">
 		<div class="container">
@@ -130,8 +132,6 @@
 						</a>
 						<a href="javascript:void(0)" data-toggle="modal" data-target="#nbhdModalCart">
 							<i data-feather="shopping-cart"></i>
-							<?php global $woocommerce;
-							$items_count = $woocommerce->cart->get_cart_contents_count(); ?>
 							<span class="navigation__lower-utils-cart-count <?php echo $items_count ? null : 'd-none'; ?>" id="mini-cart-count"><?php echo $items_count ? $items_count : null; ?></span>
 						</a>
 					</div>
@@ -140,15 +140,17 @@
 					<a href="javascript:void(0)" data-toggle="modal" data-target="#nbhdModalSearch">
 						<i data-feather="search"></i>
 					</a>
-					<a href="/konto">
-						<i data-feather="user"></i>
-					</a>
-					<a href="javascript:void(0)" data-toggle="modal" data-target="#nbhdModalCart">
-						<i data-feather="shopping-cart"></i>
-						<?php global $woocommerce;
-						$items_count = $woocommerce->cart->get_cart_contents_count(); ?>
-						<span class="navigation__lower-utils-cart-count <?php echo $items_count ? null : 'd-none'; ?>" id="mini-cart-count"><?php echo $items_count ? $items_count : null; ?></span>
-					</a>
+					<?php if (!is_user_logged_in() || (is_user_logged_in() && $items_count === 0)) : ?>
+						<a href="/konto">
+							<i data-feather="user"></i>
+						</a>
+					<?php endif; ?>
+					<?php if ($items_count > 0) : ?>
+						<a href="javascript:void(0)" data-toggle="modal" data-target="#nbhdModalCart">
+							<i data-feather="shopping-cart"></i>
+							<span class="navigation__lower-utils-cart-count <?php echo $items_count ? null : 'd-none'; ?>" id="mini-cart-count"><?php echo $items_count ? $items_count : null; ?></span>
+						</a>
+					<?php endif; ?>
 					<button type="button" class="menu-opener ml-5">
 						<i data-feather="menu" style="width: 24px; height: 24px;"></i>
 					</button>
