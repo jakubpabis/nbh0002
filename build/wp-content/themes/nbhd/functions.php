@@ -955,12 +955,3 @@ if (isset($_GET['on_sale']) && $_GET['on_sale'] && $_GET['on_sale'] === true) {
 		$q->set('post__in', $product_ids_on_sale);
 	}
 }
-
-if (isset($_GET['bestsellers']) && $_GET['bestsellers'] && $_GET['bestsellers'] === true) {
-	add_action('woocommerce_product_query', 'nbhd_bestsellers_product_query');
-
-	function nbhd_bestsellers_product_query($q)
-	{
-		$q->set('orderby', 'popularity');
-	}
-}
