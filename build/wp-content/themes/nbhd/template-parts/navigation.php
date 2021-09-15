@@ -151,7 +151,7 @@ $items_count = $woocommerce->cart->get_cart_contents_count(); ?>
 							<span class="navigation__lower-utils-cart-count <?php echo $items_count ? null : 'd-none'; ?>" id="mini-cart-count"><?php echo $items_count ? $items_count : null; ?></span>
 						</a>
 					<?php endif; ?>
-					<button type="button" class="menu-opener">
+					<button type="button" class="menu-opener" data-toggle="modal" data-target="#nbhdModalMenu">
 						<i data-feather="menu" style="width: 24px; height: 24px;"></i>
 					</button>
 				</div>

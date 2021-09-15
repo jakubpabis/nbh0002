@@ -76,6 +76,12 @@
         margin-right: 30px;
       }
 
+      @media (max-width: 767px) {
+        margin-right: 0;
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+
       // @media(max-width: 991px) {
       //     margin: 20px auto;
       //     width: 100%;
@@ -92,12 +98,20 @@
         @media (max-width: 991px) {
           width: 100%;
           display: block;
-          text-align: center;
+        }
+
+        @media (max-width: 767px) {
+          text-align: right;
         }
 
         > span {
           padding: 7px;
           font-size: 15px;
+
+          @media (max-width: 767px) {
+            padding: 10px;
+            font-size: 19px;
+          }
         }
 
         > a {
@@ -117,6 +131,11 @@
           @media (max-width: 991px) {
             padding: 5px 12px;
             font-size: 14px;
+          }
+
+          @media (max-width: 767px) {
+            padding: 10px;
+            font-size: 19px;
           }
 
           &.dropdown-toggle {

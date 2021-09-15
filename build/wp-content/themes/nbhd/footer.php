@@ -266,6 +266,118 @@ endif; ?>
 		</div>
 	</div>
 </div>
+<div class="modal fade" id="nbhdModalMenu" tabindex="-1" role="dialog" aria-labelledby="nbhdModalMenuLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-slideout" role="document">
+		<div class="modal-content">
+			<div class="modal-topbar bg-black color-white d-flex align-items-center justify-content-between position-absolute left-0">
+				<h5 class="h4 text-uppercase text700 mb-0" id="nbhdModalMenuLabel">Menu</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Zamknij">
+					<span aria-hidden="true">×</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<?php if (have_rows('menu_items', 'option')) : ?>
+					<ul class="navigation__lower-menu">
+						<?php while (have_rows('menu_items', 'option')) : the_row(); ?>
+							<li>
+								<?php if (get_sub_field('link_type') === 'submenu') : ?>
+									<a href="#<?php echo get_sub_field('link_title'); ?>" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<?php echo get_sub_field('link_title'); ?>
+									</a>
+									<?php
+									$promos = 0;
+									$cols = 0;
+									if (get_sub_field('submenu') && get_sub_field('submenu')['promo_panels']) {
+										$promos = count(get_sub_field('submenu')['promo_panels']);
+									}
+									if (get_sub_field('submenu') && get_sub_field('submenu')['big_list']) {
+										$cols++;
+									}
+									if (get_sub_field('submenu') && get_sub_field('submenu')['small_list']) {
+										$cols++;
+									}
+									?>
+									<?php if (have_rows('submenu', 'option')) : ?>
+										<div class="dropdown-menu">
+											<div class="container-fluid px-0">
+												<div class="row">
+													<?php while (have_rows('submenu', 'option')) : the_row(); ?>
+														<?php if (have_rows('promo_panels', 'option')) : ?>
+															<div class="col-xl-6 col-lg-5 col-md-4">
+																<div class="row h-100">
+																	<?php while (have_rows('promo_panels', 'option')) : the_row(); ?>
+																		<div class="<?php echo $promos === 2 ? 'col-xl-6' : 'col-12'; ?> px-0 d-flex align-items-center justify-content-center dropdown-menu-img-container">
+																			<img src="<?php echo get_sub_field('image')['url']; ?>" alt="<?php echo get_sub_field('image')['title']; ?>" class="bg-cover-abs dropdown-menu-img">
+																			<div class="text-center">
+																				<?php if (get_sub_field('title')) : ?>
+																					<span class="h4 text700 d-block color-white mb-4 position-relative">
+																						<?php echo get_sub_field('title'); ?>
+																					</span>
+																				<?php endif; ?>
+																				<?php if (get_sub_field('link')) : ?>
+																					<span class="btn btn__default white">
+																						<?php echo get_sub_field('link')['title']; ?>
+																					</span>
+																				<?php endif; ?>
+																			</div>
+																			<?php if (get_sub_field('link')) : ?>
+																				<a href="<?php echo get_sub_field('link')['url']; ?>" class="whole-element-link"></a>
+																			<?php endif; ?>
+																		</div>
+																	<?php endwhile; ?>
+																</div>
+															</div>
+														<?php endif; ?>
+														<?php if (have_rows('big_list', 'option') || have_rows('small_list', 'option')) : ?>
+															<div class="col-xl-6 col-lg-7 col-md-8">
+																<div class="row">
+																	<?php if (have_rows('big_list', 'option')) : ?>
+																		<div class="<?php echo $cols === 2 ? 'col-xl-6 col-md-5' : 'col-12'; ?> bg-grey px-0 d-flex align-items-center justify-content-center">
+																			<ul class="sub-menu-popular">
+																				<?php while (have_rows('big_list', 'option')) : the_row(); ?>
+																					<li>
+																						<a href="<?php echo get_sub_field('link')['url']; ?>">
+																							<?php echo get_sub_field('link')['title']; ?>
+																						</a>
+																					</li>
+																				<?php endwhile; ?>
+																			</ul>
+																		</div>
+																	<?php endif; ?>
+																	<?php if (have_rows('small_list', 'option')) : ?>
+																		<div class="<?php echo $cols === 2 ? 'col-xl-6 col-md-7' : 'col-12'; ?> px-0 d-flex align-items-center justify-content-center">
+																			<ul class="sub-menu">
+																				<?php while (have_rows('small_list', 'option')) : the_row(); ?>
+																					<li>
+																						<a href="<?php echo get_sub_field('link')['url']; ?>">
+																							<?php echo get_sub_field('link')['title']; ?>
+																						</a>
+																					</li>
+																				<?php endwhile; ?>
+																			</ul>
+																		</div>
+																	<?php endif; ?>
+																</div>
+															</div>
+														<?php endif; ?>
+													<?php endwhile; ?>
+												</div>
+											</div>
+										</div>
+									<?php endif; ?>
+								<?php else : ?>
+									<a href="<?php echo get_sub_field('link')['url']; ?>">
+										<?php echo get_sub_field('link')['title']; ?>
+									</a>
+								<?php endif; ?>
+							</li>
+						<?php endwhile; ?>
+					</ul>
+				<?php endif; ?>
+			</div>
+		</div>
+	</div>
+</div>
 <?php if (isset($_GET['already'])) : ?>
 	<div class="modal fade" id="already-modal-newsletter" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
