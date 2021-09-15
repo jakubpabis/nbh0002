@@ -26,7 +26,7 @@ if ($row == 6) {
 									</span>
 								<?php endif; ?>
 							<?php endif; ?>
-							<img data-src="<?php echo esc_url(get_sub_field('image')['sizes']['medium']); ?>" alt="<?php echo get_sub_field('image')['title']; ?>" class="bg-cover lazy mb-4">
+							<img data-src="<?php echo esc_url(get_sub_field('image')['sizes']['medium']); ?>" alt="<?php echo get_sub_field('image')['title']; ?>" class="bg-cover lazy mb-4 p-4">
 							<?php if (get_sub_field('title_link') && get_sub_field('title_link')['url']) : ?>
 								</a>
 							<?php endif; ?>
