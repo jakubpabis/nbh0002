@@ -943,3 +943,24 @@ if (function_exists('acf_add_options_page')) {
 		'parent_slug'	=> 'theme-general-settings',
 	));
 }
+
+if (isset($_GET['on_sale']) && $_GET['on_sale'] && $_GET['on_sale'] === true) {
+	add_action('woocommerce_product_query', 'nbhd_on_sale_product_query');
+
+	function nbhd_on_sale_product_query($q)
+	{
+
+		$product_ids_on_sale = wc_get_product_ids_on_sale();
+
+		$q->set('post__in', $product_ids_on_sale);
+	}
+}
+
+if (isset($_GET['bestsellers']) && $_GET['bestsellers'] && $_GET['bestsellers'] === true) {
+	add_action('woocommerce_product_query', 'nbhd_bestsellers_product_query');
+
+	function nbhd_bestsellers_product_query($q)
+	{
+		$q->set('orderby', 'popularity');
+	}
+}
