@@ -1,12 +1,12 @@
-<section class="img-aside py-5 bg-grey2">
-	<div class="container-xl py-5">
+<section class="img-aside py-xl-5 py-4 bg-grey2">
+	<div class="container-xl py-lg-5 py-4">
 		<div class="row justify-content-between">
 			<?php if (get_sub_field('image_position') === 'left') : ?>
-				<div class="col-lg-7">
+				<div class="col-md-7">
 					<img data-src="<?php echo get_sub_field('image')['sizes']['medium_large']; ?>" alt="<?php echo get_sub_field('image')['title']; ?>" class="bg-cover lazy">
 				</div>
 			<?php endif; ?>
-			<div class="col-xl-4 col-lg-5 d-flex flex-wrap align-content-between">
+			<div class="col-xl-4 col-md-5 d-flex flex-wrap align-content-between pt-md-0 pt-4">
 				<?php if (get_sub_field('sub_title')) : ?>
 					<span class="text-upper text-spacing d-block text500 w-100">
 						<?php echo get_sub_field('sub_title'); ?>
@@ -29,7 +29,7 @@
 				<?php endif; ?>
 			</div>
 			<?php if (get_sub_field('image_position') === 'right') : ?>
-				<div class="col-lg-7">
+				<div class="col-md-7">
 					<img data-src="<?php echo get_sub_field('image')['url']; ?>" alt="<?php echo get_sub_field('image')['title']; ?>" class="bg-cover lazy">
 				</div>
 			<?php endif; ?>
