@@ -89,10 +89,10 @@ if (is_product_category()) {
 					<div class="row">
 						<div class="col-xl-3 col-lg-4 pb-4 mb-3">
 							<aside class="nbhd-products-archive-filters bg-white" role="complementary">
-								<h4 class="mt-0 mb-2 text700 d-block w-100 py-3 px-4 color-white bg-black text-upper">
-									Filtrowanie
+								<h4 class="mt-0 mb-2 text700 d-block w-100 py-3 px-4 color-white bg-black text-upper nbhd-products-archive-filters-title">
+									<i class="fas fa-sort-size-down-alt mr-3"></i> Filtrowanie
 								</h4>
-								<div class="px-4 pt-4 pb-1">
+								<div class="px-4 pt-4 pb-1 d-lg-block d-none">
 									<?php dynamic_sidebar('sidebar-1'); ?>
 								</div>
 							</aside>

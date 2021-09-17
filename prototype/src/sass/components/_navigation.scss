@@ -134,8 +134,8 @@
           }
 
           @media (max-width: 767px) {
-            padding: 12px 10px;
-            font-size: 20px;
+            padding: 14px 10px;
+            font-size: 21px;
           }
 
           &.dropdown-toggle {
@@ -187,6 +187,10 @@
             margin: 0 !important;
             border-bottom: none;
             height: calc(100vh - 52px) !important;
+
+            @media (max-width: 575px) {
+              height: calc(100vh - 42px) !important;
+            }
           }
 
           &-close {
@@ -196,8 +200,14 @@
             color: white;
             font-weight: 700;
             padding-left: 30px;
+
             i {
               font-size: 24px;
+            }
+
+            @media (max-width: 575px) {
+              height: 42px;
+              padding-left: 10px;
             }
           }
 
@@ -217,6 +227,7 @@
 
             @media (max-width: 767px) {
               padding: 20px 15px;
+              text-align: center;
             }
 
             li {

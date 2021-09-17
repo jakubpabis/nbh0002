@@ -230,6 +230,19 @@ function hideQty() {
   $("form").find(".quantity.hidden").prev(".quantity").remove();
 }
 
+function filterMobile() {
+  var filter = $(".nbhd-products-archive-filters-title");
+  filter.on("click", function () {
+    if ($(window).width() <= 991) {
+      if ($(this).next().hasClass("d-none")) {
+        $(this).next().removeClass("d-none");
+      } else {
+        $(this).next().addClass("d-none");
+      }
+    }
+  });
+}
+
 jQuery(document).ready(function () {
   lazyImages();
   uglyInput();
@@ -237,6 +250,7 @@ jQuery(document).ready(function () {
   productImgHover();
   addedToCartLink();
   hideQty();
+  filterMobile();
 
   $("#nbhdModalSearch").on("shown.bs.modal", function () {
     $("input.dgwt-wcas-search-input").trigger("focus");

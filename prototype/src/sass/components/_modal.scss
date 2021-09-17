@@ -203,8 +203,25 @@
 }
 
 #nbhdModalMenu {
+  .modal-dialog {
+    max-width: 360px !important;
+  }
   .modal-content {
     padding-left: 0 !important;
+    @media (max-width: 575px) {
+      padding-left: 0 !important;
+    }
+  }
+  .modal-body {
+    @media (max-width: 575px) {
+      padding: 60px 0 20px 0 !important;
+
+      .row,
+      .container-fluid {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+    }
   }
 }
 
