@@ -186,7 +186,7 @@
             transform: translate3d(0, 0, 0) !important;
             margin: 0 !important;
             border-bottom: none;
-            //height: calc(100vh - 45px) !important;
+            height: calc(100vh - 52px) !important;
           }
 
           &-close {
@@ -216,7 +216,7 @@
             display: block;
 
             @media (max-width: 767px) {
-              padding: 30px 15px;
+              padding: 20px 15px;
             }
 
             li {
@@ -245,7 +245,7 @@
             display: block;
 
             @media (max-width: 767px) {
-              padding: 30px 15px;
+              padding: 20px 15px;
             }
 
             li {

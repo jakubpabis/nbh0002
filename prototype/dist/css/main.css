@@ -4996,13 +4996,14 @@ h3,
 	top: 0 !important;
 	bottom: 0 !important;
 	width: 100% !important;
+	height: calc(100vh - 52px) !important;
 	margin: 0 !important;
 	transform: translate3d(0, 0, 0) !important;
 	border-bottom: none;
 }
 
 .navigation__lower-menu > li .dropdown-menu ul.sub-menu-popular {
-	padding: 30px 15px;
+	padding: 20px 15px;
 }
 
 .navigation__lower-menu > li .dropdown-menu ul.sub-menu-popular li {
@@ -5011,7 +5012,7 @@ h3,
 }
 
 .navigation__lower-menu > li .dropdown-menu ul.sub-menu {
-	padding: 30px 15px;
+	padding: 20px 15px;
 }
 
 .navigation__lower-menu > li .dropdown-menu ul.sub-menu li {
