@@ -32,9 +32,9 @@
 							<?php if (get_sub_field('text')) :
 								get_sub_field('text');
 							endif; ?>
-							<?php if (get_sub_field('button')) : ?>
-								<a href="<?php echo get_sub_field('button')['url']; ?>" class="btn btn__default white">
-									<?php echo get_sub_field('button')['title']; ?>
+							<?php if (get_sub_field('link')) : ?>
+								<a href="<?php echo get_sub_field('link')['url']; ?>" class="btn btn__default white">
+									<?php echo get_sub_field('link')['title']; ?>
 								</a>
 							<?php endif; ?>
 						</div>
