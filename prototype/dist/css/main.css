@@ -5326,12 +5326,8 @@ h3,
 	height: 320px !important;
 }
 
-.nbhd-products-archive.with_header_img .woocommerce-products-header.with_header_img .woocommerce-products-header__title.with_header_img {
-	margin-left: 20px;
-}
-
 .nbhd-products-archive-filtering {
-	padding: 20px;
+	padding: 20px 30px;
 }
 
 .nbhd-products-archive-filtering .woocommerce-result-count,
@@ -5364,8 +5360,7 @@ h3,
 	margin-right: 10px !important;
 }
 
-.products__container > .container-fluid,
-.products__container > .container-fluid > .row {
+.products__container > .container-fluid {
 	padding-right: 0 !important;
 	padding-left: 0 !important;
 }
