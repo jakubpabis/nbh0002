@@ -33,7 +33,7 @@
       img {
         height: 340px !important;
         opacity: 0.66;
-        max-width: 101vw !important;
+        max-width: 105vw !important;
 
         @media (max-width: 575px) {
           height: 240px !important;
@@ -43,7 +43,7 @@
       &.low {
         img {
           height: 340px !important;
-          max-width: 101vw !important;
+          max-width: 105vw !important;
           @media (max-width: 575px) {
             height: 240px !important;
           }
@@ -54,7 +54,7 @@
         img {
           min-height: 400px !important;
           height: 66vh !important;
-          max-width: 101vw !important;
+          max-width: 105vw !important;
           @media (max-width: 575px) {
             height: 280px !important;
           }
@@ -65,7 +65,7 @@
         img {
           min-height: 500px !important;
           height: 80vh !important;
-          max-width: 101vw !important;
+          max-width: 105vw !important;
           @media (max-width: 575px) {
             height: 320px !important;
           }
