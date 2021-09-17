@@ -279,6 +279,21 @@ i {
 
 .general-template-section {
   padding: 15px 15px 0 15px;
+
+  @media (max-width: 767px) {
+    padding: 10px 0 0 0;
+
+    article {
+      margin: 0 -15px;
+    }
+  }
+  @media (max-width: 575px) {
+    padding: 10px 5px 0 5px;
+
+    article {
+      margin: 0 -15px;
+    }
+  }
 }
 
 .woocommerce-breadcrumb {
@@ -357,6 +372,7 @@ i {
 input[type="radio"] {
   appearance: none !important;
   position: relative;
+  outline: 0;
   &:after {
     width: 15px;
     height: 15px;
@@ -399,6 +415,7 @@ input[type="radio"] {
 input[type="checkbox"] {
   appearance: none !important;
   position: relative;
+  outline: 0;
   width: 16px;
   height: 16px;
   display: inline-block !important;
