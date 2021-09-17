@@ -202,6 +202,12 @@
   }
 }
 
+#nbhdModalMenu {
+  .modal-content {
+    padding-left: 0 !important;
+  }
+}
+
 .modal-dialog-slideout {
   min-height: 100%;
   margin: 0 0 0 auto;

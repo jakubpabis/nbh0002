@@ -299,16 +299,20 @@ endif; ?>
 									?>
 									<?php if (have_rows('submenu', 'option')) : ?>
 										<div class="dropdown-menu">
-											<div class="container-fluid px-0">
-												<div class="row">
+											<div class="container-fluid px-0 h-100">
+												<div class="dropdown-menu-close d-flex align-items-center">
+													<i class="fas fa-chevron-left"></i>
+													<span class="h4 text-uppercase text700 mb-0 ml-3">Wstecz</span>
+												</div>
+												<div class="row h-100">
 													<?php while (have_rows('submenu', 'option')) : the_row(); ?>
 														<?php if (have_rows('promo_panels', 'option')) : ?>
-															<div class="col-xl-6 col-lg-5 col-md-4">
+															<div class="col-xl-6 col-lg-5 col-md-4 promo-panels order-md-0 order-12">
 																<div class="row h-100">
 																	<?php while (have_rows('promo_panels', 'option')) : the_row(); ?>
 																		<div class="<?php echo $promos === 2 ? 'col-xl-6' : 'col-12'; ?> px-0 d-flex align-items-center justify-content-center dropdown-menu-img-container">
 																			<img src="<?php echo get_sub_field('image')['url']; ?>" alt="<?php echo get_sub_field('image')['title']; ?>" class="bg-cover-abs dropdown-menu-img">
-																			<div class="text-center">
+																			<div class="text-center py-4 my-2">
 																				<?php if (get_sub_field('title')) : ?>
 																					<span class="h4 text700 d-block color-white mb-4 position-relative">
 																						<?php echo get_sub_field('title'); ?>
@@ -330,7 +334,7 @@ endif; ?>
 														<?php endif; ?>
 														<?php if (have_rows('big_list', 'option') || have_rows('small_list', 'option')) : ?>
 															<div class="col-xl-6 col-lg-7 col-md-8">
-																<div class="row">
+																<div class="row h-100 align-items-between">
 																	<?php if (have_rows('big_list', 'option')) : ?>
 																		<div class="<?php echo $cols === 2 ? 'col-xl-6 col-md-5' : 'col-12'; ?> bg-grey px-0 d-flex align-items-center justify-content-center">
 																			<ul class="sub-menu-popular">
