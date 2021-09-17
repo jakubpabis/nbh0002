@@ -205,6 +205,10 @@
 #nbhdModalMenu {
   .modal-dialog {
     max-width: 360px !important;
+
+    @media (max-width: 575px) {
+      max-width: 280px !important;
+    }
   }
   .modal-content {
     padding-left: 0 !important;

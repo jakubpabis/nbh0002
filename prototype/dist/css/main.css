@@ -1389,7 +1389,7 @@ select:focus {
 }
 
 .navigation__lower-menu > li .dropdown-menu-img {
-	opacity: .6;
+	opacity: .5;
 }
 
 .navigation__lower-menu > li .dropdown-menu-img-container {
@@ -5330,6 +5330,10 @@ h3,
 #nbhdModalMenu .modal-content .modal-body .widget_shopping_cart_content ul.woocommerce-mini-cart li.woocommerce-mini-cart-item .remove_from_cart_button {
 	top: 2px !important;
 	right: 2px !important;
+}
+
+#nbhdModalMenu .modal-dialog {
+	max-width: 280px !important;
 }
 
 #nbhdModalMenu .modal-content {
