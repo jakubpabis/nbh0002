@@ -240,7 +240,7 @@
     }
   }
 
-  @media (max-width: 374px) {
+  @media (max-width: 339px) {
     width: calc(100% - 10px) !important;
     margin-right: 10px !important;
 
@@ -454,6 +454,24 @@
 .woocommerce-page #content div.product div.images,
 .woocommerce-page div.product div.images {
   width: 60% !important;
+
+  @media (max-width: 991px) {
+    width: 55% !important;
+    float: left !important;
+  }
+  @media (max-width: 699px) {
+    width: 100% !important;
+    float: none !important;
+  }
+}
+
+.woocommerce #content div.product div.summary,
+.woocommerce div.product div.summary,
+.woocommerce-page #content div.product div.summary,
+.woocommerce-page div.product div.summary {
+  @media (max-width: 768px) {
+    float: right !important;
+  }
 }
 
 .woocommerce #content div.product div.summary,
@@ -467,6 +485,14 @@
   width: 37.5% !important;
   float: right;
   clear: none !important;
+
+  @media (max-width: 991px) {
+    width: 42% !important;
+  }
+
+  @media (max-width: 699px) {
+    width: 100% !important;
+  }
 
   .product_title.entry-title {
     margin-bottom: 10px;
@@ -583,6 +609,11 @@
 
 article.single-product {
   padding: 25px 15px 0 15px;
+
+  @media (max-width: 1199px) {
+    padding: 15px 0 0 0;
+  }
+
   span.onsale {
     display: none !important;
     visibility: hidden !important;
@@ -590,6 +621,10 @@ article.single-product {
   div.images,
   #accordion {
     margin-bottom: 4rem !important;
+
+    @media (max-width: 699px) {
+      margin-bottom: 2.5rem !important;
+    }
   }
   .related.products {
     clear: both;

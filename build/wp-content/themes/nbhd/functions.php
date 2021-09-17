@@ -301,7 +301,7 @@ function nbhd_scripts()
 	wp_enqueue_style('nbhd-prettycheckbox', 'https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css');
 	wp_enqueue_style('nbhd-swiper', 'https://unpkg.com/swiper/swiper-bundle.min.css');
 	wp_enqueue_style('nbhd-fontawesome', get_template_directory_uri() . '/assets/css/fa.min.css');
-	wp_enqueue_style('nbhd-style', get_template_directory_uri() . '/assets/css/main.min.css?v=2.0.1');
+	wp_enqueue_style('nbhd-style', get_template_directory_uri() . '/assets/css/main.min.css?v=2.0.2');
 
 	if (!is_admin()) {
 		wp_deregister_script('wp-embed');
