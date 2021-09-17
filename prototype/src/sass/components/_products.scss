@@ -9,6 +9,13 @@
       width: 100%;
       top: 15px;
 
+      @media (max-width: 575px) {
+        top: 10px;
+        left: 15px;
+        right: 15px;
+        width: auto;
+      }
+
       * {
         color: white !important;
       }
@@ -25,12 +32,21 @@
 
       img {
         height: 340px !important;
-        opacity: 0.7;
+        opacity: 0.66;
+        max-width: 101vw !important;
+
+        @media (max-width: 575px) {
+          height: 240px !important;
+        }
       }
 
       &.low {
         img {
           height: 340px !important;
+          max-width: 101vw !important;
+          @media (max-width: 575px) {
+            height: 240px !important;
+          }
         }
       }
 
@@ -38,6 +54,10 @@
         img {
           min-height: 400px !important;
           height: 66vh !important;
+          max-width: 101vw !important;
+          @media (max-width: 575px) {
+            height: 280px !important;
+          }
         }
       }
 
@@ -45,6 +65,10 @@
         img {
           min-height: 500px !important;
           height: 80vh !important;
+          max-width: 101vw !important;
+          @media (max-width: 575px) {
+            height: 320px !important;
+          }
         }
       }
 
@@ -208,20 +232,20 @@
   }
 
   @media (max-width: 575px) {
-    width: calc(50% - 15px) !important;
-    margin-right: 15px !important;
+    width: calc(50% - 10px) !important;
+    margin-right: 10px !important;
 
     &.last {
-      margin-right: 15px !important;
+      margin-right: 10px !important;
     }
   }
 
   @media (max-width: 374px) {
-    width: calc(100% - 15px) !important;
-    margin-right: 15px !important;
+    width: calc(100% - 10px) !important;
+    margin-right: 10px !important;
 
     &.last {
-      margin-right: 15px !important;
+      margin-right: 10px !important;
     }
   }
 }
@@ -256,6 +280,22 @@
           width: calc(50% - 15px) !important;
         }
       }
+      @media (max-width: 575px) {
+        ul.products.columns-3 li.product,
+        ul.products.columns-3 li.product,
+        ul.products.columns-4 li.product,
+        ul.products.columns-4 li.product {
+          width: calc(50% - 10px) !important;
+        }
+      }
+      @media (max-width: 339px) {
+        ul.products.columns-3 li.product,
+        ul.products.columns-3 li.product,
+        ul.products.columns-4 li.product,
+        ul.products.columns-4 li.product {
+          width: 100% !important;
+        }
+      }
     }
 
     &-item {
@@ -269,11 +309,19 @@
       li.product {
         margin-right: 30px !important;
 
+        @media (max-width: 575px) {
+          margin-right: 20px !important;
+        }
+
         &.last {
           margin-right: 0 !important;
 
           @media (max-width: 1199px) {
             margin-right: 30px !important;
+          }
+
+          @media (max-width: 575px) {
+            margin-right: 20px !important;
           }
         }
 

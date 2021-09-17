@@ -289,6 +289,10 @@
         padding-right: 7px;
       }
 
+      @media (max-width: 575px) {
+        padding-right: 5px !important;
+      }
+
       > a {
         margin: 0;
         padding: 0 10px;

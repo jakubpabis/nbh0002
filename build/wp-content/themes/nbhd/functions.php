@@ -301,7 +301,7 @@ function nbhd_scripts()
 	wp_enqueue_style('nbhd-prettycheckbox', 'https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css');
 	wp_enqueue_style('nbhd-swiper', 'https://unpkg.com/swiper/swiper-bundle.min.css');
 	wp_enqueue_style('nbhd-fontawesome', get_template_directory_uri() . '/assets/css/fa.min.css');
-	wp_enqueue_style('nbhd-style', get_template_directory_uri() . '/assets/css/main.min.css');
+	wp_enqueue_style('nbhd-style', get_template_directory_uri() . '/assets/css/main.min.css?v=2.0.0');
 
 	if (!is_admin()) {
 		wp_deregister_script('wp-embed');
@@ -316,7 +316,7 @@ function nbhd_scripts()
 	wp_enqueue_script('nbhd-bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js', array(), '', true);
 	wp_enqueue_script('nbhd-feather', 'https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js', array(), '', true);
 	wp_enqueue_script('nbhd-swiper', 'https://unpkg.com/swiper/swiper-bundle.min.js', array(), '', true);
-	wp_enqueue_script('nbhd-app', get_template_directory_uri() . '/assets/js/main.min.js', array(), '', true);
+	wp_enqueue_script('nbhd-app', get_template_directory_uri() . '/assets/js/main.min.js', array(), '2.0.0', true);
 	// Internet Explorer HTML5 support
 	wp_enqueue_script('html5hiv', get_template_directory_uri() . '/inc/assets/js/html5.js', array(), '3.7.0', false);
 	wp_script_add_data('html5hiv', 'conditional', 'lt IE 9');
