@@ -1561,6 +1561,11 @@ select:focus {
 	color: white;
 }
 
+.header.swiper-container .swiper-button-prev:after,
+.header.swiper-container .swiper-button-next:after {
+	display: none;
+}
+
 .nbhd-products-archive.with_header_img {
 	padding-top: 0 !important;
 }

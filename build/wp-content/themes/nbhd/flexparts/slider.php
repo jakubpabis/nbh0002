@@ -46,7 +46,7 @@
 		<div class="swiper-pagination"></div>
 
 		<!-- If we need navigation buttons -->
-		<div class="swiper-button-prev"></div>
-		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"><i class="fal fa-chevron-left fa-3x"></i></div>
+		<div class="swiper-button-next"><i class="fal fa-chevron-right fa-3x"></i></div>
 	<?php endif; ?>
 </section>
