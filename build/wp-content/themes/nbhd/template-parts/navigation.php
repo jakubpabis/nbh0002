@@ -140,7 +140,7 @@ $items_count = $woocommerce->cart->get_cart_contents_count(); ?>
 					<a href="javascript:void(0)" data-toggle="modal" data-target="#nbhdModalSearch">
 						<i data-feather="search"></i>
 					</a>
-					<?php if (!is_user_logged_in() && $items_count === 0) : ?>
+					<?php if ($items_count === 0) : ?>
 						<a href="/konto">
 							<i data-feather="user"></i>
 						</a>
