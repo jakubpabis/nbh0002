@@ -43,7 +43,7 @@ endif; ?>
 			<div class="row justify-content-between align-items-center">
 				<div class="col-lg-6">
 					<p class="text-size-large text700 mt-0 mb-1">
-						Bądź na bierząco, zapisz się do newsletter’a
+						Bądź na bieżąco, zapisz się do newsletter’a
 					</p>
 					<p class="color-red mt-1 mb-0">
 						Odbierz kupon 10% zniżki!
