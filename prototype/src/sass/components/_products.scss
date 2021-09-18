@@ -1037,7 +1037,7 @@ article.single-product {
     }
 
     ul.product-categories,
-    ul.wc-block-product-categories-list {
+    ul.wc-block-product-categories-list--depth-0 {
       padding-left: 0;
       list-style: none;
 
@@ -1061,7 +1061,7 @@ article.single-product {
           font-weight: 500;
         }
 
-        ul.children {
+        ul {
           padding-left: 15px;
           padding-top: 5px;
           list-style: none;

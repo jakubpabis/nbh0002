@@ -2643,100 +2643,100 @@ article.single-product .related.products ul.products li.product {
 }
 
 .nbhd-products-archive-filters .widget_price_filter ul.product-categories,
-.nbhd-products-archive-filters .widget_price_filter ul.wc-block-product-categories-list,
+.nbhd-products-archive-filters .widget_price_filter ul.wc-block-product-categories-list--depth-0,
 .nbhd-products-archive-filters .widget_product_categories ul.product-categories,
-.nbhd-products-archive-filters .widget_product_categories ul.wc-block-product-categories-list,
+.nbhd-products-archive-filters .widget_product_categories ul.wc-block-product-categories-list--depth-0,
 .nbhd-products-archive-filters .wc-block-product-categories ul.product-categories,
-.nbhd-products-archive-filters .wc-block-product-categories ul.wc-block-product-categories-list,
+.nbhd-products-archive-filters .wc-block-product-categories ul.wc-block-product-categories-list--depth-0,
 .nbhd-products-archive-filters .widget_layered_nav_filters ul.product-categories,
-.nbhd-products-archive-filters .widget_layered_nav_filters ul.wc-block-product-categories-list,
+.nbhd-products-archive-filters .widget_layered_nav_filters ul.wc-block-product-categories-list--depth-0,
 .nbhd-products-archive-filters .woocommerce-widget-layered-nav ul.product-categories,
-.nbhd-products-archive-filters .woocommerce-widget-layered-nav ul.wc-block-product-categories-list {
+.nbhd-products-archive-filters .woocommerce-widget-layered-nav ul.wc-block-product-categories-list--depth-0 {
 	padding-left: 0;
 	list-style: none;
 }
 
 .nbhd-products-archive-filters .widget_price_filter ul.product-categories li.current-cat > a,
-.nbhd-products-archive-filters .widget_price_filter ul.wc-block-product-categories-list li.current-cat > a,
+.nbhd-products-archive-filters .widget_price_filter ul.wc-block-product-categories-list--depth-0 li.current-cat > a,
 .nbhd-products-archive-filters .widget_product_categories ul.product-categories li.current-cat > a,
-.nbhd-products-archive-filters .widget_product_categories ul.wc-block-product-categories-list li.current-cat > a,
+.nbhd-products-archive-filters .widget_product_categories ul.wc-block-product-categories-list--depth-0 li.current-cat > a,
 .nbhd-products-archive-filters .wc-block-product-categories ul.product-categories li.current-cat > a,
-.nbhd-products-archive-filters .wc-block-product-categories ul.wc-block-product-categories-list li.current-cat > a,
+.nbhd-products-archive-filters .wc-block-product-categories ul.wc-block-product-categories-list--depth-0 li.current-cat > a,
 .nbhd-products-archive-filters .widget_layered_nav_filters ul.product-categories li.current-cat > a,
-.nbhd-products-archive-filters .widget_layered_nav_filters ul.wc-block-product-categories-list li.current-cat > a,
+.nbhd-products-archive-filters .widget_layered_nav_filters ul.wc-block-product-categories-list--depth-0 li.current-cat > a,
 .nbhd-products-archive-filters .woocommerce-widget-layered-nav ul.product-categories li.current-cat > a,
-.nbhd-products-archive-filters .woocommerce-widget-layered-nav ul.wc-block-product-categories-list li.current-cat > a {
+.nbhd-products-archive-filters .woocommerce-widget-layered-nav ul.wc-block-product-categories-list--depth-0 li.current-cat > a {
 	font-weight: 700;
 	text-decoration: underline;
 	color: #f00;
 }
 
 .nbhd-products-archive-filters .widget_price_filter ul.product-categories li.current-cat > span,
-.nbhd-products-archive-filters .widget_price_filter ul.wc-block-product-categories-list li.current-cat > span,
+.nbhd-products-archive-filters .widget_price_filter ul.wc-block-product-categories-list--depth-0 li.current-cat > span,
 .nbhd-products-archive-filters .widget_product_categories ul.product-categories li.current-cat > span,
-.nbhd-products-archive-filters .widget_product_categories ul.wc-block-product-categories-list li.current-cat > span,
+.nbhd-products-archive-filters .widget_product_categories ul.wc-block-product-categories-list--depth-0 li.current-cat > span,
 .nbhd-products-archive-filters .wc-block-product-categories ul.product-categories li.current-cat > span,
-.nbhd-products-archive-filters .wc-block-product-categories ul.wc-block-product-categories-list li.current-cat > span,
+.nbhd-products-archive-filters .wc-block-product-categories ul.wc-block-product-categories-list--depth-0 li.current-cat > span,
 .nbhd-products-archive-filters .widget_layered_nav_filters ul.product-categories li.current-cat > span,
-.nbhd-products-archive-filters .widget_layered_nav_filters ul.wc-block-product-categories-list li.current-cat > span,
+.nbhd-products-archive-filters .widget_layered_nav_filters ul.wc-block-product-categories-list--depth-0 li.current-cat > span,
 .nbhd-products-archive-filters .woocommerce-widget-layered-nav ul.product-categories li.current-cat > span,
-.nbhd-products-archive-filters .woocommerce-widget-layered-nav ul.wc-block-product-categories-list li.current-cat > span {
+.nbhd-products-archive-filters .woocommerce-widget-layered-nav ul.wc-block-product-categories-list--depth-0 li.current-cat > span {
 	font-weight: 700;
 	text-decoration: underline;
 	color: #f00;
 }
 
 .nbhd-products-archive-filters .widget_price_filter ul.product-categories > li,
-.nbhd-products-archive-filters .widget_price_filter ul.wc-block-product-categories-list > li,
+.nbhd-products-archive-filters .widget_price_filter ul.wc-block-product-categories-list--depth-0 > li,
 .nbhd-products-archive-filters .widget_product_categories ul.product-categories > li,
-.nbhd-products-archive-filters .widget_product_categories ul.wc-block-product-categories-list > li,
+.nbhd-products-archive-filters .widget_product_categories ul.wc-block-product-categories-list--depth-0 > li,
 .nbhd-products-archive-filters .wc-block-product-categories ul.product-categories > li,
-.nbhd-products-archive-filters .wc-block-product-categories ul.wc-block-product-categories-list > li,
+.nbhd-products-archive-filters .wc-block-product-categories ul.wc-block-product-categories-list--depth-0 > li,
 .nbhd-products-archive-filters .widget_layered_nav_filters ul.product-categories > li,
-.nbhd-products-archive-filters .widget_layered_nav_filters ul.wc-block-product-categories-list > li,
+.nbhd-products-archive-filters .widget_layered_nav_filters ul.wc-block-product-categories-list--depth-0 > li,
 .nbhd-products-archive-filters .woocommerce-widget-layered-nav ul.product-categories > li,
-.nbhd-products-archive-filters .woocommerce-widget-layered-nav ul.wc-block-product-categories-list > li {
+.nbhd-products-archive-filters .woocommerce-widget-layered-nav ul.wc-block-product-categories-list--depth-0 > li {
 	padding: 5px 0;
 }
 
 .nbhd-products-archive-filters .widget_price_filter ul.product-categories > li > a,
-.nbhd-products-archive-filters .widget_price_filter ul.wc-block-product-categories-list > li > a,
+.nbhd-products-archive-filters .widget_price_filter ul.wc-block-product-categories-list--depth-0 > li > a,
 .nbhd-products-archive-filters .widget_product_categories ul.product-categories > li > a,
-.nbhd-products-archive-filters .widget_product_categories ul.wc-block-product-categories-list > li > a,
+.nbhd-products-archive-filters .widget_product_categories ul.wc-block-product-categories-list--depth-0 > li > a,
 .nbhd-products-archive-filters .wc-block-product-categories ul.product-categories > li > a,
-.nbhd-products-archive-filters .wc-block-product-categories ul.wc-block-product-categories-list > li > a,
+.nbhd-products-archive-filters .wc-block-product-categories ul.wc-block-product-categories-list--depth-0 > li > a,
 .nbhd-products-archive-filters .widget_layered_nav_filters ul.product-categories > li > a,
-.nbhd-products-archive-filters .widget_layered_nav_filters ul.wc-block-product-categories-list > li > a,
+.nbhd-products-archive-filters .widget_layered_nav_filters ul.wc-block-product-categories-list--depth-0 > li > a,
 .nbhd-products-archive-filters .woocommerce-widget-layered-nav ul.product-categories > li > a,
-.nbhd-products-archive-filters .woocommerce-widget-layered-nav ul.wc-block-product-categories-list > li > a {
+.nbhd-products-archive-filters .woocommerce-widget-layered-nav ul.wc-block-product-categories-list--depth-0 > li > a {
 	font-weight: 500;
 }
 
-.nbhd-products-archive-filters .widget_price_filter ul.product-categories > li ul.children,
-.nbhd-products-archive-filters .widget_price_filter ul.wc-block-product-categories-list > li ul.children,
-.nbhd-products-archive-filters .widget_product_categories ul.product-categories > li ul.children,
-.nbhd-products-archive-filters .widget_product_categories ul.wc-block-product-categories-list > li ul.children,
-.nbhd-products-archive-filters .wc-block-product-categories ul.product-categories > li ul.children,
-.nbhd-products-archive-filters .wc-block-product-categories ul.wc-block-product-categories-list > li ul.children,
-.nbhd-products-archive-filters .widget_layered_nav_filters ul.product-categories > li ul.children,
-.nbhd-products-archive-filters .widget_layered_nav_filters ul.wc-block-product-categories-list > li ul.children,
-.nbhd-products-archive-filters .woocommerce-widget-layered-nav ul.product-categories > li ul.children,
-.nbhd-products-archive-filters .woocommerce-widget-layered-nav ul.wc-block-product-categories-list > li ul.children {
+.nbhd-products-archive-filters .widget_price_filter ul.product-categories > li ul,
+.nbhd-products-archive-filters .widget_price_filter ul.wc-block-product-categories-list--depth-0 > li ul,
+.nbhd-products-archive-filters .widget_product_categories ul.product-categories > li ul,
+.nbhd-products-archive-filters .widget_product_categories ul.wc-block-product-categories-list--depth-0 > li ul,
+.nbhd-products-archive-filters .wc-block-product-categories ul.product-categories > li ul,
+.nbhd-products-archive-filters .wc-block-product-categories ul.wc-block-product-categories-list--depth-0 > li ul,
+.nbhd-products-archive-filters .widget_layered_nav_filters ul.product-categories > li ul,
+.nbhd-products-archive-filters .widget_layered_nav_filters ul.wc-block-product-categories-list--depth-0 > li ul,
+.nbhd-products-archive-filters .woocommerce-widget-layered-nav ul.product-categories > li ul,
+.nbhd-products-archive-filters .woocommerce-widget-layered-nav ul.wc-block-product-categories-list--depth-0 > li ul {
 	padding-top: 5px;
 	padding-left: 15px;
 	list-style: none;
 }
 
-.nbhd-products-archive-filters .widget_price_filter ul.product-categories > li ul.children li,
-.nbhd-products-archive-filters .widget_price_filter ul.wc-block-product-categories-list > li ul.children li,
-.nbhd-products-archive-filters .widget_product_categories ul.product-categories > li ul.children li,
-.nbhd-products-archive-filters .widget_product_categories ul.wc-block-product-categories-list > li ul.children li,
-.nbhd-products-archive-filters .wc-block-product-categories ul.product-categories > li ul.children li,
-.nbhd-products-archive-filters .wc-block-product-categories ul.wc-block-product-categories-list > li ul.children li,
-.nbhd-products-archive-filters .widget_layered_nav_filters ul.product-categories > li ul.children li,
-.nbhd-products-archive-filters .widget_layered_nav_filters ul.wc-block-product-categories-list > li ul.children li,
-.nbhd-products-archive-filters .woocommerce-widget-layered-nav ul.product-categories > li ul.children li,
-.nbhd-products-archive-filters .woocommerce-widget-layered-nav ul.wc-block-product-categories-list > li ul.children li {
+.nbhd-products-archive-filters .widget_price_filter ul.product-categories > li ul li,
+.nbhd-products-archive-filters .widget_price_filter ul.wc-block-product-categories-list--depth-0 > li ul li,
+.nbhd-products-archive-filters .widget_product_categories ul.product-categories > li ul li,
+.nbhd-products-archive-filters .widget_product_categories ul.wc-block-product-categories-list--depth-0 > li ul li,
+.nbhd-products-archive-filters .wc-block-product-categories ul.product-categories > li ul li,
+.nbhd-products-archive-filters .wc-block-product-categories ul.wc-block-product-categories-list--depth-0 > li ul li,
+.nbhd-products-archive-filters .widget_layered_nav_filters ul.product-categories > li ul li,
+.nbhd-products-archive-filters .widget_layered_nav_filters ul.wc-block-product-categories-list--depth-0 > li ul li,
+.nbhd-products-archive-filters .woocommerce-widget-layered-nav ul.product-categories > li ul li,
+.nbhd-products-archive-filters .woocommerce-widget-layered-nav ul.wc-block-product-categories-list--depth-0 > li ul li {
 	padding: 5px 0;
 }
 
