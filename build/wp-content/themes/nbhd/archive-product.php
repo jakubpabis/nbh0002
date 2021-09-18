@@ -34,6 +34,8 @@ if (is_product_category()) {
 	} elseif ($sale) {
 		$class = 'with_header_img';
 	}
+} elseif ($sale) {
+	$class = 'with_header_img';
 }
 ?>
 <section class="bg-grey general-template-section nbhd-products-archive <?php echo $class; ?>">
