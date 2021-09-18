@@ -31,6 +31,8 @@ if (is_product_category()) {
 		if ($image_url) {
 			$class = 'with_header_img';
 		}
+	} elseif ($sale) {
+		$class = 'with_header_img';
 	}
 }
 ?>
