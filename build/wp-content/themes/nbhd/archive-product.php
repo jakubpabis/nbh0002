@@ -36,6 +36,8 @@ if (is_product_category()) {
 	}
 } elseif ($sale) {
 	$class = 'with_header_img';
+} elseif (is_shop()) {
+	$class = 'with_header_img';
 }
 ?>
 <section class="bg-grey general-template-section nbhd-products-archive <?php echo $class; ?>">
@@ -53,8 +55,10 @@ if (is_product_category()) {
 		<header class="woocommerce-products-header <?php echo $class; ?>">
 			<?php if ($sale) : ?>
 				<img class="lazy bg-cover" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/nbhd_sale.jpg" alt="Wyprzedaż w Neighbourhood Skateshop">
-			<?php elseif ($class) : ?>
+			<?php elseif ($class && isset($image_url) && $image_url) : ?>
 				<img class="lazy bg-cover" data-src="<?php echo $image_url; ?>" alt="<?php echo get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true); ?>">
+			<?php else : ?>
+				<img class="lazy bg-cover" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/nbhd_shop_header.jpg" alt="Neighbourhood Skateshop - Strona sklepu - header">
 			<?php endif; ?>
 			<?php if (apply_filters('woocommerce_show_page_title', true)) : ?>
 				<h1 class="woocommerce-products-header__title page-title <?php echo $class; ?> <?php echo $sale ? 'color-red' : null; ?>">
