@@ -1114,3 +1114,32 @@ article.single-product {
     margin-bottom: 10px;
   }
 }
+
+.woocommerce {
+  .woocommerce-MyAccount-navigation {
+    @media (max-width: 768px) {
+      width: 100% !important;
+      margin-bottom: 30px !important;
+
+      ul {
+        display: flex;
+        justify-content: stretch;
+        flex-wrap: wrap;
+
+        li {
+          border: 1px solid #ddd;
+        }
+      }
+    }
+  }
+  .woocommerce-MyAccount-content {
+    > p:first-of-type {
+      margin-top: 0 !important;
+    }
+
+    @media (max-width: 768px) {
+      width: 100% !important;
+      padding: 0 !important;
+    }
+  }
+}
