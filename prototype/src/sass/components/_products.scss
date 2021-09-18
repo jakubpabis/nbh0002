@@ -1003,6 +1003,7 @@ article.single-product {
 .nbhd-products-archive-filters {
   .widget_price_filter,
   .widget_product_categories,
+  .wc-block-product-categories,
   .widget_layered_nav_filters,
   .woocommerce-widget-layered-nav {
     margin-bottom: 40px;
@@ -1035,7 +1036,8 @@ article.single-product {
       }
     }
 
-    ul.product-categories {
+    ul.product-categories,
+    ul.wc-block-product-categories-list {
       padding-left: 0;
       list-style: none;
 
