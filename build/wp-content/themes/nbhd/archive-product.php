@@ -48,8 +48,8 @@ if (is_product_category()) {
 		?>
 		<header class="woocommerce-products-header <?php echo $class; ?>">
 			<?php if ($sale) : ?>
-				<img class="lazy bg-cover" data-src="<?php get_template_directory_uri(); ?>/assets/img/nbhd_sale.jpg" alt="Wyprzedaż w Neighbourhood Skateshop">
-			<?php else if ($class) : ?>
+				<img class="lazy bg-cover" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/nbhd_sale.jpg" alt="Wyprzedaż w Neighbourhood Skateshop">
+			<?php elseif ($class) : ?>
 				<img class="lazy bg-cover" data-src="<?php echo $image_url; ?>" alt="<?php echo get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true); ?>">
 			<?php endif; ?>
 			<?php if (apply_filters('woocommerce_show_page_title', true)) : ?>
