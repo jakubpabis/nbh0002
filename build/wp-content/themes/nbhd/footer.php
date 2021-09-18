@@ -112,25 +112,25 @@ endif; ?>
 					</span>
 					<ul class="list-unstyled text-size-small color-grey5">
 						<li>
-							<a href="">Płatności</a>
+							<a href="/platnosci/">Płatności</a>
 						</li>
 						<li>
-							<a href="">Tabela rozmiarów</a>
+							<a href="/tabela-rozmiarow/">Tabela rozmiarów</a>
 						</li>
 						<li>
-							<a href="">Wysyłka i czas dostawy</a>
+							<a href="/regulamin-sklepu/#wysylka">Wysyłka i czas dostawy</a>
 						</li>
 						<li>
-							<a href="">Zwroty i reklamacje</a>
+							<a href="/regulamin-sklepu/#reklamacje">Zwroty i reklamacje</a>
 						</li>
 						<li>
-							<a href="">Polityka prywatności</a>
+							<a href="/polityka-prywatnosci/">Polityka prywatności</a>
 						</li>
 						<li>
-							<a href="">Regulamin sklepu</a>
+							<a href="/regulamin-sklepu/">Regulamin sklepu</a>
 						</li>
 						<li>
-							<a href="">Moje konto</a>
+							<a href="/konto">Moje konto</a>
 						</li>
 					</ul>
 				</div>
@@ -140,22 +140,22 @@ endif; ?>
 					</span>
 					<ul class="list-unstyled text-size-small color-grey5">
 						<li>
-							<a href="">Strona główna</a>
+							<a href="/">Strona główna</a>
 						</li>
 						<li>
-							<a href="">Sklep</a>
+							<a href="/sklep">Sklep</a>
 						</li>
 						<li>
-							<a href="">Sale</a>
+							<a href="/sklep/?on_sale=true">Sale</a>
 						</li>
 						<li>
-							<a href="">Team</a>
+							<a href="/team">Team</a>
 						</li>
 						<li>
-							<a href="">Koszyk</a>
+							<a href="/koszyk">Koszyk</a>
 						</li>
 						<li>
-							<a href="">Kontakt</a>
+							<a href="/kontakt">Kontakt</a>
 						</li>
 					</ul>
 				</div>
