@@ -16,10 +16,12 @@ if (isset($_GET['on_sale']) && $_GET['on_sale'] === 'true') {
 
 get_header(); ?>
 <?php
-$class = null;
+$class = false;
+
 if (is_product_category()) {
 	global $wp_query;
 	$cat = $wp_query->get_queried_object();
+	//var_dump(get_term_meta(get_term(get_term($cat)->parent)->parent, 'thumbnail_id', true));
 	$thumbnail_id = get_term_meta($cat->term_id, 'thumbnail_id', true);
 	if ($thumbnail_id) {
 		$image_url = wp_get_attachment_url($thumbnail_id);
@@ -31,7 +33,13 @@ if (is_product_category()) {
 		if ($image_url) {
 			$class = 'with_header_img';
 		}
-	} elseif ($sale) {
+	} else {
+		$class = 'with_header_img';
+	}
+} elseif(get_term_meta(get_term(get_term($cat)->parent)->parent, 'thumbnail_id', true)) {
+	$thumbid = get_term(get_term($cat)->parent)->parent;
+	$image_url = wp_get_attachment_url($thumbid, 'thumbnail_id', true);
+	if ($image_url) {
 		$class = 'with_header_img';
 	}
 } elseif ($sale) {
