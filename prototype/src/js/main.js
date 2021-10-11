@@ -119,6 +119,33 @@ jQuery(document).ready(function () {
   hideQty();
   filterMobile();
 
+  jQuery(document.body).on("updated_checkout", function () {
+    //console.log('cos');
+    $(".form-row.mailchimp-newsletter")
+      .addClass("pretty p-default p-thick p-pulse")
+      .find("label")
+      .wrap('<div class="state p-warning-o"></div>');
+  });
+
+  if (
+    !getCookie("newsletter-coupon") ||
+    getCookie("newsletter-coupon") === "showed"
+  ) {
+    console.log("somesome");
+    if (getUrlParameter("already")) {
+      setCookie("newsletter-coupon", getUrlParameter("already"), 365);
+      $("#already-modal-newsletter").modal("show");
+    } else if (getUrlParameter("code")) {
+      setCookie("newsletter-coupon", getUrlParameter("code"), 365);
+      $("#code-modal-newsletter").modal("show");
+    } else {
+      setTimeout(function () {
+        $("#open-modal-newsletter").modal("show");
+        setCookie("newsletter-coupon", "showed", 1);
+      }, 5000);
+    }
+  }
+
   $("#nbhdModalSearch").on("shown.bs.modal", function () {
     $("input.dgwt-wcas-search-input").trigger("focus");
   });
@@ -152,4 +179,8 @@ jQuery(document).ready(function () {
 
 jQuery(window).on("load", function () {
   lazyImages();
+  $(".form-row.mailchimp-newsletter")
+    .addClass("pretty p-default p-thick p-pulse")
+    .find("label")
+    .wrap('<div class="state p-warning-o"></div>');
 });
