@@ -428,8 +428,8 @@ endif; ?>
 		},
 		"position": "bottom-left",
 		"content": {
-			"message": "Używamy ciasteczek jak każdy, wiadomo... Kliknij, że wiesz o co kaman, albo sobie poczytaj, jak wolisz...",
-			"dismiss": "Czaje, czaje...",
+			"message": "Używamy ciasteczek jak każdy, wiadomo... Kliknij, że się zgadzasz, lub poczytaj o cookies...",
+			"dismiss": "Zgadzam się",
 			"link": "Chce poczytać o cookies",
 			"href": "/polityka-prywatnosci/"
 		}
