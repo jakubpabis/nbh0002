@@ -129,7 +129,7 @@ jQuery(document).ready(function () {
 
   if (
     !getCookie("newsletter-coupon") ||
-    getCookie("newsletter-coupon") === "showed"
+    getCookie("newsletter-coupon") !== "showed"
   ) {
     console.log("somesome");
     if (getUrlParameter("already")) {
