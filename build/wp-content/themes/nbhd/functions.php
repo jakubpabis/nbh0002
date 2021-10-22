@@ -174,7 +174,7 @@ function nbhd_scripts()
 	wp_enqueue_style('nbhd-prettycheckbox', 'https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css');
 	wp_enqueue_style('nbhd-swiper', 'https://unpkg.com/swiper/swiper-bundle.min.css');
 	wp_enqueue_style('nbhd-fontawesome', get_template_directory_uri() . '/assets/css/fa.min.css');
-	wp_enqueue_style('nbhd-style', get_template_directory_uri() . '/assets/css/main.min.css?v=2.1.1');
+	wp_enqueue_style('nbhd-style', get_template_directory_uri() . '/assets/css/main.min.css?v=2.1.2');
 
 	if (!is_admin()) {
 		wp_deregister_script('wp-embed');
@@ -497,6 +497,9 @@ add_action('woocommerce_before_shop_loop_item_title', function () {
 	}
 }, 11);
 
+remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10);
+add_action('woocommerce_single_product_summary', 'woocommerce_output_product_data_tabs', 60);
+
 /**
  * WooCommerce, Add Long Description to Products on Shop Page
  *
@@ -573,20 +576,6 @@ function nbhd_echo_qty_front_add_cart()
 {
 	echo '<label class="quantity"><strong>Ilość</strong></label>';
 }
-
-// /**
-//  * @snippet       Display "Quantity: #" @ WooCommerce Single Product Page
-//  * @how-to        Get CustomizeWoo.com FREE
-//  * @author        Rodolfo Melogli
-//  * @testedwith    WooCommerce 3.6.2
-//  */
-// add_filter( 'woocommerce_get_availability_text', 'bbloomer_custom_get_availability_text', 99, 2 );  
-// function bbloomer_custom_get_availability_text( $availability, $product ) 
-// {
-// 	$stock = $product->get_stock_quantity();
-// 	if ( $product->is_in_stock() && $product->managing_stock() ) $availability = __( 'Ostatnia sztuka!', 'woocommerce' );
-// 	return $availability;
-// }
 
 
 function custom_post_type_newsletter_users()

@@ -621,6 +621,13 @@ article.single-product {
       margin-bottom: 2.5rem !important;
     }
   }
+  .summary {
+    #accordion {
+      width: 100% !important;
+      float: none !important;
+      margin-top: 30px !important;
+    }
+  }
   .related.products {
     clear: both;
     min-width: 100vw;
