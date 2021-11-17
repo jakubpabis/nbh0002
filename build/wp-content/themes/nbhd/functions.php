@@ -529,8 +529,8 @@ function nbhd_change_breadcrumb_delimiter($defaults)
 
 add_filter('woocommerce_get_image_size_gallery_thumbnail', function ($size) {
 	return array(
-		'width' => 600,
-		'height' => 600,
+		'width' => 640,
+		'height' => 800,
 		'crop' => 0,
 	);
 });
