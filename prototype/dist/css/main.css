@@ -1594,8 +1594,8 @@ select:focus {
 
 .nbhd-products-archive.with_header_img .woocommerce-products-header.with_header_img img {
 	max-width: 105vw !important;
-	height: 340px !important;
-	opacity: .66;
+	height: 300px !important;
+	opacity: .75;
 }
 
 .nbhd-products-archive.with_header_img .woocommerce-products-header.with_header_img.low img {
