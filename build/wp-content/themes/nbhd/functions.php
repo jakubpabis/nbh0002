@@ -297,7 +297,7 @@ function custom_taxonomy_marka()
 		'parent_item'                => 'Marka nadrzędna',
 		'parent_item_colon'          => 'Marka nadrzędna:',
 		'new_item_name'              => 'Nowa marka',
-		'add_new_item'               => 'Dodaj nową markę',
+		'add_new_item'               => 'Dodaj nową markę',
 		'edit_item'                  => 'Edytuj markę',
 		'update_item'                => 'Aktualizuj markę',
 		'separate_items_with_commas' => 'Marki przedzielone kropką',
