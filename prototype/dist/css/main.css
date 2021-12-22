@@ -5991,6 +5991,13 @@ h3,
 	width: 100% !important;
 }
 
+#add_payment_method #payment ul.payment_methods li,
+.woocommerce-cart #payment ul.payment_methods li,
+.woocommerce-checkout #payment ul.payment_methods li {
+	width: 100% !important;
+	margin: 10px 0 !important;
+}
+
 #nbhdModalCart .modal-topbar,
 #nbhdModalSearch .modal-topbar,
 #nbhdModalMenu .modal-topbar {
