@@ -1252,6 +1252,10 @@ input[type='checkbox']:checked:after {
 	display: flex !important;
 }
 
+.pretty .state label span {
+	margin-left: 4px;
+}
+
 .pretty .state label:after,
 .pretty .state label:before {
 	top: 6px !important;

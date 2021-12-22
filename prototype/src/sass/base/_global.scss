@@ -466,6 +466,10 @@ input[type='checkbox'] {
 .pretty .state label {
   display: flex !important;
   position: relative !important;
+
+  span {
+    margin-left: 4px;
+  }
 }
 
 .pretty .state label:after,
