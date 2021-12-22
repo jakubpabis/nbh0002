@@ -1130,8 +1130,8 @@ i {
 }
 
 .woocommerce-form__label.woocommerce-form__label-for-checkbox.inline {
-	display: inline !important;
-	margin-left: -4px;
+	display: flex !important;
+	margin-left: 0;
 }
 
 .form-row,
