@@ -1209,7 +1209,7 @@ input[type='checkbox']:focus {
 
 input[type='checkbox']:after {
 	position: absolute;
-	top: 6px !important;
+	top: 0;
 	left: 0;
 	display: inline-block;
 	visibility: visible;
@@ -1224,7 +1224,7 @@ input[type='checkbox']:before {
 	font-size: 16px !important;
 	line-height: 16px;
 	position: absolute;
-	top: 6px !important;
+	top: 0;
 	left: 0;
 	display: inline-block;
 	display: none;
@@ -1247,11 +1247,14 @@ input[type='checkbox']:checked:after {
 	background-color: transparent !important;
 }
 
-input[type='checkbox'] + .state {
-	position: relative;
+.pretty .state label {
+	position: relative !important;
 	display: flex !important;
-	width: 100%;
-	margin-bottom: 0 !important;
+}
+
+.pretty .state label:after,
+.pretty .state label:before {
+	top: 6px !important;
 }
 
 select {

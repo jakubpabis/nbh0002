@@ -426,7 +426,7 @@ input[type='checkbox'] {
   &:after {
     width: 16px;
     height: 16px;
-    top: 6px !important;
+    top: 0;
     left: 0;
     position: absolute;
     content: '';
@@ -440,7 +440,7 @@ input[type='checkbox'] {
     height: 16px;
     line-height: 16px;
     text-align: center;
-    top: 6px !important;
+    top: 0;
     left: 0;
     position: absolute;
     content: '✕';
@@ -461,13 +461,16 @@ input[type='checkbox'] {
       background-color: transparent !important;
     }
   }
+}
 
-  & + .state {
-    display: flex !important;
-    width: 100%;
-    position: relative;
-    margin-bottom: 0 !important;
-  }
+.pretty .state label {
+  display: flex !important;
+  position: relative !important;
+}
+
+.pretty .state label:after,
+.pretty .state label:before {
+  top: 6px !important;
 }
 
 select {
