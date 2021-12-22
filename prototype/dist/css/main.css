@@ -2859,6 +2859,9 @@ li.wc_payment_method.payment_method_przelewy24 {
 	padding: 6px 12px;
 	border-radius: 0;
 	background-color: #ccc;
+	-webkit-appearance: none !important;
+	-moz-appearance: none !important;
+	appearance: none !important;
 }
 
 .card {
