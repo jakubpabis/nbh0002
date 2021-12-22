@@ -986,6 +986,75 @@ article.single-product {
   background-color: $color-grey2 !important;
 }
 
+#add_payment_method #payment ul.payment_methods,
+.woocommerce-cart #payment ul.payment_methods,
+.woocommerce-checkout #payment ul.payment_methods {
+  text-align: left;
+  padding: 10px 5px;
+  border-bottom: 1px solid #d3ced2;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none outside;
+}
+
+#add_payment_method #payment ul.payment_methods li,
+.woocommerce-cart #payment ul.payment_methods li,
+.woocommerce-checkout #payment ul.payment_methods li {
+  line-height: 1;
+  text-align: left;
+  display: flex;
+  width: calc(50% - 20px);
+  padding: 12px 15px;
+  align-items: center;
+  font-weight: 400;
+  border: 2px solid #666;
+  border-radius: 10px;
+  margin: 10px;
+
+  @media (max-width: 767px) {
+    width: calc(100% - 20px) !important;
+  }
+
+  label {
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    margin: 0;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-weight: 500;
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+    }
+  }
+}
+
+li.wc_payment_method.payment_method_przelewy24 {
+  width: calc(100% - 20px) !important;
+}
+
+#add_payment_method #payment ul.payment_methods li img,
+.woocommerce-cart #payment ul.payment_methods li img,
+.woocommerce-checkout #payment ul.payment_methods li img {
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: relative;
+  height: 40px;
+  box-shadow: none;
+}
+
+#add_payment_method #payment ul.payment_methods li input,
+.woocommerce-cart #payment ul.payment_methods li input,
+.woocommerce-checkout #payment ul.payment_methods li input {
+  margin-right: 10px !important;
+}
+
 .woocommerce #payment #place_order,
 .woocommerce-page #payment #place_order {
   @extend .btn;

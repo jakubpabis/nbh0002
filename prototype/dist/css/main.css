@@ -2569,6 +2569,69 @@ article.single-product .related.products ul.products li.product {
 	background-color: #f0f0f0 !important;
 }
 
+#add_payment_method #payment ul.payment_methods,
+.woocommerce-cart #payment ul.payment_methods,
+.woocommerce-checkout #payment ul.payment_methods {
+	display: flex;
+	margin: 0;
+	padding: 10px 5px;
+	list-style: none outside;
+	text-align: left;
+	border-bottom: 1px solid #d3ced2;
+	flex-wrap: wrap;
+}
+
+#add_payment_method #payment ul.payment_methods li,
+.woocommerce-cart #payment ul.payment_methods li,
+.woocommerce-checkout #payment ul.payment_methods li {
+	font-weight: 400;
+	line-height: 1;
+	display: flex;
+	width: calc(50% - 20px);
+	margin: 10px;
+	padding: 12px 15px;
+	text-align: left;
+	border: 2px solid #666;
+	border-radius: 10px;
+	align-items: center;
+}
+
+#add_payment_method #payment ul.payment_methods li label,
+.woocommerce-cart #payment ul.payment_methods li label,
+.woocommerce-checkout #payment ul.payment_methods li label {
+	font-size: 18px;
+	font-weight: 500;
+	display: flex;
+	width: 100%;
+	margin: 0;
+	cursor: pointer;
+	white-space: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+li.wc_payment_method.payment_method_przelewy24 {
+	width: calc(100% - 20px) !important;
+}
+
+#add_payment_method #payment ul.payment_methods li img,
+.woocommerce-cart #payment ul.payment_methods li img,
+.woocommerce-checkout #payment ul.payment_methods li img {
+	position: relative;
+	display: block;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	box-shadow: none;
+}
+
+#add_payment_method #payment ul.payment_methods li input,
+.woocommerce-cart #payment ul.payment_methods li input,
+.woocommerce-checkout #payment ul.payment_methods li input {
+	margin-right: 10px !important;
+}
+
 .woocommerce #payment #place_order,
 .woocommerce-page #payment #place_order {
 	font-size: 1.33rem !important;
@@ -5602,6 +5665,18 @@ h3,
 .navigation__lower-menu > li .dropdown-menu ul.sub-menu li {
 	font-size: 16px;
 	padding: 10px 20px;
+}
+
+#add_payment_method #payment ul.payment_methods li,
+.woocommerce-cart #payment ul.payment_methods li,
+.woocommerce-checkout #payment ul.payment_methods li {
+	width: calc(100% - 20px) !important;
+}
+
+#add_payment_method #payment ul.payment_methods li label,
+.woocommerce-cart #payment ul.payment_methods li label,
+.woocommerce-checkout #payment ul.payment_methods li label {
+	font-size: 16px;
 }
 
 .article {
