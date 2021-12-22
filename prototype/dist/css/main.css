@@ -960,6 +960,50 @@ label {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+input[type='radio'] {
+	position: relative;
+	-webkit-appearance: none !important;
+	-moz-appearance: none !important;
+	appearance: none !important;
+}
+
+input[type='radio']:after {
+	position: relative;
+	top: -1px;
+	left: -1px;
+	display: inline-block;
+	visibility: visible;
+	width: 15px;
+	height: 15px;
+	content: '';
+	border: 1px solid #bdbdbd;
+	border-radius: 15px;
+}
+
+input[type='radio']:before {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	display: inline-block;
+	visibility: visible;
+	width: 9px;
+	height: 9px;
+	content: '';
+	border: none;
+	border-radius: 15px;
+}
+
+input[type='radio']:checked:before {
+	display: inline-block;
+	visibility: visible;
+	content: '';
+	background-color: black;
+}
+
+input[type='radio']:checked:after {
+	border-color: black !important;
+}
+
 section {
 	position: relative;
 	display: block;
@@ -1146,53 +1190,6 @@ i {
 	padding-top: 8px !important;
 }
 
-input[type='radio'] {
-	position: relative;
-	outline: 0;
-	-webkit-appearance: none !important;
-	-moz-appearance: none !important;
-	appearance: none !important;
-}
-
-input[type='radio']:after {
-	position: relative;
-	top: -1px;
-	left: -1px;
-	display: inline-block;
-	visibility: visible;
-	width: 15px;
-	height: 15px;
-	content: '';
-	border: 1px solid #bdbdbd;
-	border-radius: 15px;
-	background-color: white !important;
-}
-
-input[type='radio']:before {
-	position: absolute;
-	z-index: 9;
-	top: 2px;
-	left: 2px;
-	display: inline-block;
-	visibility: visible;
-	width: 9px;
-	height: 9px;
-	content: '';
-	border: none;
-	border-radius: 15px;
-}
-
-input[type='radio']:checked:before {
-	display: inline-block;
-	visibility: visible;
-	content: '';
-	background-color: black;
-}
-
-input[type='radio']:checked:after {
-	border-color: black !important;
-}
-
 input[type='checkbox'] {
 	position: relative;
 	display: inline-block !important;
@@ -1212,7 +1209,7 @@ input[type='checkbox']:focus {
 
 input[type='checkbox']:after {
 	position: absolute;
-	top: 0;
+	top: 6px !important;
 	left: 0;
 	display: inline-block;
 	visibility: visible;
@@ -1227,7 +1224,7 @@ input[type='checkbox']:before {
 	font-size: 16px !important;
 	line-height: 16px;
 	position: absolute;
-	top: 0;
+	top: 6px !important;
 	left: 0;
 	display: inline-block;
 	display: none;
@@ -1248,6 +1245,13 @@ input[type='checkbox']:checked:before {
 input[type='checkbox']:checked:after {
 	border-color: black !important;
 	background-color: transparent !important;
+}
+
+input[type='checkbox'] + .state {
+	position: relative;
+	display: flex !important;
+	width: 100%;
+	margin-bottom: 0 !important;
 }
 
 select {
