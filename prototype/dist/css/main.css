@@ -2585,7 +2585,7 @@ article.single-product .related.products ul.products li.product {
 .woocommerce-cart #payment ul.payment_methods li,
 .woocommerce-checkout #payment ul.payment_methods li {
 	font-weight: 400;
-	line-height: 1;
+	line-height: 1 !important;
 	display: flex;
 	width: calc(50% - 20px);
 	margin: 10px !important;
@@ -2593,6 +2593,7 @@ article.single-product .related.products ul.products li.product {
 	text-align: left;
 	border: 2px solid #666;
 	border-radius: 10px;
+	flex-wrap: wrap;
 	align-items: center;
 }
 
@@ -2602,7 +2603,7 @@ article.single-product .related.products ul.products li.product {
 	font-size: 18px;
 	font-weight: 500;
 	display: flex;
-	width: 100%;
+	width: calc(100% - 25px);
 	margin: 0;
 	cursor: pointer;
 	white-space: nowrap;

@@ -1001,9 +1001,10 @@ article.single-product {
 #add_payment_method #payment ul.payment_methods li,
 .woocommerce-cart #payment ul.payment_methods li,
 .woocommerce-checkout #payment ul.payment_methods li {
-  line-height: 1;
+  line-height: 1 !important;
   text-align: left;
   display: flex;
+  flex-wrap: wrap;
   width: calc(50% - 20px);
   padding: 12px 15px;
   align-items: center;
@@ -1018,7 +1019,7 @@ article.single-product {
 
   label {
     cursor: pointer;
-    width: 100%;
+    width: calc(100% - 25px);
     font-size: 18px;
     margin: 0;
     justify-content: space-between;
