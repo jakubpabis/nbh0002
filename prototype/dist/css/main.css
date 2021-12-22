@@ -2588,7 +2588,7 @@ article.single-product .related.products ul.products li.product {
 	line-height: 1;
 	display: flex;
 	width: calc(50% - 20px);
-	margin: 10px;
+	margin: 10px !important;
 	padding: 12px 15px;
 	text-align: left;
 	border: 2px solid #666;
