@@ -2853,6 +2853,14 @@ li.wc_payment_method.payment_method_przelewy24 {
 	opacity: 0 !important;
 }
 
+.woocommerce .woocommerce-form__label.woocommerce-form__label-for-checkbox.checkbox {
+	display: inline-block !important;
+	width: auto;
+	padding: 6px 12px;
+	border-radius: 0;
+	background-color: #ccc;
+}
+
 .card {
 	border: none;
 	outline: 0;
