@@ -121,7 +121,7 @@ if (is_product_category()) {
 							$cat = $wp_query->get_queried_object();
 							if (strtolower($cat->name) === 'blaty') : ?>
 								<div class="w-100">
-									<div style="color:#ffc107;" class="p-3 mb-4 text-center bg-black d-block w-100 text-size-xlarge font-bold text-bold text700">Do każdego decku grip gratis!</div>
+									<div style="color:rgb(245, 166, 35);" class="p-3 mb-4 text-center bg-black d-block w-100 text-size-xlarge font-bold text-bold text700">Do każdego decku grip gratis!</div>
 								</div>
 							<?php endif; ?>
 							<?php woocommerce_product_loop_start();

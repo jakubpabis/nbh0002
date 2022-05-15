@@ -577,6 +577,24 @@ function nbhd_echo_qty_front_add_cart()
 	echo '<label class="quantity"><strong>Ilość</strong></label>';
 }
 
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_title', 5);
+
+function woocommerce_add_custom_text_before_product_title()
+{
+	global $post;
+	$terms = get_the_terms($post->ID, 'product_cat');
+	$is_blaty = false;
+	foreach ($terms as $term) {
+		if (strtolower($term->name) === 'blaty') {
+			$is_blaty = true;
+		}
+	}
+	if ($is_blaty) {
+		echo '<div class="w-100"><div style="color:rgb(245, 166, 35);" class="p-3 mb-4 text-center bg-black d-block w-100 text-size-xlarge font-bold text-bold text700">Do każdego decku grip gratis!</div></div>';
+	}
+	the_title('<h1 class="product_title entry-title">', '</h1>');
+}
+add_action('woocommerce_single_product_summary', 'woocommerce_add_custom_text_before_product_title', 5);
 
 function custom_post_type_newsletter_users()
 {
