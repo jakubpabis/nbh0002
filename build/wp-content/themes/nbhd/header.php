@@ -409,10 +409,24 @@
 			margin-left: 0
 		}
 	</style>
+
 	<link rel="preload" href="<?php echo get_template_directory_uri() . '/assets/css/fa.min.css'; ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript>
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/fa.min.css'; ?>">
 	</noscript>
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+	</noscript>
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+	</noscript>
+	<link rel="preload" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+	</noscript>
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/main.min.css?v=2.2.8'; ?>">
 </head>
 
 <body <?php body_class(); ?>>
