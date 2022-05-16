@@ -27,7 +27,7 @@
 		gtag('config', 'UA-108874065-8');
 	</script>
 	<meta charset="<?php bloginfo('charset'); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
@@ -409,10 +409,6 @@
 			margin-left: 0
 		}
 	</style>
-	<link rel="preload" href="<?php echo get_template_directory_uri() . '/assets/css/main.min.css?v=2.2.6'; ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript>
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/main.min.css?v=2.2.6'; ?>">
-	</noscript>
 	<link rel="preload" href="<?php echo get_template_directory_uri() . '/assets/css/fa.min.css'; ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<noscript>
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/fa.min.css'; ?>">
