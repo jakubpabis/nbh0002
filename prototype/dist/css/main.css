@@ -12640,13 +12640,13 @@ li.wc_payment_method.payment_method_przelewy24 {
 }
 
 #yith-quick-view-close {
-	font-weight: 700;
-	line-height: 22px;
-	width: 26px;
-	height: 26px;
-	opacity: 1;
-	color: black;
-	border: 2px solid black;
+	font-weight: 700 !important;
+	line-height: 22px !important;
+	width: 26px !important;
+	height: 26px !important;
+	opacity: 1 !important;
+	color: black !important;
+	border: 2px solid black !important;
 }
 
 .article {
