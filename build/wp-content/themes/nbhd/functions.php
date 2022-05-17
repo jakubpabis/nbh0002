@@ -169,7 +169,7 @@ function nbhd_scripts()
 	wp_dequeue_style('wp-block-library');
 	wp_dequeue_style('wp-block-library-theme');
 	// load bootstrap css
-	wp_enqueue_style('nbhd-style', get_template_directory_uri() . '/assets/css/main.min.css?v=2.2.9');
+	wp_enqueue_style('nbhd-style', get_template_directory_uri() . '/assets/css/main.min.css?v=2.3.0');
 
 	if (!is_admin()) {
 		wp_deregister_script('wp-embed');
