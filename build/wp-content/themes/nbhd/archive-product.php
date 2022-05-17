@@ -36,7 +36,7 @@ if (is_product_category()) {
 	} else {
 		$class = 'with_header_img';
 	}
-} elseif (get_term_meta(get_term(get_term($cat)->parent)->parent, 'thumbnail_id', true)) {
+} elseif (get_term($cat) && get_term($cat)->parent && get_term(get_term($cat)->parent)->parent && get_term_meta(get_term(get_term($cat)->parent)->parent, 'thumbnail_id', true)) {
 	$thumbid = get_term(get_term($cat)->parent)->parent;
 	$image_url = wp_get_attachment_url($thumbid, 'thumbnail_id', true);
 	if ($image_url) {
@@ -66,7 +66,7 @@ if (is_product_category()) {
 				<?php /* elseif ($class && isset($image_url) && $image_url) : ?>
 				<img class="lazy bg-cover" data-src="<?php echo $image_url; ?>" alt="<?php echo get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true); ?>"> */ ?>
 			<?php else : ?>
-				<img class="lazy bg-cover" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/shop_header_shape.jpg" alt="Neighbourhood Skateshop - Strona sklepu - header">
+				<img class="lazy bg-cover" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/shop-header-top-banner.jpg" alt="Neighbourhood Skateshop - Strona sklepu - header">
 			<?php endif; ?>
 			<?php if (apply_filters('woocommerce_show_page_title', true)) : ?>
 				<h1 class="woocommerce-products-header__title page-title <?php echo $class; ?> <?php echo $sale ? 'color-red' : null; ?>">
@@ -112,6 +112,61 @@ if (is_product_category()) {
 								</h4>
 								<div class="px-4 pt-4 pb-1 d-lg-block d-none">
 									<?php dynamic_sidebar('sidebar-1'); ?>
+									<?php echo do_shortcode("[yith_wcan_filters slug='default-preset']"); ?>
+									<?php /*
+									$queried = $wp_query->get_queried_object();
+									$all_ids = get_posts(array(
+										'post_type' => 'product',
+										'numberposts' => -1,
+										'post_status' => 'publish',
+										'fields' => 'ids',
+										'tax_query' => array(
+											array(
+												'taxonomy' => $queried->taxonomy,
+												'field' => 'slug',
+												'terms' => $queried->slug,
+												'operator' => 'IN',
+											)
+										),
+									));
+									$atts = [];
+									foreach ($all_ids as $id) {
+										$attributes = wc_get_product($id)->get_attributes();
+										foreach ($attributes as $attribute) {
+											$attName = $attribute->get_name();
+											$attOptions = $attribute->get_options();
+											if (!array_key_exists($attName, $atts)) {
+												$atts[$attName] = [];
+											}
+											foreach ($attOptions as $attOption) {
+												if (!array_key_exists($attOption, $atts[$attName])) {
+													$atts[$attName][$attOption]['qty'] = 1;
+												} else {
+													$atts[$attName][$attOption]['qty']++;
+												}
+												$atts[$attName][$attOption]['slug'] = get_term($attOption)->slug;
+												$atts[$attName][$attOption]['name'] = get_term($attOption)->name;
+											}
+										}
+									}
+									foreach ($atts as $key => $att) {
+										$newKey = ucfirst(str_replace('pa_', '', $key));
+										$atts[$newKey] = $atts[$key];
+										unset($atts[$key]);
+									}
+									//print_r($atts);
+									?>
+									<?php foreach ($atts as $keyItem => $atItem) : ?>
+										<section class="widget woocommerce widget_layered_nav woocommerce-widget-layered-nav">
+											<h3 class="widget-title"><?php echo $keyItem; ?></h3>
+											<ul class="woocommerce-widget-layered-nav-list">
+												<?php foreach ($atItem as $item) : ?>
+													<li class="woocommerce-widget-layered-nav-list__item wc-layered-nav-term "><a rel="nofollow" href="?filter_rozmiar=9-25&amp;query_type_rozmiar=or"><?php echo $item['name']; ?></a> <small class="count">(<?php echo $item['qty']; ?>)</small></li>
+												<?php endforeach; ?>
+											</ul>
+										</section>
+									<?php endforeach; */ ?>
+
 								</div>
 							</aside>
 						</div>
