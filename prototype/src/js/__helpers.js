@@ -1,5 +1,5 @@
 (function ($) {
-  $.each(["show", "hide"], function (i, ev) {
+  $.each(['show', 'hide'], function (i, ev) {
     var el = $.fn[ev];
     $.fn[ev] = function () {
       this.trigger(ev);
@@ -9,16 +9,16 @@
 })(jQuery);
 
 jQuery.fn.preventDoubleSubmission = function () {
-  $(this).on("submit", function (e) {
+  $(this).on('submit', function (e) {
     var $form = $(this);
 
-    if ($form.data("submitted") === true) {
+    if ($form.data('submitted') === true) {
       // Previously submitted - don't submit again
       e.preventDefault();
-      console.log("prevent double submittion");
+      console.log('prevent double submittion');
     } else {
       // Mark it so that the next submit can be ignored
-      $form.data("submitted", true);
+      $form.data('submitted', true);
     }
   });
 
@@ -28,12 +28,12 @@ jQuery.fn.preventDoubleSubmission = function () {
 
 var getUrlParameter = function getUrlParameter(sParam) {
   var sPageURL = window.location.search.substring(1),
-    sURLVariables = sPageURL.split("&"),
+    sURLVariables = sPageURL.split('&'),
     sParameterName,
     i;
 
   for (i = 0; i < sURLVariables.length; i++) {
-    sParameterName = sURLVariables[i].split("=");
+    sParameterName = sURLVariables[i].split('=');
 
     if (sParameterName[0] === sParam) {
       return sParameterName[1] === undefined
@@ -46,28 +46,28 @@ var getUrlParameter = function getUrlParameter(sParam) {
 function setCookie(cname, cvalue, exdays) {
   var d = new Date();
   d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
-  var expires = "expires=" + d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  var expires = 'expires=' + d.toUTCString();
+  document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/';
 }
 
 function getCookie(cname) {
-  var name = cname + "=";
+  var name = cname + '=';
   var decodedCookie = decodeURIComponent(document.cookie);
-  var ca = decodedCookie.split(";");
+  var ca = decodedCookie.split(';');
   for (var i = 0; i < ca.length; i++) {
     var c = ca[i];
-    while (c.charAt(0) == " ") {
+    while (c.charAt(0) == ' ') {
       c = c.substring(1);
     }
     if (c.indexOf(name) == 0) {
       return c.substring(name.length, c.length);
     }
   }
-  return "";
+  return '';
 }
 
 function slideTo(el) {
-  $("html, body").animate(
+  $('html, body').animate(
     {
       scrollTop: $(el).offset().top,
     },
@@ -77,7 +77,7 @@ function slideTo(el) {
 
 function spaceFromBottom(el) {
   var eTop = $(el).offset().top; //get the offset top of the element
-  if (eTop - $(window).scrollTop() < $(window).height() + 600) {
+  if (eTop - $(window).scrollTop() < $(window).height() + 100) {
     return true;
   } else {
     return false;
@@ -86,11 +86,11 @@ function spaceFromBottom(el) {
 
 function getFileName($input, $el) {
   $text = $input.value;
-  document.getElementById($el).innerHTML = $text.split("\\")[2];
+  document.getElementById($el).innerHTML = $text.split('\\')[2];
 }
 
 function isScriptLoaded(url) {
-  var scripts = document.getElementsByTagName("script");
+  var scripts = document.getElementsByTagName('script');
   for (var i = scripts.length; i--; ) {
     if (scripts[i].src == url) return true;
   }
@@ -98,20 +98,20 @@ function isScriptLoaded(url) {
 }
 
 function addScript($src) {
-  var head = document.getElementsByTagName("head")[0];
-  var script = document.createElement("script");
-  script.type = "text/javascript";
+  var head = document.getElementsByTagName('head')[0];
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
   script.src = $src;
   head.appendChild(script);
 }
 
 function loadScript(url, callback) {
-  var script = document.createElement("script");
-  script.type = "text/javascript";
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
   if (script.readyState) {
     // only required for IE <9
     script.onreadystatechange = function () {
-      if (script.readyState === "loaded" || script.readyState === "complete") {
+      if (script.readyState === 'loaded' || script.readyState === 'complete') {
         script.onreadystatechange = null;
         callback();
       }
@@ -124,14 +124,14 @@ function loadScript(url, callback) {
   }
 
   script.src = url;
-  document.getElementsByTagName("head")[0].appendChild(script);
+  document.getElementsByTagName('head')[0].appendChild(script);
 }
 
 /**
  * Parse url
  */
 function urlParser($url) {
-  var parser = document.createElement("a");
+  var parser = document.createElement('a');
   parser.href = $url;
 
   var $result = parser.hostname;

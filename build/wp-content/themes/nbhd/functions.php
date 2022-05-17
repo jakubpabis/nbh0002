@@ -164,6 +164,15 @@ remove_action('admin_print_styles', 'print_emoji_styles');
 /**
  * Enqueue scripts and styles.
  */
+
+function defer_parsing_of_js($url)
+{
+	if (FALSE === strpos($url, '.js')) return $url;
+	if (strpos($url, 'jquery.js') || strpos($url, 'jquery.min.js')) return $url;
+	return "$url' defer ";
+}
+add_filter('clean_url', 'defer_parsing_of_js', 11, 1);
+
 function nbhd_scripts()
 {
 	wp_dequeue_style('wp-block-library');
