@@ -189,11 +189,9 @@ function nbhd_scripts()
 	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', array(), '', false);
 	wp_deregister_script('jquery-migrate');
 	wp_register_script('jquery-migrate', "https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.2.0/jquery-migrate.min.js", array(), '3.2.0', false);
-	wp_enqueue_script('nbhd-feather', 'https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js', array(), '', true);
 	// Internet Explorer HTML5 support
-	wp_enqueue_script('html5hiv', get_template_directory_uri() . '/inc/assets/js/html5.js', array(), '3.7.0', false);
-	wp_script_add_data('html5hiv', 'conditional', 'lt IE 9');
-	wp_enqueue_script('nbhd-app', get_template_directory_uri() . '/assets/js/main.min.js', array(), '2.0.4', true);
+	// wp_enqueue_script('html5hiv', get_template_directory_uri() . '/inc/assets/js/html5.js', array(), '3.7.0', false);
+	// wp_script_add_data('html5hiv', 'conditional', 'lt IE 9');
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
@@ -383,9 +381,6 @@ if (!function_exists('nbhd_catalog_ordering')) {
 	}
 }
 
-//remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
-//remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20 );
-
 /**
  * Ensure variation combinations are working properly - standard limit is 30
  */
@@ -407,7 +402,7 @@ function wcbv_variation_is_active($active, $variation)
 	}
 	return $active;
 }
-//add_filter('woocommerce_variation_is_active', 'wcbv_variation_is_active', 10, 2);
+add_filter('woocommerce_variation_is_active', 'wcbv_variation_is_active', 10, 2);
 
 
 /**
@@ -427,7 +422,6 @@ if (!function_exists('woocommerce_output_related_products')) {
 		}
 	}
 }
-
 
 add_filter('woocommerce_hide_invisible_variations', '__return_true');
 

@@ -31,10 +31,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
-	<link rel="preload" href="<?php echo get_template_directory_uri() . '/assets/css/fa.min.css'; ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript>
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/assets/css/fa.min.css'; ?>">
-	</noscript>
 </head>
 
 <body <?php body_class(); ?>>
