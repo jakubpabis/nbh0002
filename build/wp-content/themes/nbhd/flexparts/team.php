@@ -1,4 +1,4 @@
-<?php $row = get_sub_field('row')[0]; ?>
+<?php $row = !empty(get_sub_field('row')) ? get_sub_field('row')[0] : '6'; ?>
 <?php if (have_rows('people')) : ?>
 	<section class="img-aside py-5 bg-grey2">
 		<div class="container-xl py-5">

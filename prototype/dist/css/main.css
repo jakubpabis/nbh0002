@@ -10154,6 +10154,11 @@ p,
 	box-shadow: none !important;
 }
 
+.btn-primary {
+	color: white !important;
+	background-color: #0a0a0a !important;
+}
+
 .btn:hover,
 .products__product a.button:hover,
 .products .product a.button:hover,
@@ -11090,6 +11095,12 @@ select:focus {
 	background-color: white;
 }
 
+.nbhd-products-archive-filtering input[type='checkbox']:after,
+.nbhd-products-archive-filtering input[type='checkbox']:before {
+	top: 3px;
+	left: -2px;
+}
+
 .nbhd-products-archive-filtering .woocommerce-notices-wrapper {
 	width: 100%;
 }
@@ -11185,22 +11196,33 @@ select:focus {
 }
 
 .products__container ul.products li.product {
+	display: flex;
 	margin-right: 30px !important;
+	flex-wrap: wrap;
 }
 
 .products__container ul.products li.product.last {
 	margin-right: 0 !important;
 }
 
+.products__container ul.products li.product .add_to_cart_button {
+	display: none !important;
+}
+
 .products__product,
 .products .product {
-	margin-bottom: 6rem !important;
+	margin-bottom: 5rem !important;
 }
 
 .products__product .woocommerce-loop-product__title,
 .products .product .woocommerce-loop-product__title {
 	font-weight: 700;
 	margin-bottom: .25rem;
+}
+
+.products__product .woocommerce-loop-product__link,
+.products .product .woocommerce-loop-product__link {
+	width: 100%;
 }
 
 .products__product .price del,
@@ -12112,6 +12134,20 @@ li.wc_payment_method.payment_method_przelewy24 {
 
 #order_review_heading {
 	margin-top: 30px !important;
+}
+
+.nbhd-products-archive-filters input[type='checkbox'] {
+	margin-right: 2px;
+	margin-bottom: -3px;
+}
+
+.nbhd-products-archive-filters .yith-wcan-filters .yith-wcan-filter .filter-items .filter-item {
+	line-height: 1.33;
+	padding: .5rem 0 0 0;
+}
+
+.nbhd-products-archive-filters .yith-wcan-filters .yith-wcan-filter .filter-items .filter-item > ul {
+	padding-bottom: .75rem;
 }
 
 .nbhd-products-archive-filters .widget_price_filter,
@@ -19731,7 +19767,7 @@ h4,
 
 .products__product,
 .products .product {
-	margin-bottom: 5rem !important;
+	margin-bottom: 4rem !important;
 }
 
 .woocommerce #content div.product div.summary,
@@ -20215,7 +20251,7 @@ h3,
 
 .products__product,
 .products .product {
-	margin-bottom: 4rem !important;
+	margin-bottom: 3.5rem !important;
 }
 
 .products__product-badge,

@@ -164,15 +164,6 @@ remove_action('admin_print_styles', 'print_emoji_styles');
 /**
  * Enqueue scripts and styles.
  */
-
-function defer_parsing_of_js($url)
-{
-	if (FALSE === strpos($url, '.js')) return $url;
-	if (strpos($url, 'jquery.js') || strpos($url, 'jquery.min.js')) return $url;
-	return "$url' defer ";
-}
-add_filter('clean_url', 'defer_parsing_of_js', 11, 1);
-
 function nbhd_scripts()
 {
 	wp_dequeue_style('wp-block-library');
@@ -350,7 +341,7 @@ if (!function_exists('nbhd_catalog_ordering')) {
 		);
 
 		$default_orderby = wc_get_loop_prop('is_search') ? 'relevance' : apply_filters('woocommerce_default_catalog_orderby', get_option('woocommerce_default_catalog_orderby', ''));
-		$orderby         = isset($_GET['orderby']) ? wc_clean(wp_unslash($_GET['orderby'])) : $default_orderby; // WPCS: sanitization ok, input var ok, CSRF ok.
+		$orderby = isset($_GET['orderby']) ? wc_clean(wp_unslash($_GET['orderby'])) : $default_orderby; // WPCS: sanitization ok, input var ok, CSRF ok.
 
 		if (wc_get_loop_prop('is_search')) {
 			$catalog_orderby_options = array_merge(array('relevance' => __('Relevance', 'woocommerce')), $catalog_orderby_options);
@@ -529,6 +520,14 @@ add_filter('woocommerce_get_image_size_gallery_thumbnail', function ($size) {
 		'crop' => 0,
 	);
 });
+
+// function nbhd_before_after_btn($add_to_cart_html, $product, $args)
+// {
+// 	$before = '<p>'; // Some text or HTML here
+// 	$after = '</p>'; // Add some text or HTML here as well
+// 	return $before . $add_to_cart_html . $after;
+// }
+// add_filter('woocommerce_loop_add_to_cart_link', 'nbhd_before_after_btn', 30, 50);
 
 add_filter('woocommerce_after_add_to_cart_form', function () {
 	echo '
