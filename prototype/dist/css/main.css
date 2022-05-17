@@ -12639,6 +12639,16 @@ li.wc_payment_method.payment_method_przelewy24 {
 	padding: 20px 10px !important;
 }
 
+#yith-quick-view-close {
+	font-weight: 700;
+	line-height: 22px;
+	width: 26px;
+	height: 26px;
+	opacity: 1;
+	color: black;
+	border: 2px solid black;
+}
+
 .article {
 	margin-top: 40px;
 	margin-bottom: 70px;
