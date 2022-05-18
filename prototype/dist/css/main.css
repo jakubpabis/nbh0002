@@ -11022,7 +11022,7 @@ select:focus {
 	padding: 10px 40px 20px 30px;
 	border-top: 5px solid white;
 	border-right: 5px solid white;
-	background-color: rgba(10, 10, 10, .4);
+	background-color: rgba(10, 10, 10, .5);
 }
 
 .header.low {
