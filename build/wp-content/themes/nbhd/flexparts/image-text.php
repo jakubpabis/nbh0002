@@ -23,7 +23,7 @@
 					</div>
 				<?php endif; ?>
 				<?php if (get_sub_field('link')) : ?>
-					<a href="<?php echo get_sub_field('link')['url']; ?>" class="btn btn__default black">
+					<a href="<?php echo esc_url(get_sub_field('link')['url']); ?>" <?php echo get_sub_field('link')['target'] ? 'target="' . get_sub_field('link')['target'] . '"' : null; ?> class="btn btn__default black">
 						<?php echo get_sub_field('link')['title']; ?>
 					</a>
 				<?php endif; ?>
