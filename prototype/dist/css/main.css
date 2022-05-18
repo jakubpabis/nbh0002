@@ -12458,6 +12458,15 @@ li.wc_payment_method.payment_method_przelewy24 {
 	padding-right: 0 !important;
 }
 
+#nbhdModalCart .modal-dialog,
+#nbhdModalSearch .modal-dialog,
+#nbhdModalMenu .modal-dialog {
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+
 #nbhdModalCart .close,
 #nbhdModalSearch .close,
 #nbhdModalMenu .close {
