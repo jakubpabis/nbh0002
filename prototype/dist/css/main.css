@@ -10887,6 +10887,10 @@ select:focus {
 	background-color: black;
 }
 
+.navigation__lower-menu > li .dropdown-menu-img-container:last-child {
+	border-left: 1px solid #ddd;
+}
+
 .navigation__lower-menu > li .dropdown-menu ul.sub-menu-popular {
 	display: block;
 	margin: 0 auto;
@@ -19567,6 +19571,11 @@ h3,
 
 .navigation__lower-menu > li .dropdown-menu {
 	top: 26px !important;
+}
+
+.navigation__lower-menu > li .dropdown-menu-img-container:last-child {
+	border-top: 1px solid #ddd;
+	border-left: none;
 }
 
 .navigation__lower-utils {
