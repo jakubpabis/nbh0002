@@ -12089,6 +12089,15 @@ article.single-product .related.products ul.products li.product {
 	width: 100%;
 }
 
+.form-row.form-row-wide.mailchimp-newsletter .woocommerce-form__label {
+	display: inline-block !important;
+	width: auto;
+	border-radius: 0;
+	-webkit-appearance: none !important;
+	-moz-appearance: none !important;
+	appearance: none !important;
+}
+
 #add_payment_method #payment,
 .woocommerce-cart #payment,
 .woocommerce-checkout #payment {

@@ -1006,6 +1006,14 @@ article.single-product {
 .form-row.form-row-wide.mailchimp-newsletter {
   display: block !important;
   width: 100%;
+
+	.woocommerce-form__label {
+		display: inline-block !important;
+		width: auto;
+		appearance: none !important;
+		border-radius: 0;
+	}
+
 }
 
 #add_payment_method #payment,
