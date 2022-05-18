@@ -11190,6 +11190,11 @@ select:focus {
 	padding-left: 5px;
 }
 
+.woocommerce ul.products.columns-4 .add_to_cart_button,
+.woocommerce-page ul.products.columns-4 .add_to_cart_button {
+	display: none !important;
+}
+
 .woocommerce ul.products.columns-4 li.product,
 .woocommerce-page ul.products.columns-4 li.product {
 	width: calc(25% - 22.5px) !important;
