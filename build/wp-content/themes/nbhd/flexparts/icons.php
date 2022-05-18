@@ -6,7 +6,7 @@
 					<div class="col-md-4 col-sm-8 col-10 mb-md-0 mb-4">
 						<div class="cards__card bg-grey d-flex justify-content-center align-items-center py-lg-5 py-4 flex-wrap text-center">
 							<?php if (get_sub_field('icon')) : ?>
-								<img src="<?php echo get_sub_field('icon')['url']; ?>" alt="<?php echo get_sub_field('icon')['title']; ?>" class="w-25 mb-sm-4 mb-3">
+								<img src="<?php echo get_sub_field('icon')['url']; ?>" alt="<?php echo get_sub_field('icon')['title']; ?>" class="w-25 mb-sm-4 mb-3" width="<?php echo wp_get_attachment_metadata(get_sub_field('icon')['id'])['width']; ?>" height="<?php echo wp_get_attachment_metadata(get_sub_field('icon')['id'])['height']; ?>">
 							<?php endif; ?>
 							<?php if (get_sub_field('title')) : ?>
 								<span class="color-grey9 h4 text700 w-100 pt-2">

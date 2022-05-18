@@ -17,7 +17,7 @@
 							<source class="lazyset h-100 bg-cover-abs" media="(max-width: 720px)" data-srcset="<?php echo esc_url($mobileL); ?>">
 							<source class="lazyset h-100 bg-cover-abs" media="(max-width: 1200px)" data-srcset="<?php echo esc_url($tablet); ?>">
 							<source class="lazyset h-100 bg-cover-abs" data-srcset="<?php echo get_sub_field('image')['url']; ?>">
-							<img class="h-100 bg-cover-abs lazy" data-src="<?php echo get_sub_field('image')['url']; ?>" alt="<?php echo get_sub_field('image')['title']; ?>">
+							<img class="h-100 bg-cover-abs lazy" data-src="<?php echo get_sub_field('image')['url']; ?>" alt="<?php echo get_sub_field('image')['title']; ?>" width="<?php echo wp_get_attachment_metadata(get_sub_field('image')['id'])['width']; ?>" height="<?php echo wp_get_attachment_metadata(get_sub_field('image')['id'])['height']; ?>">
 						</picture>
 					<?php endif; ?>
 

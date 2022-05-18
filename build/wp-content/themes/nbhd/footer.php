@@ -185,10 +185,10 @@ endif; ?>
 						Wysyłka
 					</span>
 					<div class="mb-4">
-						<img style="width: 68px;" class="lazy" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/inpost.png" alt="">
+						<img width="68" style="width: 68px;" class="lazy" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/inpost.png" alt="">
 					</div>
 					<div class="mb-4">
-						<img style="width: 68px;" class="lazy" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/dpd.png" alt="">
+						<img width="68" style="width: 68px;" class="lazy" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/dpd.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -289,7 +289,7 @@ endif; ?>
 																<div class="row h-100">
 																	<?php while (have_rows('promo_panels', 'option')) : the_row(); ?>
 																		<div class="<?php echo $promos === 2 ? 'col-xl-6' : 'col-12'; ?> px-0 d-flex align-items-center justify-content-center dropdown-menu-img-container">
-																			<img src="<?php echo get_sub_field('image')['url']; ?>" alt="<?php echo get_sub_field('image')['title']; ?>" class="bg-cover-abs dropdown-menu-img">
+																			<img src="<?php echo get_sub_field('image')['url']; ?>" alt="<?php echo get_sub_field('image')['title']; ?>" class="bg-cover-abs dropdown-menu-img" width="<?php echo wp_get_attachment_metadata(get_sub_field('image')['id'])['width']; ?>" height="<?php echo wp_get_attachment_metadata(get_sub_field('image')['id'])['height']; ?>">
 																			<div class="text-center py-4 my-2">
 																				<?php if (get_sub_field('title')) : ?>
 																					<span class="h4 text700 d-block color-white mb-4 position-relative">

@@ -36,7 +36,7 @@
 					<div class="col-md-6 col-sm-9 mb-2">
 						<div class="cards__card position-relative mb-4 p-0">
 							<div class="cards__card-img">
-								<img data-src="<?php echo get_sub_field('image')['sizes']['medium']; ?>" alt="<?php echo get_sub_field('image')['title']; ?>" class="bg-cover-abs lazy">
+								<img data-src="<?php echo get_sub_field('image')['sizes']['medium']; ?>" alt="<?php echo get_sub_field('image')['title']; ?>" class="bg-cover-abs lazy" width="<?php echo wp_get_attachment_metadata(get_sub_field('image')['id'])['width']; ?>" height="<?php echo wp_get_attachment_metadata(get_sub_field('image')['id'])['height']; ?>">
 							</div>
 							<div class="cards__card-corner position-absolute bottom-0 left-0 bg-white p-sm-3 p-2 pr-md-5 pr-sm-4 pr-3">
 								<?php if (get_sub_field('title')) : ?>

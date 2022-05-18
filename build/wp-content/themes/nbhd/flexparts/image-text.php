@@ -3,7 +3,7 @@
 		<div class="row justify-content-between">
 			<?php if (get_sub_field('image_position') === 'left') : ?>
 				<div class="col-md-7">
-					<img data-src="<?php echo get_sub_field('image')['sizes']['medium_large']; ?>" alt="<?php echo get_sub_field('image')['title']; ?>" class="bg-cover lazy">
+					<img data-src="<?php echo get_sub_field('image')['sizes']['medium_large']; ?>" alt="<?php echo get_sub_field('image')['title']; ?>" width="<?php echo wp_get_attachment_metadata(get_sub_field('image')['id'])['width']; ?>" height="<?php echo wp_get_attachment_metadata(get_sub_field('image')['id'])['height']; ?>" class="bg-cover lazy">
 				</div>
 			<?php endif; ?>
 			<div class="col-xl-4 col-md-5 d-flex flex-wrap align-content-between pt-md-0 pt-4">
@@ -30,7 +30,7 @@
 			</div>
 			<?php if (get_sub_field('image_position') === 'right') : ?>
 				<div class="col-md-7">
-					<img data-src="<?php echo get_sub_field('image')['url']; ?>" alt="<?php echo get_sub_field('image')['title']; ?>" class="bg-cover lazy">
+					<img data-src="<?php echo get_sub_field('image')['url']; ?>" alt="<?php echo get_sub_field('image')['title']; ?>" width="<?php echo wp_get_attachment_metadata(get_sub_field('image')['id'])['width']; ?>" height="<?php echo wp_get_attachment_metadata(get_sub_field('image')['id'])['height']; ?>" class="bg-cover lazy">
 				</div>
 			<?php endif; ?>
 		</div>
