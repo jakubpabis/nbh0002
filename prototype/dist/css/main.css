@@ -12098,6 +12098,10 @@ article.single-product .related.products ul.products li.product {
 	appearance: none !important;
 }
 
+.form-row.form-row-wide.mailchimp-newsletter .input-checkbox {
+	margin-right: 0 !important;
+}
+
 #add_payment_method #payment,
 .woocommerce-cart #payment,
 .woocommerce-checkout #payment {
