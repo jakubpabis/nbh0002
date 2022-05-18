@@ -13153,13 +13153,13 @@ jQuery(document).ready(function () {
   hideQty();
   filterMobile();
 
-  jQuery(document.body).on('updated_checkout', function () {
-    //console.log('cos');
-    $('.form-row.mailchimp-newsletter')
-      .addClass('pretty p-default p-thick p-pulse')
-      .find('label')
-      .wrap('<div class="state p-warning-o"></div>');
-  });
+  // jQuery(document.body).on('updated_checkout', function () {
+  //   //console.log('cos');
+  //   $('.form-row.mailchimp-newsletter')
+  //     .addClass('pretty p-default p-thick p-pulse')
+  //     .find('label')
+  //     .wrap('<div class="state p-warning-o"></div>');
+  // });
 
   if (
     !getCookie('newsletter-coupon') ||
