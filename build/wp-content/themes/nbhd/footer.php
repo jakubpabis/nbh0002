@@ -418,7 +418,7 @@ endif; ?>
 <?php wp_footer(); ?>
 <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" async defer></script>
 <script src="<?php echo get_template_directory_uri() . '/assets/js/main.min.js'; ?>" defer></script>
-<?php if ($_COOKIE['cookieconsent_status'] !== 'dismiss') : ?>
+<?php if (!isset($_COOKIE['cookieconsent_status']) || $_COOKIE['cookieconsent_status'] !== 'dismiss') : ?>
 	<style>
 		.cc-window {
 			opacity: 1;
