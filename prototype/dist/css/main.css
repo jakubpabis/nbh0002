@@ -10254,6 +10254,21 @@ p,
 	background-color: white;
 }
 
+.btn.white.full,
+.products__product a.white.full.button,
+.products .product a.white.full.button,
+.woocommerce-form.woocommerce-form-login.login .white.full.button,
+.checkout_coupon.woocommerce-form-coupon .white.full.button,
+.woocommerce-form.woocommerce-form-register .white.full.button,
+.woocommerce #payment .white.full#place_order,
+.woocommerce-page #payment .white.full#place_order,
+#nbhdModalCart .modal-content .modal-body .widget_shopping_cart_content .woocommerce-mini-cart__buttons .white.full.button.wc-forward,
+#nbhdModalSearch .modal-content .modal-body .widget_shopping_cart_content .woocommerce-mini-cart__buttons .white.full.button.wc-forward,
+#nbhdModalMenu .modal-content .modal-body .widget_shopping_cart_content .woocommerce-mini-cart__buttons .white.full.button.wc-forward {
+	color: #0a0a0a !important;
+	background-color: white;
+}
+
 .btn.black,
 .products__product a.button,
 .products .product a.button,
