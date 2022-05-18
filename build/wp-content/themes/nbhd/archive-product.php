@@ -219,7 +219,18 @@ if (is_product_category()) {
 			 *
 			 * @hooked wc_no_products_found - 10
 			 */
-			do_action('woocommerce_no_products_found');
+			//do_action('woocommerce_no_products_found');
+		?>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 text-center py-5">
+						<h1 class="text-center d-block">
+							Niestety, nie mamy produktów w tej kategorii...
+						</h1>
+					</div>
+				</div>
+			</div>
+		<?php
 		}
 
 		/**
