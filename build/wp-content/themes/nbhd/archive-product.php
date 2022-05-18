@@ -36,7 +36,7 @@ if (is_product_category()) {
 	} else {
 		$class = 'with_header_img';
 	}
-} elseif (get_term($cat) && get_term($cat)->parent && get_term(get_term($cat)->parent)->parent && get_term_meta(get_term(get_term($cat)->parent)->parent, 'thumbnail_id', true)) {
+} elseif (isset($cat) && $cat && get_term($cat) && get_term($cat)->parent && get_term(get_term($cat)->parent)->parent && get_term_meta(get_term(get_term($cat)->parent)->parent, 'thumbnail_id', true)) {
 	$thumbid = get_term(get_term($cat)->parent)->parent;
 	$image_url = wp_get_attachment_url($thumbid, 'thumbnail_id', true);
 	if ($image_url) {
@@ -44,7 +44,7 @@ if (is_product_category()) {
 	}
 } elseif ($sale) {
 	$class = 'with_header_img';
-} elseif (is_shop()) {
+} elseif (is_shop() || is_tag() || is_tax() || is_category() || is_product_tag() || is_product_taxonomy()) {
 	$class = 'with_header_img';
 }
 ?>
