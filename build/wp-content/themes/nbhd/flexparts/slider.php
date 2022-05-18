@@ -2,7 +2,7 @@
 	<?php if (have_rows('slides')) : ?>
 		<div class="swiper-wrapper">
 			<?php while (have_rows('slides')) : the_row(); ?>
-				<div class="swiper-slide d-flex align-items-center justify-content-center">
+				<div class="swiper-slide d-flex align-items-end justify-content-start">
 					<?php if (get_sub_field('video')) : ?>
 						<div class="embed-container full">
 							<iframe class="lazy" data-src="<?php echo get_sub_field('video'); ?>?controls=0&autoplay=1&mute=1&rel=0&loop=1&showinfo=0" allow="autoplay; encrypted-media;" frameborder="0" allowfullscreen></iframe>
@@ -22,10 +22,9 @@
 					<?php endif; ?>
 
 					<?php if (get_sub_field('title') || get_sub_field('text') || get_sub_field('button')) : ?>
-						<div class="over-50"></div>
-						<div class="position-relative text-center">
+						<div class="position-relative header-text-container">
 							<?php if (get_sub_field('title')) : ?>
-								<span class="h1 text-white text700 d-block mt-5 mb-4">
+								<span class="text-size-xxxxlarge text-white text700 d-block mt-0 mb-2">
 									<?php echo get_sub_field('title'); ?>
 								</span>
 							<?php endif; ?>
@@ -33,7 +32,7 @@
 								get_sub_field('text');
 							endif; ?>
 							<?php if (get_sub_field('link')) : ?>
-								<a href="<?php echo get_sub_field('link')['url']; ?>" class="btn btn__default white">
+								<a href="<?php echo get_sub_field('link')['url']; ?>" class="btn btn__medium white">
 									<?php echo get_sub_field('link')['title']; ?>
 								</a>
 							<?php endif; ?>

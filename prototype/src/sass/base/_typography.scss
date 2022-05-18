@@ -1,23 +1,28 @@
 .text-size-xxxxlarge {
-  font-size: 4rem;
+  font-size: 5rem;
   line-height: 1.44;
   margin: 0;
 
   @media (max-width: 1199px) {
-    font-size: 3.66rem;
+    font-size: 4.2rem;
   }
 
   @media (max-width: 991px) {
-    font-size: 3.33rem;
+    font-size: 3.69rem;
   }
 
   @media (max-width: 767px) {
-    font-size: 3rem;
+    font-size: 3.33rem;
   }
 
   @media (max-width: 575px) {
-    font-size: 2.75rem;
+    font-size: 3rem;
   }
+
+	@media (max-width: 374px) {
+    font-size: 2.66rem;
+  }
+
 }
 
 h1,

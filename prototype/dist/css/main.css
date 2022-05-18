@@ -9551,6 +9551,14 @@ a.text-dark:hover {
 	background-color: #0a0a0a;
 }
 
+.bg-black-50 {
+	background-color: rgba(10, 10, 10, .5);
+}
+
+.bg-black-25 {
+	background-color: rgba(10, 10, 10, .25);
+}
+
 .bg-red {
 	background-color: #f00;
 }
@@ -10012,7 +10020,7 @@ th {
 }
 
 .text-size-xxxxlarge {
-	font-size: 4rem;
+	font-size: 5rem;
 	line-height: 1.44;
 	margin: 0;
 }
@@ -10991,6 +10999,13 @@ select:focus {
 	position: relative;
 }
 
+.header-text-container {
+	padding: 10px 40px 20px 30px;
+	border-top: 5px solid white;
+	border-right: 5px solid white;
+	background-color: rgba(10, 10, 10, .4);
+}
+
 .header.low {
 	height: 50vh;
 	min-height: 300px;
@@ -11007,6 +11022,12 @@ select:focus {
 	height: 80vh;
 	min-height: 500px;
 	max-height: 900px;
+}
+
+.header.swiper-container .swiper-pagination {
+	right: 30px;
+	left: auto;
+	width: auto;
 }
 
 .header.swiper-container .swiper-pagination .swiper-pagination-bullet {
@@ -19482,7 +19503,7 @@ fieldset[disabled] .datepicker table tr td span.active:hover:hover {
 @media (max-width: 1199px) {
 
 .text-size-xxxxlarge {
-	font-size: 3.66rem;
+	font-size: 4.2rem;
 }
 
 h1,
@@ -19608,7 +19629,7 @@ article.single-product {
 @media (max-width: 991px) {
 
 .text-size-xxxxlarge {
-	font-size: 3.33rem;
+	font-size: 3.69rem;
 }
 
 h1,
@@ -19842,7 +19863,7 @@ h4,
 @media (max-width: 767px) {
 
 .text-size-xxxxlarge {
-	font-size: 3rem;
+	font-size: 3.33rem;
 }
 
 h1,
@@ -20024,7 +20045,7 @@ article.single-product #accordion {
 @media (max-width: 575px) {
 
 .text-size-xxxxlarge {
-	font-size: 2.75rem;
+	font-size: 3rem;
 }
 
 h1,
@@ -20052,6 +20073,35 @@ h3,
 .woocommerce .woocommerce-tabs.wc-tabs-wrapper .card .card-body h5 span,
 .text-size-xlarge {
 	font-size: 1.44rem;
+}
+
+.btn__default,
+.woocommerce #payment #place_order,
+.woocommerce-page #payment #place_order {
+	padding: .9rem 3rem;
+}
+
+.btn__medium,
+.woocommerce-form.woocommerce-form-login.login .woocommerce-button.button.woocommerce-form-login__submit,
+.woocommerce-form.woocommerce-form-login.login .button,
+.checkout_coupon.woocommerce-form-coupon .woocommerce-button.button.woocommerce-form-login__submit,
+.checkout_coupon.woocommerce-form-coupon .button,
+.woocommerce-form.woocommerce-form-register .woocommerce-button.button.woocommerce-form-login__submit,
+.woocommerce-form.woocommerce-form-register .button,
+#nbhdModalCart .modal-content .modal-body .widget_shopping_cart_content .woocommerce-mini-cart__buttons .button.wc-forward,
+#nbhdModalCart .modal-content .modal-body .widget_shopping_cart_content .woocommerce-mini-cart__buttons .button.checkout.wc-forward,
+#nbhdModalSearch .modal-content .modal-body .widget_shopping_cart_content .woocommerce-mini-cart__buttons .button.wc-forward,
+#nbhdModalSearch .modal-content .modal-body .widget_shopping_cart_content .woocommerce-mini-cart__buttons .button.checkout.wc-forward,
+#nbhdModalMenu .modal-content .modal-body .widget_shopping_cart_content .woocommerce-mini-cart__buttons .button.wc-forward,
+#nbhdModalMenu .modal-content .modal-body .widget_shopping_cart_content .woocommerce-mini-cart__buttons .button.checkout.wc-forward {
+	font-size: .95rem;
+	padding: .75rem 2rem;
+}
+
+.btn__small,
+.products__product a.button,
+.products .product a.button {
+	padding: .66rem 1.25rem;
 }
 
 #wrapper {
@@ -20162,6 +20212,12 @@ h3,
 
 .navigation__lower-utils {
 	padding-right: 5px !important;
+}
+
+.header-text-container {
+	padding: 10px 25px 15px 15px;
+	border-top-width: 4px;
+	border-right-width: 4px;
 }
 
 .header.low {
@@ -20373,6 +20429,17 @@ h3,
 }
 
 @media (max-width: 374px) {
+
+.text-size-xxxxlarge {
+	font-size: 2.66rem;
+}
+
+.header-text-container {
+	padding-top: 5px;
+	padding-right: 20px;
+	border-top-width: 3px;
+	border-right-width: 3px;
+}
 
 .woocommerce form .form-row-first,
 .woocommerce form .form-row-last,
