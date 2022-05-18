@@ -12168,8 +12168,9 @@ li.wc_payment_method.payment_method_przelewy24 {
 	float: none;
 	margin-top: 25px;
 	padding-bottom: 1.3rem !important;
+	color: white !important;
 	border: none !important;
-	background-color: black;
+	background-color: #0a0a0a;
 }
 
 .woocommerce-terms-and-conditions-wrapper .form-row.validate-required,

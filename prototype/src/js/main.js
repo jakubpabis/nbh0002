@@ -179,8 +179,8 @@ jQuery(document).ready(function () {
 
 jQuery(window).on('load', function () {
   lazyImages();
-  $('.form-row.mailchimp-newsletter')
-    .addClass('pretty p-default p-thick p-pulse')
-    .find('label')
-    .wrap('<div class="state p-warning-o"></div>');
+  // $('.form-row.mailchimp-newsletter')
+  //   .addClass('pretty p-default p-thick p-pulse')
+  //   .find('label')
+  //   .wrap('<div class="state p-warning-o"></div>');
 });

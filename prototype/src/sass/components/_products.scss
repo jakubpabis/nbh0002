@@ -1097,7 +1097,8 @@ li.wc_payment_method.payment_method_przelewy24 {
   @extend .btn__default;
   font-size: 1.33rem !important;
   float: none;
-  background-color: black;
+  background-color: $color-primary;
+	color: white!important;
   font-weight: 700;
   border: none !important;
   margin-top: 25px;
