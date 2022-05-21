@@ -148,7 +148,7 @@ $items_count = $woocommerce->cart->get_cart_contents_count(); ?>
 					<?php if ($items_count > 0) : ?>
 						<a href="javascript:void(0)" data-toggle="modal" data-target="#nbhdModalCart" class="mr-3">
 							<i data-feather="shopping-cart"></i>
-							<span class="navigation__lower-utils-cart-count <?php echo $items_count ? null : 'd-none'; ?>" id="mini-cart-count"><?php echo $items_count ? $items_count : null; ?></span>
+							<span class="navigation__lower-utils-cart-count <?php echo $items_count ? null : 'd-none'; ?>" id="mini-cart-count"><?php echo $items_count; ?></span>
 						</a>
 					<?php endif; ?>
 					<button type="button" class="menu-opener" data-toggle="modal" data-target="#nbhdModalMenu">
