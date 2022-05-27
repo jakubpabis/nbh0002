@@ -263,7 +263,7 @@ add_filter('woocommerce_checkout_fields', 'custom_override_checkout_fields_nbhd'
  */
 function gateway_disable_shipping($available_gateways)
 {
-	if (!is_admin() && is_woocommerce() && WC() && WC()->session) {
+	if (!is_admin() && isset(WC()->session) && WC()->session->has_session()) {
 		$chosen_methods = WC()->session->get('chosen_shipping_methods');
 		$chosen_shipping = $chosen_methods[0];
 		if (isset($available_gateways['przelewy24']) && 0 === strpos($chosen_shipping, 'flat_rate')) {
