@@ -66,7 +66,7 @@ if (is_product_category()) {
 				<?php /* elseif ($class && isset($image_url) && $image_url) : ?>
 				<img class="lazy bg-cover" data-src="<?php echo $image_url; ?>" alt="<?php echo get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true); ?>"> */ ?>
 			<?php else : ?>
-				<img class="lazy bg-cover" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/shop-header-top-banner.jpg" alt="Neighbourhood Skateshop - Strona sklepu - header">
+				<img class="lazy bg-cover" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/shop-header-top-banner-new.jpg" alt="Neighbourhood Skateshop - Strona sklepu - header">
 			<?php endif; ?>
 			<?php if (apply_filters('woocommerce_show_page_title', true)) : ?>
 				<h1 class="woocommerce-products-header__title page-title <?php echo $class; ?> <?php echo $sale ? 'color-red' : null; ?>">
