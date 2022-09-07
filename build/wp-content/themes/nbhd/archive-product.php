@@ -26,26 +26,28 @@ if (is_product_category()) {
 	if ($thumbnail_id) {
 		$image_url = wp_get_attachment_url($thumbnail_id);
 		if ($image_url) {
-			$class = 'with_header_img';
+			$class = 'without_header_img';
 		}
 	} elseif (get_term_meta($cat->parent, 'thumbnail_id', true)) {
 		$image_url = wp_get_attachment_url(get_term_meta($cat->parent, 'thumbnail_id', true));
 		if ($image_url) {
-			$class = 'with_header_img';
+			$class = 'without_header_img';
 		}
 	} else {
-		$class = 'with_header_img';
+		$class = 'without_header_img';
 	}
 } elseif (isset($cat) && $cat && get_term($cat) && get_term($cat)->parent && get_term(get_term($cat)->parent)->parent && get_term_meta(get_term(get_term($cat)->parent)->parent, 'thumbnail_id', true)) {
 	$thumbid = get_term(get_term($cat)->parent)->parent;
 	$image_url = wp_get_attachment_url($thumbid, 'thumbnail_id', true);
 	if ($image_url) {
-		$class = 'with_header_img';
+		$class = 'without_header_img';
 	}
 } elseif ($sale) {
 	$class = 'with_header_img';
 } elseif (is_shop() || is_tag() || is_tax() || is_category() || is_product_tag() || is_product_taxonomy()) {
-	$class = 'with_header_img';
+	$class = 'without_header_img';
+} else {
+	$class = 'without_header_img';
 }
 ?>
 <section class="bg-grey general-template-section nbhd-products-archive <?php echo $class; ?>">
@@ -65,8 +67,6 @@ if (is_product_category()) {
 				<img class="lazy bg-cover" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/nbhd_sale.jpg" alt="Wyprzedaż w Neighbourhood Skateshop">
 				<?php /* elseif ($class && isset($image_url) && $image_url) : ?>
 				<img class="lazy bg-cover" data-src="<?php echo $image_url; ?>" alt="<?php echo get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true); ?>"> */ ?>
-			<?php else : ?>
-				<img class="lazy bg-cover" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/shop-header-top-banner-new.jpg" alt="Neighbourhood Skateshop - Strona sklepu - header">
 			<?php endif; ?>
 			<?php if (apply_filters('woocommerce_show_page_title', true)) : ?>
 				<h1 class="woocommerce-products-header__title page-title <?php echo $class; ?> <?php echo $sale ? 'color-red' : null; ?>">
