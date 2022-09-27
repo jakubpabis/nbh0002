@@ -111,6 +111,15 @@ function filterMobile() {
 }
 
 function hidePaymentMethods() {
+  if ($('#shipping_method_0_flat_rate11').is(':checked')) {
+    $('.wc_payment_methods.payment_methods.methods')
+      .hide(200)
+      .addClass('d-none');
+  } else {
+    $('.wc_payment_methods.payment_methods.methods')
+      .show(200)
+      .removeClass('d-none');
+  }
   $('#shipping_method')
     .find('input')
     .on('change', function () {
