@@ -13144,31 +13144,31 @@ function filterMobile() {
   });
 }
 
-function hidePaymentMethods() {
-  if ($('#shipping_method_0_flat_rate11').is(':checked')) {
-    $('.wc_payment_methods.payment_methods.methods')
-      .hide(200)
-      .addClass('d-none');
-  } else {
-    $('.wc_payment_methods.payment_methods.methods')
-      .show(200)
-      .removeClass('d-none');
-  }
-  $('#shipping_method')
-    .find('input')
-    .on('change', function () {
-      if ($('#shipping_method_0_flat_rate11').is(':checked')) {
-        $('.wc_payment_methods.payment_methods.methods')
-          .hide(200)
-          .addClass('d-none');
-      } else {
-        $('.wc_payment_methods.payment_methods.methods')
-          .show(200)
-          .removeClass('d-none');
-      }
-      console.log($(this));
-    });
-}
+// function hidePaymentMethods() {
+//   if ($('#shipping_method_0_flat_rate11').is(':checked')) {
+//     $('.wc_payment_methods.payment_methods.methods')
+//       .hide(200)
+//       .addClass('d-none');
+//   } else {
+//     $('.wc_payment_methods.payment_methods.methods')
+//       .show(200)
+//       .removeClass('d-none');
+//   }
+//   $('#shipping_method')
+//     .find('input')
+//     .on('change', function () {
+//       if ($('#shipping_method_0_flat_rate11').is(':checked')) {
+//         $('.wc_payment_methods.payment_methods.methods')
+//           .hide(200)
+//           .addClass('d-none');
+//       } else {
+//         $('.wc_payment_methods.payment_methods.methods')
+//           .show(200)
+//           .removeClass('d-none');
+//       }
+//       console.log($(this));
+//     });
+// }
 
 jQuery(document).ready(function () {
   lazyImages();
@@ -13178,7 +13178,7 @@ jQuery(document).ready(function () {
   addedToCartLink();
   hideQty();
   filterMobile();
-  hidePaymentMethods();
+  //hidePaymentMethods();
 
   // jQuery(document.body).on('updated_checkout', function () {
   //   //console.log('cos');
