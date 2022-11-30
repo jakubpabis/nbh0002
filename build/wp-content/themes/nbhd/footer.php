@@ -416,7 +416,7 @@ endif; ?>
 <div class="fb-customerchat" attribution=setup_tool page_id="436289680462922" theme_color="#F5A623" logged_in_greeting="Siemanko! Potrzebujesz pomocy Ziomuś? Pisz co jest grane..." logged_out_greeting="Siemanko! Potrzebujesz pomocy Ziomuś? Pisz co jest grane...">
 </div>
 <?php wp_footer(); ?>
-<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" async defer></script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" defer></script>
 <script src="<?php echo get_template_directory_uri() . '/assets/js/main.min.js'; ?>" defer></script>
 <?php if (!isset($_COOKIE['cookieconsent_status']) || $_COOKIE['cookieconsent_status'] !== 'dismiss') : ?>
 	<style>

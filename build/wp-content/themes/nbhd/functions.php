@@ -829,3 +829,58 @@ if (isset($_GET['on_sale']) && $_GET['on_sale'] && $_GET['on_sale'] === true) {
 		$q->set('post__in', $product_ids_on_sale);
 	}
 }
+
+
+// Detect if products in cart are on sale and discounted by more than 10%
+function detect_sale_products()
+{
+	global $woocommerce;
+	$product_on_sale = false;
+	$total_discount = 0;
+	$discount = 5;
+	foreach ($woocommerce->cart->get_cart() as $cart_item_key => $values) {
+		$_product = $values['data'];
+		if ($_product->is_on_sale() == true) {
+			$sale_price = $_product->get_sale_price();
+			$regular_price = $_product->get_regular_price();
+
+			$product_on_sale = true;
+		}
+	}
+	return $product_on_sale;
+}
+
+// Display no returns notice if any product in cart is discounted by more than 10%
+add_action('woocommerce_before_checkout_form', 'sale_products_notice');
+add_action('woocommerce_before_cart_table', 'sale_products_notice');
+add_action('woocommerce_before_cart_totals', 'sale_products_notice');
+function sale_products_notice()
+{
+	global $woocommerce;
+	$cart = WC()->cart;
+	$coupons = $cart->applied_coupons;
+	$isblk = false;
+	foreach ($coupons as $coupon) {
+		if ($coupon == 'blkfrd') {
+			$isblk = 'blkfrd';
+		}
+	}
+	$newDiscount = $cart->get_cart_discount_total();
+	if ($isblk) {
+
+		foreach ($cart->get_cart() as $cart_item_key => $values) {
+			$_product = $values['data'];
+			if ($_product->is_on_sale() == true) {
+				$sale_price = $_product->get_sale_price();
+				$newSalePriceChange = $sale_price * 0.25 - $sale_price * 0.05;
+				$newDiscount = $newDiscount - $newSalePriceChange;
+			}
+		}
+	}
+	//WC()->cart->remove_coupon($isblk);
+	$cart->set_discount_total($newDiscount);
+	var_dump($woocommerce->cart->get_cart_discount_total());
+	if (detect_sale_products()) {
+		wc_print_notice("You have items in your cart which are discounted by more than 10%. Please note that this is a final sale with no returns or refunds.", 'notice');
+	}
+}
