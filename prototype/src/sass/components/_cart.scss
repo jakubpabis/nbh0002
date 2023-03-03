@@ -1,0 +1,82 @@
+.woocommerce-cart-form__contents,
+.woocommerce table.shop_table {
+    border-radius: 0;
+
+    thead {
+        border-bottom: 2px solid black;
+    }
+
+    tbody {
+        
+        td,
+        label {
+            font-family: $font-tertiary;
+        }
+
+    }
+
+}
+
+.woocommerce-cart table.cart img {
+    width: 64px;
+}
+
+.woocommerce-cart table.cart td.actions .coupon .input-text {
+    min-width: 160px;
+
+    @media(max-width: 575px) {
+        width: 100%!important;
+    }
+
+}
+
+.woocommerce-page table.cart td.actions .coupon .button {
+
+    @media(max-width: 575px) {
+        width: 100%!important;
+    }
+
+}
+
+.cart_totals {
+
+    h2 {
+        margin: 0.33em 0;
+    }
+
+}
+
+.product-remove {
+
+    a {
+        line-height: 0.85!important;
+    }
+    
+}
+
+.wc_payment_method {
+
+    label {
+        font-weight: 700;
+    }
+
+    .payment_box {
+
+        p {
+            margin-top: 0!important;
+            font-weight: 600!important;
+        }
+    
+    }
+
+}
+
+.woocommerce .cart-collaterals .cart_totals, 
+.woocommerce-page .cart-collaterals .cart_totals {
+    width: 60%;
+
+    @media(max-width: 767px) {
+        width: 100%;
+    }
+
+}
