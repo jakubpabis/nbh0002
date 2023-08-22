@@ -174,11 +174,11 @@ if (is_product_category()) {
 						<div class="col-xl-9 col-lg-8 products__container-items">
 							<?php global $wp_query;
 							$cat = $wp_query->get_queried_object();
-							if (strtolower($cat->name) === 'blaty') : ?>
+							/* if (strtolower($cat->name) === 'blaty') : ?>
 								<div class="w-100">
 									<div style="color:rgb(245, 166, 35);" class="p-3 mb-4 text-center bg-black d-block w-100 text-size-xlarge font-bold text-bold text700">Do każdego decku grip gratis!</div>
 								</div>
-							<?php endif; ?>
+							endif; */?>
 							<?php woocommerce_product_loop_start();
 
 							if (wc_get_loop_prop('total')) {
