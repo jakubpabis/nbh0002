@@ -588,7 +588,7 @@ function woocommerce_add_custom_text_before_product_title()
 	}
 	the_title('<h1 class="product_title entry-title">', '</h1>');
 }
-add_action('woocommerce_single_product_summary', 'woocommerce_add_custom_text_before_product_title', 5);
+//add_action('woocommerce_single_product_summary', 'woocommerce_add_custom_text_before_product_title', 5);
 
 function custom_post_type_newsletter_users()
 {
@@ -879,8 +879,8 @@ function sale_products_notice()
 	}
 	//WC()->cart->remove_coupon($isblk);
 	$cart->set_discount_total($newDiscount);
-	var_dump($woocommerce->cart->get_cart_discount_total());
+	// var_dump($woocommerce->cart->get_cart_discount_total());
 	if (detect_sale_products()) {
-		wc_print_notice("You have items in your cart which are discounted by more than 10%. Please note that this is a final sale with no returns or refunds.", 'notice');
+		// wc_print_notice("You have items in your cart which are discounted by more than 10%. Please note that this is a final sale with no returns or refunds.", 'notice');
 	}
 }
