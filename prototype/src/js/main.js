@@ -155,20 +155,20 @@ jQuery(document).ready(function () {
   // });
 
   if (
-    !getCookie('newsletter-coupon') ||
-    getCookie('newsletter-coupon') !== 'showed'
+    !getCookie('newsletter-kupon') ||
+    getCookie('newsletter-kupon') !== 'showed'
   ) {
     console.log('somesome');
     if (getUrlParameter('already')) {
-      setCookie('newsletter-coupon', getUrlParameter('already'), 365);
+      setCookie('newsletter-kupon', getUrlParameter('already'), 365);
       $('#already-modal-newsletter').modal('show');
     } else if (getUrlParameter('code')) {
-      setCookie('newsletter-coupon', getUrlParameter('code'), 365);
+      setCookie('newsletter-kupon', getUrlParameter('code'), 365);
       $('#code-modal-newsletter').modal('show');
     } else {
       setTimeout(function () {
         $('#open-modal-newsletter').modal('show');
-        setCookie('newsletter-coupon', 'showed', 1);
+        setCookie('newsletter-kupon', 'showed', 1);
       }, 5000);
     }
   }
