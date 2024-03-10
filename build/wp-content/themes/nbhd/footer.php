@@ -360,7 +360,7 @@ endif; ?>
 		</div>
 	</div>
 </div>
-<?php if (isset($_GET['already'])) : ?>
+<?php /* if (isset($_GET['already'])) : ?>
 	<div class="modal fade" id="already-modal-newsletter" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 			<div class="modal-content bg-white p-4" style="border-radius: 0;">
@@ -389,25 +389,27 @@ endif; ?>
 			</div>
 		</div>
 	</div>
-<?php endif; ?>
+<?php endif; */ ?>
 <div class="modal fade" id="open-modal-newsletter" tabindex="-1" role="dialog" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 560px;">
 		<div class="modal-content bg-white p-4" style="border-radius: 0;">
-			<div class="modal-header px-4 my-4">
-				<h3 class="modal-title text700">
-					Zapisz się do newslettera i odbierz <br /><span style="color: #ff0000;">kod rabatowy -10%</span>
-				</h3>
+			<div class="modal-header px-4 mt-4">
+				<div>
+					<h2 class="modal-title text700">
+						Dzięki za odwiedziny!
+					</h2>
+					<p class="h5">
+						Jesteśmy wdzięczni, że jesteś z nami, dlatego mamy dla Ciebie <strong style="color: #ff0000;">kod rabatowy -10%</strong>
+					</p>
+				</div>
 				<button type="button" class="close px-3 py-2" data-dismiss="modal" aria-label="Zamknij">
 					<span aria-hidden="true">×</span>
 				</button>
 			</div>
 			<div class="modal-body px-4 mb-2">
-				<form class="d-flex align-items-stretch form-group" method="POST" action="<?php echo esc_url(admin_url('admin-post.php')); ?>" accept-charset="UTF-8" role="form" id="newsletter-form-modal" enctype="multipart/form-data">
-					<input class="mr-3 required email form-control" style="height: auto!important;" type="email" name="newsletter-email" value="" placeholder="Wpisz tutaj swój e-mail" required>
-					<input type="hidden" name="action" value="newsletter_form">
-					<?php wp_nonce_field('newsletter_form', 'newsletter_form_nonce'); ?>
-					<button type="submit" class="btn btn__medium black nowrap text-nowrap"><span>Zapisz się</span></button>
-				</form>
+				<p class="h4">
+					Wpisz kod: <strong style="color: #ff0000;">NBHD10</strong> podczas płacenia, aby odebrać rabat.
+				</p>
 			</div>
 		</div>
 	</div>
