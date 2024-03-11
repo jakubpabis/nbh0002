@@ -410,7 +410,7 @@ endif; ?>
 				<p class="h4">
 					Wpisz kod: <strong style="color: #ff0000;">NBHD10</strong> podczas płacenia, aby odebrać rabat.
 				</p>
-				<small class="d-block mb-4">
+				<small class="d-block mt-2">
 					* Kod rabatowy nie łączy się z innymi promocjami i towarami już przecenionymi.
 				</small>
 			</div>
