@@ -154,21 +154,18 @@ jQuery(document).ready(function () {
   //     .wrap('<div class="state p-warning-o"></div>');
   // });
 
-  if (
-    !getCookie('newsletter-kupon-10') ||
-    getCookie('newsletter-kupon-10') !== 'showed'
-  ) {
+  if (!getCookie('kupon-10') || getCookie('kupon-10') !== 'showed') {
     console.log('somesome');
     if (getUrlParameter('already')) {
-      setCookie('newsletter-kupon-10', getUrlParameter('already'), 7);
+      setCookie('kupon-10', getUrlParameter('already'), 1);
       $('#already-modal-newsletter').modal('show');
     } else if (getUrlParameter('code')) {
-      setCookie('newsletter-kupon-10', getUrlParameter('code'), 7);
+      setCookie('kupon-10', getUrlParameter('code'), 1);
       $('#code-modal-newsletter').modal('show');
     } else {
       setTimeout(function () {
         $('#open-modal-newsletter').modal('show');
-        setCookie('newsletter-kupon-10', 'showed', 1);
+        setCookie('kupon-10', 'showed', 1);
       }, 5000);
     }
   }

@@ -422,7 +422,7 @@ endif; ?>
 </div>
 <?php wp_footer(); ?>
 <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" defer></script>
-<script src="<?php echo get_template_directory_uri() . '/assets/js/main.min.js?v=1.1'; ?>" defer></script>
+<script src="<?php echo get_template_directory_uri() . '/assets/js/main.min.js?v=1.2'; ?>" defer></script>
 <?php if (!isset($_COOKIE['cookieconsent_status']) || $_COOKIE['cookieconsent_status'] !== 'dismiss') : ?>
 	<style>
 		.cc-window {
