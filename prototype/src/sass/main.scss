@@ -1,28 +1,28 @@
 // Import Plugins
-@import "plugins/bootstrap";
+@import 'plugins/bootstrap';
 
-@import "base/variables";
-@import "base/mixins";
-@import "base/classes";
-@import "base/normalize";
-@import "base/typography";
-@import "base/btn";
-@import "base/global";
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/classes';
+@import 'base/normalize';
+@import 'base/typography';
+@import 'base/btn';
+@import 'base/global';
 
 // Import Components
-@import "components/navigation";
-@import "components/breadcrumbs";
-@import "components/header";
-@import "components/products";
-@import "components/cards";
-@import "components/modal";
-@import "components/article";
-@import "components/team";
-@import "components/contact";
-@import "components/account";
-@import "components/footer";
+@import 'components/navigation';
+@import 'components/breadcrumbs';
+@import 'components/header';
+@import 'components/products';
+@import 'components/cards';
+@import 'components/modal';
+@import 'components/article';
+@import 'components/team';
+@import 'components/contact';
+@import 'components/account';
+@import 'components/footer';
 
 // Import Plugins
-@import "plugins/swiper";
-@import "plugins/prettyCheckbox";
-@import "plugins/datepicker";
+@import 'plugins/swiper';
+@import 'plugins/prettyCheckbox';
+@import 'plugins/datepicker';
